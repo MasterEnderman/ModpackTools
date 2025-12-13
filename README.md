@@ -4,4 +4,5 @@ A collection of python projects I wrote while working on various Minecraft modpa
 
 ## Projects
 
-- [PngBlender](https://github.com/MasterEnderman/ModpackTools/blob/master/PngBlender/README.md)
+- [PaletteCreator](https://github.com/MasterEnderman/ModpackTools/blob/master/PaletteCreator/)
+- [PngBlender](https://github.com/MasterEnderman/ModpackTools/blob/master/PngBlender/)

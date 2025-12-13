@@ -1,0 +1,22 @@
+// Color codes go in this file
+// - annotate comments with "//"
+// - colors have to start with "#"
+// - only hex values are supported for now
+
+// These are the 16 default Minecraft colors https://minecraft.wiki/w/Dye
+#F9FFFE
+#F9801D
+#C74EBD
+#3AB3DA
+#FED83D
+#80C71F
+#F38BAA
+#474F52
+#9D9D97
+#169C9C
+#8932B8
+#3C44AA
+#835432
+#5E7C16
+#B02E26
+#1D1D21

@@ -1,0 +1,64 @@
+#F9FFFE Everlasting Ice
+#F9801D Oriole
+#C74EBD Love Priestess
+#3AB3DA Blue Martini
+#FED83D Exploding Star
+#80C71F Overgrowth
+#F38BAA Rock’n’Rose
+#474F52 Dead Forest
+#9D9D97 Gateway Grey
+#169C9C Baltic
+#8932B8 Pleasant Purple
+#3C44AA Denim
+#835432 Chocolate Bells
+#5E7C16 Enchanted Forest
+#B02E26 Upset Tomato
+#1D1D21 Inkwell Inception
+#9AA1D4 Azureno
+#735767 Royal Fig
+#AB7E19 Bronze
+#3B7BC2 Mykonos
+#3D4C1B Treetop Cathedral
+#F9BF8D Dusty Boots
+#C1596A Candied Apple
+#4C7867 Majorelle Gardens
+#662523 Bloodlust
+#ABBD8A Nile
+#E2937D Nude Flamingo
+#9C306F Plum Kingdom
+#AEAA29 Honey and Thyme
+#87CDCD Cyantific
+#53276C Purple Seduction
+#727674 Volcanic Ash
+#D45721 War Paint Red
+#907864 Mink
+#F6C5D4 In the Pink
+#2B687D Atlantis
+#6C70A0 Twinkle Night
+#4BB15D Devil’s Grass
+#503829 Peat Brown
+#878E5C Paid in Full
+#E0A6DD Candy Floss
+#FBAC2D Beer
+#8493A3 Blank Stare
+#706824 Garden Weed
+#3A8C59 Center Field
+#FBEB9D Drover
+#CB8E5A Whiskey Sour
+#9367A7 Crown Jewels
+#9D6D7E Never Forget
+#757080 Mamba
+#5E8386 Arctic
+#BEA998 Hickory
+#2C3065 Galaxea
+#CBCECA Sterling
+#BCE38E Sage Sensation
+#6FA11A Gecko’s Dream
+#195C5E Beau Vert
+#BFCF2E Serpent Sceptre
+#DD6CB3 Super Pink
+#9D8E73 Shipwreck
+#A29347 Backroom Ember
+#C894A0 Rosetti
+#CDBA6A The Weight of Gold
+#874E87 Prunella
