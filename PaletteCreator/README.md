@@ -12,8 +12,6 @@ The program:
 * Automatically assigns human-readable color names using the **color.pizza API**
 * Outputs both a PNG preview and a text representation of the final palette
 
----
-
 ## Features
 
 * 🎨 Perceptual palette reduction using **ΔE2000**
@@ -24,16 +22,12 @@ The program:
 * 🧠 Human-friendly color names (via color.pizza)
 * 🖼 PNG palette preview with uniform swatches
 
----
-
 ## Requirements
 
 * Python 3.11+
 * [`uv`](https://github.com/astral-sh/uv)
 
 All Python dependencies are managed by `uv`.
-
----
 
 ## Input format
 
@@ -59,8 +53,6 @@ The program expects a file named `colors.txt` in the project root.
 #00FFFF
 #FF00FF
 ```
-
----
 
 ## Color combining
 
@@ -92,8 +84,6 @@ B = (B₁ + B₂) / 2
 ### Disabling combination
 
 If you want to work **only with the base colors**, you can disable color combining entirely using the `--no-combine` flag.
-
----
 
 ## Usage
 
