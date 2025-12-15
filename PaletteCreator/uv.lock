@@ -345,6 +345,7 @@ dependencies = [
     { name = "colour-science" },
     { name = "matplotlib" },
     { name = "pillow" },
+    { name = "pymixbox" },
     { name = "requests" },
     { name = "scipy" },
 ]
@@ -354,6 +355,7 @@ requires-dist = [
     { name = "colour-science", specifier = ">=0.4.7" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "pillow", specifier = ">=12.0.0" },
+    { name = "pymixbox", specifier = ">=2.0.0" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "scipy", specifier = ">=1.16.3" },
 ]
@@ -414,6 +416,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a2/2f/16cabcc6426c32218ace36bf0d55955e813f2958afddbf1d391849fee9d1/pillow-12.0.0-cp314-cp314t-win32.whl", hash = "sha256:3830c769decf88f1289680a59d4f4c46c72573446352e2befec9a8512104fa52", size = 6408045, upload-time = "2025-10-15T18:23:53.177Z" },
     { url = "https://files.pythonhosted.org/packages/35/73/e29aa0c9c666cf787628d3f0dcf379f4791fba79f4936d02f8b37165bdf8/pillow-12.0.0-cp314-cp314t-win_amd64.whl", hash = "sha256:905b0365b210c73afb0ebe9101a32572152dfd1c144c7e28968a331b9217b94a", size = 7148282, upload-time = "2025-10-15T18:23:55.316Z" },
     { url = "https://files.pythonhosted.org/packages/c1/70/6b41bdcddf541b437bbb9f47f94d2db5d9ddef6c37ccab8c9107743748a4/pillow-12.0.0-cp314-cp314t-win_arm64.whl", hash = "sha256:99353a06902c2e43b43e8ff74ee65a7d90307d82370604746738a1e0661ccca7", size = 2525630, upload-time = "2025-10-15T18:23:57.149Z" },
+]
+
+[[package]]
+name = "pymixbox"
+version = "2.0.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a5/84/7c9d23ea219dd9b88ab89219b1da33325ffe6cf854a69b5b49f83039ef45/pymixbox-2.0.0.tar.gz", hash = "sha256:7f1fc8e950778efedfc20bbeeaf240576baca06726b3ce83a97ce507f226aee4", size = 125012, upload-time = "2022-09-20T12:58:08.915Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/dd/45/64a4d16175dda7cc61742ea2324df277c0f7875010833a3f08a450c83c3e/pymixbox-2.0.0-py2.py3-none-any.whl", hash = "sha256:ac645ee27989ee96622579250ccc057ede2cc57847c56c73082eae2e47341aa4", size = 123258, upload-time = "2022-09-20T12:58:05.97Z" },
 ]
 
 [[package]]

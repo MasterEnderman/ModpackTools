@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import math
+import mixbox
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -21,6 +22,7 @@ class MixMode(str, Enum):
     AVERAGE = "average"
     ADD = "add"
     MULTIPLY = "multiply"
+    MIXBOX = "mixbox"
 
 
 # ============================================================
@@ -33,6 +35,7 @@ class Color:
     rgb: Tuple[int, int, int]
     lab: np.ndarray
     name: str | None = None
+    mixed_from: Tuple[str, str] | None = None
 
     @staticmethod
     def _rgb_to_lab(rgb: Tuple[int, int, int]) -> np.ndarray:
@@ -58,10 +61,10 @@ class Color:
         return Color(hex_value, rgb, lab)
 
     @staticmethod
-    def from_rgb(rgb: Tuple[int, int, int]) -> Color:
+    def from_rgb(rgb: Tuple[int, int, int], mixed_from: Tuple[str, str] | None = None) -> Color:
         hex_value = f"#{rgb[0]:02X}{rgb[1]:02X}{rgb[2]:02X}"
         lab = Color._rgb_to_lab(rgb)
-        return Color(hex_value, rgb, lab)
+        return Color(hex_value, rgb, lab, mixed_from=mixed_from)
 
 
 # ============================================================
@@ -93,10 +96,11 @@ class ColorLoader:
 class ColorCombiner:
     @staticmethod
     def _mix_rgb(
-        a: Tuple[int, int, int],
-        b: Tuple[int, int, int],
-        mode: MixMode
-    ) -> Tuple[int, int, int]:
+        a: tuple[int, int, int],
+        b: tuple[int, int, int],
+        mode: MixMode,
+        ratio: float,
+    ) -> tuple[int, int, int]:
 
         if mode == MixMode.AVERAGE:
             return (
@@ -119,25 +123,33 @@ class ColorCombiner:
                 (a[2] * b[2]) // 255,
             )
 
+        if mode == MixMode.MIXBOX:
+            c = mixbox.lerp(a, b, ratio)
+            return (c[0], c[1], c[2])
+
         raise ValueError(f"Unsupported mix mode: {mode}")
 
     @staticmethod
-    def combine(
-        colors: List[Color],
-        mode: MixMode
-    ) -> List[Color]:
+    def combine(colors: List[Color], mode: MixMode, ratio: float) -> List[Color]:
 
         combined: dict[str, Color] = {}
 
         for i in range(len(colors)):
             for j in range(i + 1, len(colors)):
+                c1 = colors[i]
+                c2 = colors[j]
+
                 mixed_rgb = ColorCombiner._mix_rgb(
-                    colors[i].rgb,
-                    colors[j].rgb,
-                    mode
+                    c1.rgb,
+                    c2.rgb,
+                    mode,
+                    ratio,
                 )
 
-                color = Color.from_rgb(mixed_rgb)
+                color = Color.from_rgb(
+                    mixed_rgb,
+                    mixed_from=(c1.hex_value, c2.hex_value),
+                )
                 combined[color.hex_value] = color
 
         return list(combined.values())
@@ -208,7 +220,8 @@ class ColorNamer:
                     hex_value=color.hex_value,
                     rgb=color.rgb,
                     lab=color.lab,
-                    name=api_color["name"]
+                    name=api_color["name"],
+                    mixed_from=color.mixed_from,
                 )
             )
 
@@ -252,7 +265,13 @@ class PaletteWriter:
     def write(colors: List[Color], path: Path) -> None:
         with path.open("w") as f:
             for c in colors:
-                f.write(f"{c.hex_value} {c.name}\n")
+                line = f"{c.hex_value} {c.name}"
+
+                if c.mixed_from:
+                    a, b = c.mixed_from
+                    line += f" ( {a} + {b} )"
+
+                f.write(line + "\n")
 
 
 # ============================================================
@@ -273,8 +292,14 @@ def main() -> None:
         "--mix-mode",
         type=MixMode,
         choices=list(MixMode),
-        default=MixMode.AVERAGE,
+        default=MixMode.MIXBOX,
         help="Color mix mode"
+    )
+    parser.add_argument(
+        "--mix-ratio",
+        type=float,
+        default=0.5,
+        help="Mix ratio for mixbox mode (0.0–1.0)"
     )
 
     args = parser.parse_args()
@@ -285,13 +310,17 @@ def main() -> None:
         raise ValueError(
             "Target size must be >= number of base colors"
         )
+    
+    if not 0.0 <= args.mix_ratio <= 1.0:
+        raise ValueError("--mix-ratio must be between 0.0 and 1.0")
 
     if args.no_combine:
         all_colors = base_colors
     else:
         combined_colors = ColorCombiner.combine(
             base_colors,
-            args.mix_mode
+            args.mix_mode,
+            args.mix_ratio,
         )
         all_colors = base_colors + combined_colors
 

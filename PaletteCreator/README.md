@@ -6,18 +6,22 @@ Developed for [The Road not taken](https://github.com/xkforce/The-Road-Not-Taken
 The program:
 
 * Loads a list of base colors from a text file
-* Optionally generates mixed colors by combining base colors
+* Optionally generates mixed colors by combining base colors (unordered pairs)
+* Supports multiple digital and perceptual color mixing modes
 * Reduces the full candidate set to a target palette size using a max-distance algorithm
 * Ensures strong visual contrast between colors
 * Automatically assigns human-readable color names using the **color.pizza API**
+* Preserves mix provenance for derived colors
 * Outputs both a PNG preview and a text representation of the final palette
 
 ## Features
 
-* 🎨 Perceptual palette reduction using **ΔE2000**
+* 🎨 Perceptual palette reduction using **ΔE2000 (CIE 2000)**
 * 📏 Target palette size configurable via CLI
 * 🧪 Optional color mixing (pairwise combinations)
-* 🔀 Multiple color mix modes
+* 🔀 Multiple color mix modes, including pigment-style mixing via **mixbox**
+* ⚖️ Configurable mixing ratio for mixbox mode
+* 🧾 Provenance tracking for mixed colors
 * 📄 Simple text-based color input
 * 🧠 Human-friendly color names (via color.pizza)
 * 🖼 PNG palette preview with uniform swatches
@@ -60,25 +64,31 @@ By default, the program generates additional **derived colors** by combining all
 
 * No self-pairs (e.g. `A + A`)
 * No duplicate ordering (`A + B` is the same as `B + A`)
+* Duplicate results are automatically deduplicated
 
-These derived colors are added to the candidate pool before palette reduction.
+Derived colors are added to the candidate pool before palette reduction.
 
 ### Mix modes
 
 The way two colors are combined is controlled via the `--mix-mode` flag:
 
-| Mode                | Description                            |
-| ------------------- | -------------------------------------- |
-| `average` (default) | Averages RGB components of both colors |
-| `add`               | Adds RGB components and clamps to 255  |
-| `multiply`          | Multiplies RGB components (normalized) |
+| Mode       | Description                                                  |
+| ---------- | ------------------------------------------------------------ |
+| `average`  | Averages RGB components of both colors                       |
+| `add`      | Adds RGB components and clamps to 255                        |
+| `multiply` | Multiplies RGB components (normalized)                       |
+| `mixbox`   | Pigment-style perceptual mixing using the **mixbox** library |
 
-Example (average mode):
+#### Mixbox mode
 
-```
-R = (R₁ + R₂) / 2
-G = (G₁ + G₂) / 2
-B = (B₁ + B₂) / 2
+When using `mixbox`, colors are mixed in a perceptually realistic, pigment-like manner rather than simple RGB arithmetic.
+
+The mixing ratio is controlled via `--mix-ratio`:
+
+```text
+--mix-ratio 0.0 → 100% first color
+--mix-ratio 0.5 → equal mix (default)
+--mix-ratio 1.0 → 100% second color
 ```
 
 ### Disabling combination
@@ -95,11 +105,12 @@ uv run python palette.py --size 32
 
 ### Arguments
 
-| Argument       | Description                                     |
-| -------------- | ----------------------------------------------- |
-| `--size`       | Desired number of colors in the final palette   |
-| `--no-combine` | Disable generation of combined colors           |
-| `--mix-mode`   | Color mix mode: `average`, `add`, or `multiply` |
+| Argument       | Description                                            |
+| -------------- | ------------------------------------------------------ |
+| `--size`       | Desired number of colors in the final palette          |
+| `--no-combine` | Disable generation of combined colors                  |
+| `--mix-mode`   | Color mix mode: `average`, `add`, `multiply`, `mixbox` |
+| `--mix-ratio`  | Mixing ratio for `mixbox` mode (0.0–1.0, default: 0.5) |
 
 ### Examples
 
@@ -119,6 +130,12 @@ Generate a palette using additive color mixing:
 
 ```bash
 uv run python palette.py --size 32 --mix-mode add
+```
+
+Generate a palette using pigment-style mixbox blending:
+
+```bash
+uv run python palette.py --size 32 --mix-mode mixbox --mix-ratio 0.25
 ```
 
 **Note:**
@@ -142,13 +159,14 @@ After execution, two files are generated:
 ```txt
 #FF5733 Red Orange
 #1F3A5F Dark Blue
-#A8C686 Light Green
+#6F6E52 Olive Drab ( #0033A5 + #FCD300 )
 ```
 
 Each line contains:
 
 1. The hex color value
 2. A human-readable color name (from color.pizza)
+3. Optional mix provenance for derived colors in the form `(c1 + c2)`
 
 ## How it works (high-level)
 
@@ -158,7 +176,8 @@ Each line contains:
 4. A greedy **max-min distance** algorithm selects colors that are maximally distinct
 5. Distance is measured using **ΔE2000**, a perceptual color difference metric
 6. Selected colors are named using the color.pizza API
-7. Results are written to disk
+7. Mix provenance metadata is preserved throughout the pipeline
+8. Results are written to disk
 
 This ensures that every added color contributes new, visually distinct information to the palette.
 
@@ -167,3 +186,4 @@ This ensures that every added color contributes new, visually distinct informati
 * The color.pizza API is queried in a single batch request
 * Network access is required for color naming
 * If naming fails, the program will raise an error
+* Mixed colors are treated as first-class palette entries during selection

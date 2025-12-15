@@ -14,51 +14,51 @@
 #5E7C16 Enchanted Forest
 #B02E26 Upset Tomato
 #1D1D21 Inkwell Inception
-#9AA1D4 Azureno
-#735767 Royal Fig
-#AB7E19 Bronze
-#3B7BC2 Mykonos
-#3D4C1B Treetop Cathedral
-#F9BF8D Dusty Boots
-#C1596A Candied Apple
-#4C7867 Majorelle Gardens
-#662523 Bloodlust
-#ABBD8A Nile
-#E2937D Nude Flamingo
-#9C306F Plum Kingdom
-#AEAA29 Honey and Thyme
-#87CDCD Cyantific
-#53276C Purple Seduction
-#727674 Volcanic Ash
-#D45721 War Paint Red
-#907864 Mink
-#F6C5D4 In the Pink
-#2B687D Atlantis
-#6C70A0 Twinkle Night
-#4BB15D Devil’s Grass
-#503829 Peat Brown
-#878E5C Paid in Full
-#E0A6DD Candy Floss
-#FBAC2D Beer
-#8493A3 Blank Stare
-#706824 Garden Weed
-#3A8C59 Center Field
-#FBEB9D Drover
-#CB8E5A Whiskey Sour
-#9367A7 Crown Jewels
-#9D6D7E Never Forget
-#757080 Mamba
-#5E8386 Arctic
-#BEA998 Hickory
-#2C3065 Galaxea
-#CBCECA Sterling
-#BCE38E Sage Sensation
-#6FA11A Gecko’s Dream
-#195C5E Beau Vert
-#BFCF2E Serpent Sceptre
-#DD6CB3 Super Pink
-#9D8E73 Shipwreck
-#A29347 Backroom Ember
-#C894A0 Rosetti
-#CDBA6A The Weight of Gold
-#874E87 Prunella
+#9890B9 Wizard’s Brew ( #3AB3DA + #F38BAA )
+#845468 Indian Silk ( #F38BAA + #1D1D21 )
+#A38019 Rich Gold ( #F9801D + #5E7C16 )
+#3B78C3 Fading Night ( #3AB3DA + #3C44AA )
+#334B18 Treetop Cathedral ( #5E7C16 + #1D1D21 )
+#C26E65 Morocco ( #F38BAA + #835432 )
+#612925 Arcane Red ( #B02E26 + #1D1D21 )
+#4D715B Toad King ( #169C9C + #835432 )
+#C5A188 Frappé ( #F9FFFE + #835432 )
+#483B2A Dark Rum ( #835432 + #1D1D21 )
+#81A366 Frankenstein ( #FED83D + #3C44AA )
+#55316C Purple Protégé ( #8932B8 + #1D1D21 )
+#FCAB29 Beer ( #F9801D + #FED83D )
+#717777 Volcanic Ash ( #474F52 + #9D9D97 )
+#7D6E49 Lizard ( #8932B8 + #5E7C16 )
+#DE9FDC Candy Floss ( #F9FFFE + #C74EBD )
+#487E8E Mysterious Blue ( #3AB3DA + #474F52 )
+#C03B71 Spicy Purple ( #C74EBD + #B02E26 )
+#D44E22 Langoustine ( #F9801D + #B02E26 )
+#B16927 Light Brown ( #F9801D + #835432 )
+#C5C462 Salsa Verde ( #FED83D + #9D9D97 )
+#6D6DB0 Twinkle Night ( #C74EBD + #169C9C )
+#20565A Deep Sea Diver ( #169C9C + #1D1D21 )
+#5E525C Pinot Noir ( #3C44AA + #835432 )
+#F7BECF Berries N’ Cream ( #F9FFFE + #F38BAA )
+#76CED7 Summer of ’82 ( #F9FFFE + #169C9C )
+#37933E Kryptonite Green ( #169C9C + #5E7C16 )
+#C8CAC9 Iron Fist ( #F9FFFE + #9D9D97 )
+#879CDD Azureno ( #F9FFFE + #3C44AA )
+#60521C Reptile Revenge ( #F9801D + #1D1D21 )
+#B9A11D Greenfinch ( #F9801D + #80C71F )
+#CBED6B Venomous Sting ( #F9FFFE + #80C71F )
+#9367A7 Crown Jewels ( #9D9D97 + #8932B8 )
+#75335E Grape ( #3C44AA + #B02E26 )
+#3FBA4A Green With Envy ( #80C71F + #169C9C )
+#6FA11C Gecko’s Dream ( #80C71F + #5E7C16 )
+#32355E Galaxea ( #3C44AA + #1D1D21 )
+#95775D Whisky Barrel ( #9D9D97 + #835432 )
+#DD6CB2 Super Pink ( #C74EBD + #F38BAA )
+#D7536D Strawberry Moon ( #F38BAA + #B02E26 )
+#D9764E Jaffa ( #F9801D + #C74EBD )
+#B0975A Kathmandu ( #C74EBD + #80C71F )
+#FAB06F Apricot ( #FED83D + #F38BAA )
+#828B95 Sea Lion ( #F9FFFE + #1D1D21 )
+#84872E Witch Brew ( #80C71F + #835432 )
+#327173 Ming ( #474F52 + #169C9C )
+#FBEC89 Spätzle Yellow ( #F9FFFE + #FED83D )
+#8CD873 Fluorescence ( #3AB3DA + #FED83D )
