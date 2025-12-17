@@ -5,7 +5,7 @@
 
 // These are the 16 default Minecraft colors https://minecraft.wiki/w/Dye
 #F9FFFE (White)
-#F9801D (Oragane)
+#F9801D (Orange)
 #C74EBD (Magenta)
 #3AB3DA (Light Blue)
 #FED83D (Yellow)

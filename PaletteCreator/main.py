@@ -37,6 +37,7 @@ class Color:
     lab: np.ndarray
     name: str | None = None
     mixed_from: Tuple[str, str] | None = None
+    mixed_from_name: Tuple[str, str] | None = None
 
     @staticmethod
     def _rgb_to_lab(rgb: Tuple[int, int, int]) -> np.ndarray:
@@ -62,10 +63,10 @@ class Color:
         return Color(hex_value, rgb, lab)
 
     @staticmethod
-    def from_rgb(rgb: Tuple[int, int, int], mixed_from: Tuple[str, str] | None = None) -> Color:
-        hex_value = f"#{rgb[0]:02X}{rgb[1]:02X}{rgb[2]:02X}"
+    def from_rgb(rgb: Tuple[int, int, int], mixed_from: Tuple[str, str] | None = None, mixed_from_name: Tuple[str, str] | None = None) -> Color:
+        hex_value = f"#{rgb[0]:02X}{rgb[1]:02X}{rgb[2]:02X}".upper()
         lab = Color._rgb_to_lab(rgb)
-        return Color(hex_value, rgb, lab, mixed_from=mixed_from)
+        return Color(hex_value, rgb, lab, mixed_from=mixed_from, mixed_from_name=mixed_from_name)
 
 
 # ============================================================
@@ -175,7 +176,8 @@ class ColorCombiner:
 
                 color = Color.from_rgb(
                     mixed_rgb,
-                    mixed_from=(c1.name or c1.hex_value, c2.name or c2.hex_value),
+                    mixed_from=(c1.hex_value, c2.hex_value),
+                    mixed_from_name=(c1.name, c2.name) if c1.name and c2.name else None,
                 )
                 combined[color.hex_value] = color
 
@@ -252,6 +254,7 @@ class ColorNamer:
                     lab=color.lab,
                     name=api_color["name"],
                     mixed_from=color.mixed_from,
+                    mixed_from_name=color.mixed_from_name,
                 )
             )
 
@@ -295,13 +298,121 @@ class PaletteWriter:
     def write(colors: List[Color], path: Path) -> None:
         with path.open("w") as f:
             for c in colors:
-                line = f"{c.hex_value} {c.name}"
+                line = f"{c.hex_value} {c.name}\n"
 
-                if c.mixed_from:
-                    a, b = c.mixed_from
-                    line += f" ( {a} + {b} )"
+                if c.mixed_from and c.mixed_from_name:
+                    for i in range(len(c.mixed_from)):
+                        line += f"  - {c.mixed_from[i]} ({c.mixed_from_name[i]})\n"
+                f.write(line)
 
-                f.write(line + "\n")
+
+# ============================================================
+# Base usage enforcement
+# ============================================================
+
+class BaseUsageEnforcer:
+    def __init__(
+        self,
+        base_colors: list[Color],
+        mixed_colors: list[Color],
+    ) -> None:
+        self.base_colors = base_colors
+        self.mixed_colors = mixed_colors
+
+    def enforce(self, palette: list[Color]) -> list[Color]:
+        # Early exits
+        if not self.mixed_colors:
+            return palette
+
+        mixed_in_palette = [
+            c for c in palette if c.mixed_from is not None
+        ]
+        if not mixed_in_palette:
+            return palette
+
+        missing = self._missing_base_colors(palette)
+        if not missing:
+            return palette
+
+        print(f"[info] The following base colors are missing: {[c.name for c in missing]}.")
+        print(f"[info] Ensuring base usage for {len(missing)} base color(s)...")
+
+        # Remove last X removable colors
+        removable = self._removable_colors(palette)
+        to_remove = removable[-len(missing):]
+
+        for c in to_remove:
+            palette.remove(c)
+            print(f"[info] Removed {c.name} from palette to make room for base colors.")
+
+        # Add best candidates for each missing base color
+        for base in missing:
+            candidate = self._best_candidate_for_base(base, palette)
+            if candidate is None:
+                print(
+                    f"[warn] No mixed color available for base {base.hex_value}!"
+                )
+                continue
+
+            palette.append(candidate)
+
+        return palette
+
+    def _missing_base_colors(self, palette: list[Color]) -> list[Color]:
+        missing: list[Color] = []
+
+        for base in self.base_colors:
+            base_hex = base.hex_value.lstrip("#").upper()
+
+            used = any(
+                c.mixed_from
+                and any(
+                    base_hex == h.lstrip("#").upper()
+                    for h in c.mixed_from
+                )
+                for c in palette
+            )
+
+            if not used:
+                missing.append(base)
+
+        return missing
+
+    def _removable_colors(self, palette: list[Color]) -> list[Color]:
+        base_hexes = {b.hex_value for b in self.base_colors}
+
+        # Only non-base colors are removable
+        return [
+            c for c in palette
+            if c.hex_value not in base_hexes
+        ]
+
+    def _best_candidate_for_base(
+        self,
+        base: Color,
+        palette: list[Color],
+    ) -> Color | None:
+        candidates = [
+            c for c in self.mixed_colors
+            if c.mixed_from
+            and base.hex_value in c.mixed_from
+            and c not in palette
+        ]
+
+        if not candidates:
+            return None
+
+        def min_distance(color: Color) -> float:
+            return float(min(
+                colour.delta_E(
+                    color.lab,
+                    sel.lab,
+                    method="CIE 2000"
+                )
+                for sel in palette
+            ))
+
+        return max(candidates, key=min_distance)
 
 
 # ============================================================
@@ -331,6 +442,11 @@ def main() -> None:
         default=0.5,
         help="Mix ratio for mixbox mode (0.0–1.0)"
     )
+    parser.add_argument(
+        "--ensure-base-usage",
+        action="store_true",
+        help="Ensure every base color is used at least once in mixed colors"
+    )
 
     args = parser.parse_args()
 
@@ -346,6 +462,7 @@ def main() -> None:
 
     if args.no_combine:
         all_colors = base_colors
+        combined_colors = []
     else:
         combined_colors = ColorCombiner.combine(
             base_colors,
@@ -360,12 +477,21 @@ def main() -> None:
     )
 
     palette = selector.select(args.size)
+
+    if args.ensure_base_usage and not args.no_combine:
+        enforcer = BaseUsageEnforcer(
+            base_colors=base_colors,
+            mixed_colors=combined_colors,
+        )
+        palette = enforcer.enforce(palette)
+        print(f"[info] Ensured base usage for {len(palette)} colors.")
+
     palette = ColorNamer.name(palette)
 
     PaletteRenderer.render(palette, Path("palette.png"))
     PaletteWriter.write(palette, Path("palette.txt"))
 
-    print(f"Generated palette with {len(palette)} colors.")
+    print(f"[info] Generated palette with {len(palette)} colors.")
 
 
 if __name__ == "__main__":
