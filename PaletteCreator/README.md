@@ -6,25 +6,26 @@ Developed for [The Road not taken](https://github.com/xkforce/The-Road-Not-Taken
 The program:
 
 * Loads a list of base colors from a text file
-* Optionally generates mixed colors by combining base colors (unordered pairs)
-* Supports multiple digital and perceptual color mixing modes
+* Optionally generates mixed colors by combining base colors
 * Reduces the full candidate set to a target palette size using a max-distance algorithm
 * Ensures strong visual contrast between colors
+* Can enforce usage of all base colors in mixed palettes
+* Can sort the final palette into a perceptual gradient
 * Automatically assigns human-readable color names using the **color.pizza API**
-* Preserves mix provenance for derived colors
 * Outputs both a PNG preview and a text representation of the final palette
 
 ## Features
 
-* 🎨 Perceptual palette reduction using **ΔE2000 (CIE 2000)**
+* 🎨 Perceptual palette reduction using **ΔE2000**
 * 📏 Target palette size configurable via CLI
 * 🧪 Optional color mixing (pairwise combinations)
-* 🔀 Multiple color mix modes, including pigment-style mixing via **mixbox**
-* ⚖️ Configurable mixing ratio for mixbox mode
-* 🧾 Provenance tracking for mixed colors
-* 📄 Simple text-based color input
+* 🔀 Multiple color mix modes, including perceptual **mixbox** blending
+* 🪢 Adjustable mix ratio for mixbox mode
 * 🧠 Human-friendly color names (via color.pizza)
-* 🖼 PNG palette preview with uniform swatches
+* 🧬 Guaranteed base color usage in mixed palettes (optional)
+* 🌈 Optional perceptual gradient sorting of the final palette
+* 📄 Simple, extensible text-based color input
+* 🌓 PNG palette preview with uniform swatches
 
 ## Requirements
 
@@ -39,23 +40,24 @@ The program expects a file named `colors.txt` in the project root.
 
 ### Rules
 
-* One hex color per line
+* One color per line
 * Hex values must start with `#` and be 6-digit RGB
+* An optional color name may be provided in parentheses
 * Lines starting with `//` are treated as comments and ignored
-* Empty lines are ignored
+* Malformed lines are ignored with an informational message
 
 ### Example
 
 ```txt
-// Base colors
-#000000
-#FFFFFF
-#FF0000
-#00FF00
-#0000FF
-#FFFF00
-#00FFFF
-#FF00FF
+// Base colors with optional names
+#000000 (Black)
+#FFFFFF (White)
+#FF0000 (Red)
+#00FF00 (Green)
+#0000FF (Blue)
+#FFFF00 (Yellow)
+#00FFFF (Cyan)
+#FF00FF (Magenta)
 ```
 
 ## Color combining
@@ -64,36 +66,35 @@ By default, the program generates additional **derived colors** by combining all
 
 * No self-pairs (e.g. `A + A`)
 * No duplicate ordering (`A + B` is the same as `B + A`)
-* Duplicate results are automatically deduplicated
 
-Derived colors are added to the candidate pool before palette reduction.
+These derived colors are added to the candidate pool before palette reduction.
 
 ### Mix modes
 
 The way two colors are combined is controlled via the `--mix-mode` flag:
 
-| Mode       | Description                                                  |
-| ---------- | ------------------------------------------------------------ |
-| `average`  | Averages RGB components of both colors                       |
-| `add`      | Adds RGB components and clamps to 255                        |
-| `multiply` | Multiplies RGB components (normalized)                       |
-| `mixbox`   | Pigment-style perceptual mixing using the **mixbox** library |
+| Mode       | Description                                   |
+| ---------- | --------------------------------------------- |
+| `average`  | Averages RGB components of both colors        |
+| `add`      | Adds RGB components and clamps to 255         |
+| `multiply` | Multiplies RGB components (normalized)        |
+| `mixbox`   | Perceptual pigment-style mixing (recommended) |
 
-#### Mixbox mode
+When using `mixbox`, you can control the mixing ratio with `--mix-ratio`:
 
-When using `mixbox`, colors are mixed in a perceptually realistic, pigment-like manner rather than simple RGB arithmetic.
-
-The mixing ratio is controlled via `--mix-ratio`:
-
-```text
---mix-ratio 0.0 → 100% first color
---mix-ratio 0.5 → equal mix (default)
---mix-ratio 1.0 → 100% second color
+```bash
+--mix-ratio 0.0   # 100% first color
+--mix-ratio 0.5   # Even mix (default)
+--mix-ratio 1.0   # 100% second color
 ```
 
 ### Disabling combination
 
-If you want to work **only with the base colors**, you can disable color combining entirely using the `--no-combine` flag.
+To work **only with base colors**, disable color combining:
+
+```bash
+--no-combine
+```
 
 ## Usage
 
@@ -105,41 +106,40 @@ uv run python palette.py --size 32
 
 ### Arguments
 
-| Argument       | Description                                            |
-| -------------- | ------------------------------------------------------ |
-| `--size`       | Desired number of colors in the final palette          |
-| `--no-combine` | Disable generation of combined colors                  |
-| `--mix-mode`   | Color mix mode: `average`, `add`, `multiply`, `mixbox` |
-| `--mix-ratio`  | Mixing ratio for `mixbox` mode (0.0–1.0, default: 0.5) |
+| Argument              | Description                                                   |
+| --------------------- | ------------------------------------------------------------- |
+| `--size`              | Desired number of colors in the final palette                 |
+| `--no-combine`        | Disable generation of combined colors                         |
+| `--mix-mode`          | Color mix mode: `average`, `add`, `multiply`, `mixbox`        |
+| `--mix-ratio`         | Mix ratio for `mixbox` mode (0.0–1.0)                         |
+| `--ensure-base-usage` | Ensure every base color is used at least once in mixed colors |
+| `--sort-palette`      | Sort the final palette into a perceptual color gradient       |
 
 ### Examples
 
-Generate a palette using base colors **and** averaged mixes:
+Generate a palette using base colors and perceptual mixing:
 
 ```bash
-uv run python palette.py --size 32
+uv run python palette.py --size 32 --mix-mode mixbox
 ```
 
-Generate a palette using **only base colors**:
+Generate a palette using only base colors:
 
 ```bash
 uv run python palette.py --size 16 --no-combine
 ```
 
-Generate a palette using additive color mixing:
+Ensure every base color appears in at least one mix:
 
 ```bash
-uv run python palette.py --size 32 --mix-mode add
+uv run python palette.py --size 32 --ensure-base-usage
 ```
 
-Generate a palette using pigment-style mixbox blending:
+Sort the palette into a perceptual gradient:
 
 ```bash
-uv run python palette.py --size 32 --mix-mode mixbox --mix-ratio 0.25
+uv run python palette.py --size 32 --sort-palette
 ```
-
-**Note:**
-The target size must be **greater than or equal to** the number of base colors.
 
 ## Output
 
@@ -147,26 +147,35 @@ After execution, two files are generated:
 
 ### `palette.png`
 
-* A visual preview of the palette
-* Each color is rendered as a **32×32 pixel square**
-* Colors are arranged in a grid
+* Visual preview of the palette
+* Each color rendered as a **32×32 pixel square**
+* Colors arranged in a grid
+* Order reflects palette sorting (if enabled)
 
 ### `palette.txt`
 
-* One color per line
-* Format:
+* One color per line (base colors)
+* Mixed colors are represented as a block with their source colors listed below
+
+**Base color example:**
 
 ```txt
-#FF5733 Red Orange
-#1F3A5F Dark Blue
-#6F6E52 Olive Drab ( #0033A5 + #FCD300 )
+#FF0000 Red
 ```
 
-Each line contains:
+**Mixed color example:**
+
+```txt
+#487E8E Mysterious Blue
+  - #3AB3DA (Light Blue)
+  - #474F52 (Gray)
+```
+
+Each palette entry contains:
 
 1. The hex color value
-2. A human-readable color name (from color.pizza)
-3. Optional mix provenance for derived colors in the form `(c1 + c2)`
+2. A human-readable color name
+3. For mixed colors, the base colors used to create the mix (listed below the color)
 
 ## How it works (high-level)
 
@@ -175,15 +184,15 @@ Each line contains:
 3. All colors are converted from RGB to CIELAB
 4. A greedy **max-min distance** algorithm selects colors that are maximally distinct
 5. Distance is measured using **ΔE2000**, a perceptual color difference metric
-6. Selected colors are named using the color.pizza API
-7. Mix provenance metadata is preserved throughout the pipeline
-8. Results are written to disk
+6. Optionally, the palette is post-processed to ensure every base color is used in mixing
+7. Optionally, the palette is sorted into a perceptual gradient
+8. Base colors without names are resolved using the color.pizza API
+9. Results are written to disk
 
 This ensures that every added color contributes new, visually distinct information to the palette.
 
 ## Notes
 
-* The color.pizza API is queried in a single batch request
+* The color.pizza API is queried in batch
 * Network access is required for color naming
-* If naming fails, the program will raise an error
-* Mixed colors are treated as first-class palette entries during selection
+* Informational warnings are printed for ignored input lines or missing mix candidates
