@@ -416,6 +416,31 @@ class BaseUsageEnforcer:
 
 
 # ============================================================
+# Palette sorting (perceptual gradient)
+# ============================================================
+
+class PaletteSorter:
+    @staticmethod
+    def _hue_angle(lab: np.ndarray) -> float:
+        # lab = [L*, a*, b*]
+        a = lab[1]
+        b = lab[2]
+        return math.atan2(b, a)
+
+    def sort(self, palette: list[Color]) -> list[Color]:
+        if len(palette) <= 1:
+            return palette
+
+        return sorted(
+            palette,
+            key=lambda c: (
+                self._hue_angle(c.lab),  # primary: perceptual hue
+                c.lab[0],                # secondary: lightness (L*)
+            ),
+        )
+
+
+# ============================================================
 # Main
 # ============================================================
 
@@ -447,6 +472,11 @@ def main() -> None:
         action="store_true",
         help="Ensure every base color is used at least once in mixed colors"
     )
+    parser.add_argument(
+    "--sort-palette",
+    action="store_true",
+    help="Sort the final palette to form a perceptual color gradient"
+)
 
     args = parser.parse_args()
 
@@ -456,7 +486,7 @@ def main() -> None:
         raise ValueError(
             "Target size must be >= number of base colors"
         )
-    
+
     if not 0.0 <= args.mix_ratio <= 1.0:
         raise ValueError("--mix-ratio must be between 0.0 and 1.0")
 
@@ -485,6 +515,10 @@ def main() -> None:
         )
         palette = enforcer.enforce(palette)
         print(f"[info] Ensured base usage for {len(palette)} colors.")
+
+    if args.sort_palette:
+        sorter = PaletteSorter()
+        palette = sorter.sort(palette)
 
     palette = ColorNamer.name(palette)
 
