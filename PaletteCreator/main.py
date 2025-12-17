@@ -12,6 +12,7 @@ import numpy as np
 import requests
 from PIL import Image
 import colour
+import re
 
 
 # ============================================================
@@ -72,19 +73,45 @@ class Color:
 # ============================================================
 
 class ColorLoader:
+    COLOR_LINE_RE = re.compile(
+        r"""
+        ^
+        \s*
+        (?P<hex>\#[0-9A-Fa-f]{6})
+        (?:\s*\((?P<name>[^)]+)\))?
+        \s*$
+        """,
+        re.VERBOSE,
+    )
+
     @staticmethod
     def load(path: Path) -> List[Color]:
         colors: List[Color] = []
 
-        for line in path.read_text().splitlines():
-            line = line.strip()
+        for lineno, raw_line in enumerate(path.read_text().splitlines(), start=1):
+            line = raw_line.strip()
+
             if not line or line.startswith("//"):
                 continue
 
-            if not line.startswith("#") or len(line) != 7:
-                raise ValueError(f"Invalid color line: {line}")
+            match = ColorLoader.COLOR_LINE_RE.match(line)
+            if not match:
+                print(f"[info] Ignoring malformed line {lineno}: {raw_line}")
+                continue
 
-            colors.append(Color.from_hex(line))
+            hex_value = match.group("hex").upper()
+            name = match.group("name")
+
+            color = Color.from_hex(hex_value)
+            if name:
+                color = Color(
+                    hex_value=color.hex_value,
+                    rgb=color.rgb,
+                    lab=color.lab,
+                    name=name,
+                )
+
+            colors.append(color)
 
         return colors
 
@@ -148,7 +175,7 @@ class ColorCombiner:
 
                 color = Color.from_rgb(
                     mixed_rgb,
-                    mixed_from=(c1.hex_value, c2.hex_value),
+                    mixed_from=(c1.name or c1.hex_value, c2.name or c2.hex_value),
                 )
                 combined[color.hex_value] = color
 
@@ -215,6 +242,9 @@ class ColorNamer:
 
         named: List[Color] = []
         for color, api_color in zip(colors, data):
+            if color.name is not None:
+                named.append(color)
+                continue
             named.append(
                 Color(
                     hex_value=color.hex_value,

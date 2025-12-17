@@ -1,64 +1,64 @@
-#F9FFFE Everlasting Ice
-#F9801D Oriole
-#C74EBD Love Priestess
-#3AB3DA Blue Martini
-#FED83D Exploding Star
-#80C71F Overgrowth
-#F38BAA Rock’n’Rose
-#474F52 Dead Forest
-#9D9D97 Gateway Grey
-#169C9C Baltic
-#8932B8 Pleasant Purple
-#3C44AA Denim
-#835432 Chocolate Bells
-#5E7C16 Enchanted Forest
-#B02E26 Upset Tomato
-#1D1D21 Inkwell Inception
-#9890B9 Wizard’s Brew ( #3AB3DA + #F38BAA )
-#845468 Indian Silk ( #F38BAA + #1D1D21 )
-#A38019 Rich Gold ( #F9801D + #5E7C16 )
-#3B78C3 Fading Night ( #3AB3DA + #3C44AA )
-#334B18 Treetop Cathedral ( #5E7C16 + #1D1D21 )
-#C26E65 Morocco ( #F38BAA + #835432 )
-#612925 Arcane Red ( #B02E26 + #1D1D21 )
-#4D715B Toad King ( #169C9C + #835432 )
-#C5A188 Frappé ( #F9FFFE + #835432 )
-#483B2A Dark Rum ( #835432 + #1D1D21 )
-#81A366 Frankenstein ( #FED83D + #3C44AA )
-#55316C Purple Protégé ( #8932B8 + #1D1D21 )
-#FCAB29 Beer ( #F9801D + #FED83D )
-#717777 Volcanic Ash ( #474F52 + #9D9D97 )
-#7D6E49 Lizard ( #8932B8 + #5E7C16 )
-#DE9FDC Candy Floss ( #F9FFFE + #C74EBD )
-#487E8E Mysterious Blue ( #3AB3DA + #474F52 )
-#C03B71 Spicy Purple ( #C74EBD + #B02E26 )
-#D44E22 Langoustine ( #F9801D + #B02E26 )
-#B16927 Light Brown ( #F9801D + #835432 )
-#C5C462 Salsa Verde ( #FED83D + #9D9D97 )
-#6D6DB0 Twinkle Night ( #C74EBD + #169C9C )
-#20565A Deep Sea Diver ( #169C9C + #1D1D21 )
-#5E525C Pinot Noir ( #3C44AA + #835432 )
-#F7BECF Berries N’ Cream ( #F9FFFE + #F38BAA )
-#76CED7 Summer of ’82 ( #F9FFFE + #169C9C )
-#37933E Kryptonite Green ( #169C9C + #5E7C16 )
-#C8CAC9 Iron Fist ( #F9FFFE + #9D9D97 )
-#879CDD Azureno ( #F9FFFE + #3C44AA )
-#60521C Reptile Revenge ( #F9801D + #1D1D21 )
-#B9A11D Greenfinch ( #F9801D + #80C71F )
-#CBED6B Venomous Sting ( #F9FFFE + #80C71F )
-#9367A7 Crown Jewels ( #9D9D97 + #8932B8 )
-#75335E Grape ( #3C44AA + #B02E26 )
-#3FBA4A Green With Envy ( #80C71F + #169C9C )
-#6FA11C Gecko’s Dream ( #80C71F + #5E7C16 )
-#32355E Galaxea ( #3C44AA + #1D1D21 )
-#95775D Whisky Barrel ( #9D9D97 + #835432 )
-#DD6CB2 Super Pink ( #C74EBD + #F38BAA )
-#D7536D Strawberry Moon ( #F38BAA + #B02E26 )
-#D9764E Jaffa ( #F9801D + #C74EBD )
-#B0975A Kathmandu ( #C74EBD + #80C71F )
-#FAB06F Apricot ( #FED83D + #F38BAA )
-#828B95 Sea Lion ( #F9FFFE + #1D1D21 )
-#84872E Witch Brew ( #80C71F + #835432 )
-#327173 Ming ( #474F52 + #169C9C )
-#FBEC89 Spätzle Yellow ( #F9FFFE + #FED83D )
-#8CD873 Fluorescence ( #3AB3DA + #FED83D )
+#F9FFFE White
+#F9801D Oragane
+#C74EBD Magenta
+#3AB3DA Light Blue
+#FED83D Yellow
+#80C71F Lime
+#F38BAA Pink
+#474F52 Gray
+#9D9D97 Light Gray
+#169C9C Cyan
+#8932B8 Purple
+#3C44AA Blue
+#835432 Brown
+#5E7C16 Green
+#B02E26 Red
+#1D1D21 Black
+#9890B9 Wizard’s Brew ( Light Blue + Pink )
+#845468 Indian Silk ( Pink + Black )
+#A38019 Rich Gold ( Oragane + Green )
+#3B78C3 Fading Night ( Light Blue + Blue )
+#334B18 Treetop Cathedral ( Green + Black )
+#C26E65 Morocco ( Pink + Brown )
+#612925 Arcane Red ( Red + Black )
+#4D715B Toad King ( Cyan + Brown )
+#C5A188 Frappé ( White + Brown )
+#483B2A Dark Rum ( Brown + Black )
+#81A366 Frankenstein ( Yellow + Blue )
+#55316C Purple Protégé ( Purple + Black )
+#FCAB29 Beer ( Oragane + Yellow )
+#717777 Volcanic Ash ( Gray + Light Gray )
+#7D6E49 Lizard ( Purple + Green )
+#DE9FDC Candy Floss ( White + Magenta )
+#487E8E Mysterious Blue ( Light Blue + Gray )
+#C03B71 Spicy Purple ( Magenta + Red )
+#D44E22 Langoustine ( Oragane + Red )
+#B16927 Light Brown ( Oragane + Brown )
+#C5C462 Salsa Verde ( Yellow + Light Gray )
+#6D6DB0 Twinkle Night ( Magenta + Cyan )
+#20565A Deep Sea Diver ( Cyan + Black )
+#5E525C Pinot Noir ( Blue + Brown )
+#F7BECF Berries N’ Cream ( White + Pink )
+#76CED7 Summer of ’82 ( White + Cyan )
+#37933E Kryptonite Green ( Cyan + Green )
+#C8CAC9 Iron Fist ( White + Light Gray )
+#879CDD Azureno ( White + Blue )
+#60521C Reptile Revenge ( Oragane + Black )
+#B9A11D Greenfinch ( Oragane + Lime )
+#CBED6B Venomous Sting ( White + Lime )
+#9367A7 Crown Jewels ( Light Gray + Purple )
+#75335E Grape ( Blue + Red )
+#3FBA4A Green With Envy ( Lime + Cyan )
+#6FA11C Gecko’s Dream ( Lime + Green )
+#32355E Galaxea ( Blue + Black )
+#95775D Whisky Barrel ( Light Gray + Brown )
+#DD6CB2 Super Pink ( Magenta + Pink )
+#D7536D Strawberry Moon ( Pink + Red )
+#D9764E Jaffa ( Oragane + Magenta )
+#B0975A Kathmandu ( Magenta + Lime )
+#FAB06F Apricot ( Yellow + Pink )
+#828B95 Sea Lion ( White + Black )
+#84872E Witch Brew ( Lime + Brown )
+#327173 Ming ( Gray + Cyan )
+#FBEC89 Spätzle Yellow ( White + Yellow )
+#8CD873 Fluorescence ( Light Blue + Yellow )

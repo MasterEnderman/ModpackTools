@@ -4,19 +4,19 @@
 // - only hex values are supported for now
 
 // These are the 16 default Minecraft colors https://minecraft.wiki/w/Dye
-#F9FFFE
-#F9801D
-#C74EBD
-#3AB3DA
-#FED83D
-#80C71F
-#F38BAA
-#474F52
-#9D9D97
-#169C9C
-#8932B8
-#3C44AA
-#835432
-#5E7C16
-#B02E26
-#1D1D21
+#F9FFFE (White)
+#F9801D (Oragane)
+#C74EBD (Magenta)
+#3AB3DA (Light Blue)
+#FED83D (Yellow)
+#80C71F (Lime)
+#F38BAA (Pink)
+#474F52 (Gray)
+#9D9D97 (Light Gray)
+#169C9C (Cyan)
+#8932B8 (Purple)
+#3C44AA (Blue)
+#835432 (Brown)
+#5E7C16 (Green)
+#B02E26 (Red)
+#1D1D21 (Black)
