@@ -1,10 +1,10 @@
 {
     "paths": {
-        "textures": "/home/ender/Minecraft/The_Road_not_taken/minecraft/generated/textures",
-        "colors": "/home/ender/Minecraft/The_Road_not_taken/minecraft/generated/colors",
-        "output": "/home/ender/Minecraft/The_Road_not_taken/minecraft/generated/output"
+        "textures": "textures",
+        "colors": "colors",
+        "output": "output"
     },
     "blends": {
-        "bedrock": ["#474aa8(blue)"]
+        "bedrock": ["#474aa8(blue)", "#f9fffe(white)", "#c74ebd(magenta)", "#3c44aa(pink)"]
     }
 }
