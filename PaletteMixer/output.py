@@ -100,10 +100,6 @@ class PaletteMarkdownExporter:
         if not colors:
             raise ValueError("Cannot export an empty palette")
 
-        if ICON_PATH.exists():
-            shutil.rmtree(ICON_PATH)
-        ICON_PATH.mkdir(parents=True, exist_ok=True)
-
         lookup = {color.identifier: color for color in colors}
         grouped = self._group_by_generation(colors)
         markdown = self._render_markdown(grouped, lookup)
@@ -159,7 +155,7 @@ class PaletteMarkdownExporter:
         icon_path = self._export_color_icon(color)
 
         # 2️⃣ Heading with icon
-        lines.append(f"## ![{color.name}]({icon_path.as_posix().removeprefix("resources/")}) {color.name}")
+        lines.append(f"## ![{color.name}]({icon_path}) {color.name}")
 
         # 3️⃣ Existing details
         lines.append(f"- **Hex:** `{color.hex_value}`")
@@ -177,21 +173,32 @@ class PaletteMarkdownExporter:
                 if parent is None:
                     lines.append(f"  - ⚠ Unknown color `{parent_id}`")
                 else:
+                    # Export parent icon if not already
+                    parent_icon = self._export_color_icon(parent)
                     lines.append(
-                        f"  - {parent.name} (`{parent.hex_value}`)"
+                        f"  - ![{parent.name}]({parent_icon}) {parent.name} (`{parent.hex_value}`)"
                     )
 
         return lines
 
-    def _export_color_icon(self, color: ProcessedColor) -> Path:
+    def _export_color_icon(self, color: ProcessedColor) -> str:
         """
-        Create a 16x16 PNG icon for a single color.
+        Create a 16x16 PNG icon for a single color if it doesn't already exist.
         Returns the relative path to the icon.
         """
-        ICON_PATH.mkdir(parents=True, exist_ok=True)
+        # Ensure folder is prepared once
+        if not hasattr(self, "_icons_prepared"):
+            if ICON_PATH.exists():
+                shutil.rmtree(ICON_PATH)
+            ICON_PATH.mkdir(parents=True, exist_ok=True)
+            self._icons_prepared = True
+
         icon_file = ICON_PATH / f"{color.identifier}.png"
 
-        img = Image.new("RGB", (ICON_SIZE, ICON_SIZE), color.rgb)
-        img.save(icon_file, format="PNG")
-        return icon_file
+        # Only generate if file doesn't exist
+        if not icon_file.exists():
+            img = Image.new("RGB", (ICON_SIZE, ICON_SIZE), color.rgb)
+            img.save(icon_file, format="PNG")
+
+        return icon_file.as_posix().removeprefix("resources/")
 
