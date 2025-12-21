@@ -26,9 +26,9 @@ src/
 └── classes.py        # Shared data classes
 ```
 
-* `input.yml` → Your source color definitions.
-* `output/palette.png` → Generated palette image.
-* `output/output.md` → Markdown overview of the palette.
+* `resources/input.yml` → Example input file.
+* `resources/palette.png` → Generated palette image.
+* `resources/output.md` → Markdown overview of the palette.
 
 ## ⚡ Quick Start
 
@@ -57,8 +57,8 @@ python main.py path/to/input.yml --size 20
 
 3️⃣ **View outputs**:
 
-* `output/palette.png` 🖼️
-* `output/output.md` 📄
+* `resources/palette.png` 🖼️
+* `resources/output.md` 📄
 
 ## 🖌️ How It Works
 
