@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import numpy as np
+import shutil
 from collections import defaultdict
 from math import atan2, ceil, sqrt
 from pathlib import Path
@@ -9,6 +10,8 @@ from typing import List, Dict
 
 from classes import ProcessedColor
 
+ICON_SIZE = 16
+ICON_PATH = Path("resources/icons")
 
 class PaletteImageExporter:
     """
@@ -97,6 +100,10 @@ class PaletteMarkdownExporter:
         if not colors:
             raise ValueError("Cannot export an empty palette")
 
+        if ICON_PATH.exists():
+            shutil.rmtree(ICON_PATH)
+        ICON_PATH.mkdir(parents=True, exist_ok=True)
+
         lookup = {color.identifier: color for color in colors}
         grouped = self._group_by_generation(colors)
         markdown = self._render_markdown(grouped, lookup)
@@ -141,14 +148,20 @@ class PaletteMarkdownExporter:
 
         return "\n".join(lines).rstrip() + "\n"
 
-    @staticmethod
     def _render_color(
+        self,
         color: ProcessedColor,
         lookup: Dict[str, ProcessedColor],
     ) -> List[str]:
         lines: List[str] = []
 
-        lines.append(f"## {color.name}")
+        # 1️⃣ Export icon
+        icon_path = self._export_color_icon(color)
+
+        # 2️⃣ Heading with icon
+        lines.append(f"## ![{color.name}]({icon_path.as_posix()}) {color.name}")
+
+        # 3️⃣ Existing details
         lines.append(f"- **Hex:** `{color.hex_value}`")
         lines.append(f"- **RGB:** `{color.rgb}`")
         lines.append(
@@ -161,7 +174,6 @@ class PaletteMarkdownExporter:
             lines.append("- **Mixed from:**")
             for parent_id in color.mixed_from:
                 parent = lookup.get(parent_id)
-
                 if parent is None:
                     lines.append(f"  - ⚠ Unknown color `{parent_id}`")
                 else:
@@ -171,4 +183,15 @@ class PaletteMarkdownExporter:
 
         return lines
 
+    def _export_color_icon(self, color: ProcessedColor) -> Path:
+        """
+        Create a 16x16 PNG icon for a single color.
+        Returns the relative path to the icon.
+        """
+        ICON_PATH.mkdir(parents=True, exist_ok=True)
+        icon_file = ICON_PATH / f"{color.identifier}.png"
+
+        img = Image.new("RGB", (ICON_SIZE, ICON_SIZE), color.rgb)
+        img.save(icon_file, format="PNG")
+        return icon_file
 
