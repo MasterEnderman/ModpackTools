@@ -50,7 +50,8 @@ slate_indigo:
 2️⃣ **Run the script**:
 
 ```bash
-python main.py path/to/input.yml --size 20
+uv sync
+uv run python main.py resources/input.yml --size 20
 ```
 
 * `--size` is optional; if not provided, the program will calculate the maximum number of colors and prompt you.
