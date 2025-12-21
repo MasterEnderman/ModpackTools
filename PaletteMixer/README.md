@@ -51,7 +51,7 @@ slate_indigo:
 
 ```bash
 uv sync
-uv run python main.py resources/input.yml --size 20
+uv run main.py resources/input.yml --size 20
 ```
 
 * `--size` is optional; if not provided, the program will calculate the maximum number of colors and prompt you.
