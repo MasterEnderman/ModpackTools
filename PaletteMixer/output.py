@@ -159,7 +159,7 @@ class PaletteMarkdownExporter:
         icon_path = self._export_color_icon(color)
 
         # 2️⃣ Heading with icon
-        lines.append(f"## ![{color.name}]({icon_path.as_posix()}) {color.name}")
+        lines.append(f"## ![{color.name}]({icon_path.as_posix().removeprefix("resources/")}) {color.name}")
 
         # 3️⃣ Existing details
         lines.append(f"- **Hex:** `{color.hex_value}`")
