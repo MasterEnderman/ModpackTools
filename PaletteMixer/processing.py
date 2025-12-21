@@ -52,7 +52,7 @@ class PaletteProcessor:
 
         response = requests.get(
             url,
-            params={"values": hexes, "list": "bestOf", "noduplicates": True},
+            params={"values": hexes, "list": "bestOf", "noduplicates": "true"},
             timeout=10
         )
         response.raise_for_status()

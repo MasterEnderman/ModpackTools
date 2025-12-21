@@ -234,6 +234,14 @@
   - ![Spätzle Yellow](icons/white+yellow.png) Spätzle Yellow (`#FBEC89`)
   - ![Purple](icons/purple.png) Purple (`#8932B8`)
 
+## ![Coco Muck](icons/orange++red+black.png) Coco Muck
+- **Hex:** `#9B4D1E`
+- **RGB:** `(155, 77, 30)`
+- **Lab:** `(41.80, 29.26, 40.97)`
+- **Mixed from:**
+  - ![Orange](icons/orange.png) Orange (`#F9801D`)
+  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
+
 ## ![Coffee](icons/yellow+black++red+black.png) Coffee
 - **Hex:** `#704B32`
 - **RGB:** `(112, 75, 50)`
@@ -376,6 +384,14 @@
 - **Lab:** `(42.46, -14.21, 19.18)`
 - **Mixed from:**
   - ![Gray](icons/gray.png) Gray (`#474F52`)
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
+
+## ![Honey](icons/orange++yellow+black.png) Honey
+- **Hex:** `#A7822A`
+- **RGB:** `(167, 130, 42)`
+- **Lab:** `(56.43, 5.29, 50.48)`
+- **Mixed from:**
+  - ![Orange](icons/orange.png) Orange (`#F9801D`)
   - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Imperial Purple](icons/blue++red+black.png) Imperial Purple
@@ -618,14 +634,6 @@
   - ![Red](icons/red.png) Red (`#B02E26`)
   - ![Green](icons/green.png) Green (`#5E7C16`)
 
-## ![Panela](icons/orange++red+black.png) Panela
-- **Hex:** `#9B4D1E`
-- **RGB:** `(155, 77, 30)`
-- **Lab:** `(41.80, 29.26, 40.97)`
-- **Mixed from:**
-  - ![Orange](icons/orange.png) Orange (`#F9801D`)
-  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
-
 ## ![Phoenix Red](icons/red++white+yellow.png) Phoenix Red
 - **Hex:** `#DF7665`
 - **RGB:** `(223, 118, 101)`
@@ -706,14 +714,6 @@
   - ![Green](icons/green.png) Green (`#5E7C16`)
   - ![Orange](icons/orange.png) Orange (`#F9801D`)
 
-## ![Rich Gold](icons/orange++yellow+black.png) Rich Gold
-- **Hex:** `#A7822A`
-- **RGB:** `(167, 130, 42)`
-- **Lab:** `(56.43, 5.29, 50.48)`
-- **Mixed from:**
-  - ![Orange](icons/orange.png) Orange (`#F9801D`)
-  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
-
 ## ![Ruthless Empress](icons/purple++blue+black.png) Ruthless Empress
 - **Hex:** `#5B378F`
 - **RGB:** `(91, 55, 143)`
@@ -736,14 +736,6 @@
 - **Lab:** `(71.18, -15.54, 57.52)`
 - **Mixed from:**
   - ![Yellow](icons/yellow.png) Yellow (`#FED83D`)
-  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
-
-## ![Sinsemilla](icons/white+yellow++yellow+black.png) Sinsemilla
-- **Hex:** `#B9BF5B`
-- **RGB:** `(185, 191, 91)`
-- **Lab:** `(75.03, -16.05, 49.08)`
-- **Mixed from:**
-  - ![Spätzle Yellow](icons/white+yellow.png) Spätzle Yellow (`#FBEC89`)
   - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Siren](icons/red++blue+black.png) Siren
@@ -872,4 +864,12 @@
 - **Lab:** `(31.47, -12.89, 16.90)`
 - **Mixed from:**
   - ![Black](icons/black.png) Black (`#1D1D21`)
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
+
+## ![Zoodles](icons/white+yellow++yellow+black.png) Zoodles
+- **Hex:** `#B9BF5B`
+- **RGB:** `(185, 191, 91)`
+- **Lab:** `(75.03, -16.05, 49.08)`
+- **Mixed from:**
+  - ![Spätzle Yellow](icons/white+yellow.png) Spätzle Yellow (`#FBEC89`)
   - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
