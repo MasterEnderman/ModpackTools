@@ -1,5 +1,6 @@
+from math import comb
 import sys
-from typing import Optional
+from typing import Optional, Tuple
 
 def calculate_max_color_count(
     base_color_count: int,
@@ -25,12 +26,13 @@ def calculate_max_color_count(
         return 0
 
     total_colors = base_color_count
+    new_colors = 0
 
-    for _ in range(1, max_depth + 1):
-        new_colors = total_colors * (total_colors - 1) // 2
-        total_colors += new_colors
+    for _ in range(0, max_depth):
+        new_colors = comb(total_colors, 2)
+        total_colors = total_colors + new_colors
 
-    return total_colors
+    return new_colors
 
 def resolve_output_size(
     requested_size: Optional[int],
@@ -55,7 +57,6 @@ def resolve_output_size(
             sys.exit(1)
         return requested_size
 
-    print(f"Maximum possible output size: {max_size}")
     print("Press Enter to use the maximum size.")
 
     while True:
@@ -75,3 +76,11 @@ def resolve_output_size(
             return value
 
         print(f"Size must be between 1 and {max_size}.")
+
+def hex_to_rgb(hex_str: str) -> Tuple[int, int, int]:
+    hex_str = hex_str.lstrip("#")
+    tup = tuple(int(hex_str[i:i+2], 16) for i in (0, 2, 4))
+    return (tup[0], tup[1], tup[2])
+
+def rgb_to_hex(rgb: Tuple[int, int, int]) -> str:
+    return "#{:02X}{:02X}{:02X}".format(*rgb)

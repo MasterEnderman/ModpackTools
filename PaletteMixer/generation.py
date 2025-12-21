@@ -1,6 +1,7 @@
 from itertools import combinations, chain
-from typing import Dict, Set, List, Optional
-from input import ColorDefinition
+from typing import Dict, List, Optional
+from classes import ColorDefinition
+
 
 class ColorGenerator:
     """

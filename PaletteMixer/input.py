@@ -1,15 +1,12 @@
 from __future__ import annotations
 
 import sys
-from dataclasses import dataclass
+import yaml
 from pathlib import Path
 from typing import Dict, Optional, Set, Tuple
 
-import yaml
+from classes import ColorDefinition
 
-# =========================
-# Phase 2: Input loading
-# =========================
 
 class InputLoader:
     """
@@ -47,23 +44,6 @@ class InputLoader:
             sys.exit(1)
 
         return data
-
-
-# =========================
-# Phase 2: Parsed model
-# =========================
-
-@dataclass(frozen=True)
-class ColorDefinition:
-    """
-    Raw color definition parsed from input YAML.
-    """
-
-    identifier: str
-    name: Optional[str]
-    hex_value: Optional[str]
-    mixed_from: Optional[Tuple[str, str]]
-    generation: Optional[int]
 
 
 class InputParser:

@@ -2,24 +2,9 @@ from __future__ import annotations
 
 import argparse
 import sys
-from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
 
-
-@dataclass(frozen=True)
-class CliArguments:
-    """
-    Represents validated command-line arguments.
-
-    Attributes:
-        input_path: Path to the input.txt file.
-        size: Chosen size parameter.
-    """
-
-    input_path: Path
-    size: Optional[int]
-
+from classes import CliArguments
 
 class CliParser:
     """
