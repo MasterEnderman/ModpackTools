@@ -1,0 +1,31 @@
+# PngBlender2 configuration file
+# Modes:
+#   - noop
+#     - No-op blend mode that returns the base image unchanged
+#   - mix(weight)
+#     - Mix the base image with the layer image by the given weight
+#   - multiply
+#     - Multiply the base image with the layer image
+#   - mixbox(weight)
+#     - Mix the base image with the layer image using the Mixbox algorithm
+#   - penteract(average)
+#     - Experimental blend mode that uses grayscale averaging, value normalization,
+#       and dynamic range remapping to generate a new color transformation
+
+paths:
+  # Paths are resolved relative to main.py
+  input: input
+  output: output
+
+blend:
+  obsidian.pnm:
+    modes:
+      - penteract
+    colors:
+      - blue.pnm
+      - "#7F7F7F(gray)"
+  bedrock.pnm:
+    modes:
+      - penteract(107)
+    colors:
+      - blue.pnm
