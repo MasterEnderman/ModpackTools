@@ -358,4 +358,4 @@ class PaletteMixProjectionExporter:
 
     def _icon_md(self, color: ProcessedColor) -> str:
         icon_path = self.icon_dir / f"{color.identifier}.png"
-        return f"![{color.name}]({icon_path.as_posix()})"
+        return f"![{color.name}]({icon_path.as_posix().removeprefix("resources/")})"
