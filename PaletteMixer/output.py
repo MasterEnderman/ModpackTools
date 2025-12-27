@@ -230,7 +230,7 @@ class PaletteMixProjectionExporter:
             Iterable of MixProjection results
         """
         grouped = self._group_by_target(projections)
-        summary = self._compute_summary(projections)
+        summary = self._compute_summary(colors, projections)
 
         lines: List[str] = []
         c = {c.identifier: c for c in colors}
@@ -258,15 +258,17 @@ class PaletteMixProjectionExporter:
 
     def _compute_summary(
         self,
+        colors: Iterable[ProcessedColor],
         projections: Iterable[MixProjection],
     ) -> dict:
         projections = list(projections)
 
         delta_es = [p.delta_e for p in projections]
+        p_color = [c for c in colors]
 
         return {
-            "palette_size": len(set(p.projected for p in projections)),
-            "total_combinations": len(projections),
+            "palette_size": len(p_color),
+            "total_combinations": len(projections) + len([c for c in p_color if c.parsed]),
             "avg_delta_e": sum(delta_es) / len(delta_es) if delta_es else 0.0,
             "max_delta_e": max(delta_es) if delta_es else 0.0,
         }

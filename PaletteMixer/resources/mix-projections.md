@@ -4,8 +4,8 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 
 ## 📊 Summary
 
-- Palette size: **76 colors**
-- Total mix combinations: **120**
+- Palette size: **110 colors**
+- Total mix combinations: **136**
 - Average ΔE (CIEDE2000): **3.97**
 - Worst-case ΔE: **13.26**
 
