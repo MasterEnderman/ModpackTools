@@ -305,6 +305,9 @@ class PaletteMixProjectionExporter:
             icon = self._icon_md(target)
             lines.append(f"### {icon} {target.name}")
             lines.append("")
+            lines.append("<details>")
+            lines.append("<summary>Click to expand</summary>")
+            lines.append("")
             lines.append("| Mix | ΔE |")
             lines.append("|-----|----|")
 
@@ -319,6 +322,8 @@ class PaletteMixProjectionExporter:
 
                 lines.append(f"| {mix} | {p.delta_e:.2f} |")
 
+            lines.append("")
+            lines.append("</details>")
             lines.append("")
 
         return lines

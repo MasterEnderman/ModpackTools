@@ -13,6 +13,9 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 
 ### ![Lizard](resources/icons/green++purple.png) Lizard
 
+<details>
+<summary>Click to expand</summary>
+
 | Mix | ΔE |
 |-----|----|
 | ![Green](resources/icons/green.png) Green + ![Purple](resources/icons/purple.png) Purple | 0.00 |
@@ -225,7 +228,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Moss Gardens](resources/icons/black++white+yellow.png) Moss Gardens + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 10.91 |
 | ![Bavarian Green](resources/icons/yellow++blue+black.png) Bavarian Green + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 10.92 |
 
+</details>
+
 ### ![Reading Tea Leaves](resources/icons/yellow+black++purple.png) Reading Tea Leaves
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -437,7 +445,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Gray](resources/icons/gray.png) Gray + ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew | 13.51 |
 | ![Mysterious Blue](resources/icons/light_blue++gray.png) Mysterious Blue + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 13.71 |
 
+</details>
+
 ### ![Pizza](resources/icons/pink++green.png) Pizza
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -607,7 +620,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Yellow](resources/icons/yellow.png) Yellow + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 8.63 |
 | ![Apricot](resources/icons/yellow++pink.png) Apricot + ![Totally Broccoli](resources/icons/yellow++gray.png) Totally Broccoli | 8.63 |
 
+</details>
+
 ### ![Totally Broccoli](resources/icons/yellow++gray.png) Totally Broccoli
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -775,7 +793,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Sinsemilla](resources/icons/yellow++yellow+black.png) Sinsemilla + ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple | 9.77 |
 | ![Bavarian Green](resources/icons/yellow++blue+black.png) Bavarian Green + ![Butterum](resources/icons/pink++yellow+black.png) Butterum | 9.77 |
 
+</details>
+
 ### ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -921,7 +944,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream + ![Forester](resources/icons/white+yellow++gray.png) Forester | 10.41 |
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 10.76 |
 
+</details>
+
 ### ![Coffee](resources/icons/yellow+black++red+black.png) Coffee
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1063,7 +1091,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Ginger Dough](resources/icons/yellow++red+black.png) Ginger Dough + ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express | 11.51 |
 | ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum + ![Hinterland](resources/icons/gray++yellow+black.png) Hinterland | 11.53 |
 
+</details>
+
 ### ![Vin Cuit](resources/icons/white+yellow++red+black.png) Vin Cuit
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1201,7 +1234,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Totally Broccoli](resources/icons/yellow++gray.png) Totally Broccoli + ![Plastic Lips](resources/icons/red++purple.png) Plastic Lips | 8.83 |
 | ![Pinky Pickle](resources/icons/white++red+black.png) Pinky Pickle + ![Moss Gardens](resources/icons/black++white+yellow.png) Moss Gardens | 9.48 |
 
+</details>
+
 ### ![Cactus](resources/icons/blue++yellow+black.png) Cactus
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1334,7 +1372,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue + ![Butterum](resources/icons/pink++yellow+black.png) Butterum | 12.42 |
 | ![Gray](resources/icons/gray.png) Gray + ![Light Gray](resources/icons/light_gray.png) Light Gray | 13.12 |
 
+</details>
+
 ### ![Moss Gardens](resources/icons/black++white+yellow.png) Moss Gardens
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1457,7 +1500,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Zen Garden Olive](resources/icons/black++yellow+black.png) Zen Garden Olive + ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew | 9.47 |
 | ![Zoodles](resources/icons/white+yellow++yellow+black.png) Zoodles + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 10.19 |
 
+</details>
+
 ### ![Butterum](resources/icons/pink++yellow+black.png) Butterum
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1577,7 +1625,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold + ![Reading Tea Leaves](resources/icons/yellow+black++purple.png) Reading Tea Leaves | 9.23 |
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Not yet Caramel](resources/icons/orange++purple.png) Not yet Caramel | 9.89 |
 
+</details>
+
 ### ![Ginger Dough](resources/icons/yellow++red+black.png) Ginger Dough
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1696,7 +1749,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Gray](resources/icons/light_gray.png) Light Gray + ![Brown](resources/icons/brown.png) Brown | 8.55 |
 | ![Orange](resources/icons/orange.png) Orange + ![Vin Cuit](resources/icons/white+yellow++red+black.png) Vin Cuit | 8.66 |
 
+</details>
+
 ### ![Honey](resources/icons/orange++yellow+black.png) Honey
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1814,7 +1872,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Soft Boiled](resources/icons/white+yellow++orange.png) Soft Boiled + ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam | 9.14 |
 | ![Treetop Cathedral](resources/icons/black++green.png) Treetop Cathedral + ![Cream Puff](resources/icons/white+yellow++pink.png) Cream Puff | 9.55 |
 
+</details>
+
 ### ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -1928,7 +1991,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 11.67 |
 | ![Blue](resources/icons/blue.png) Blue + ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold | 12.95 |
 
+</details>
+
 ### ![Sinsemilla](resources/icons/yellow++yellow+black.png) Sinsemilla
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2041,7 +2109,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Yellow](resources/icons/yellow.png) Yellow + ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple | 9.43 |
 | ![Apricot](resources/icons/yellow++pink.png) Apricot + ![Bavarian Green](resources/icons/yellow++blue+black.png) Bavarian Green | 9.43 |
 
+</details>
+
 ### ![Pesto di Rucola](resources/icons/yellow+black.png) Pesto di Rucola
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2152,7 +2225,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Endo](resources/icons/light_blue++yellow+black.png) Endo + ![Greenhouse](resources/icons/green++blue+black.png) Greenhouse | 8.59 |
 | ![Jungle Jewels](resources/icons/light_blue++green.png) Jungle Jewels + ![Muddy Olive](resources/icons/yellow+black++blue+black.png) Muddy Olive | 9.59 |
 
+</details>
+
 ### ![Forester](resources/icons/white+yellow++gray.png) Forester
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2261,7 +2339,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream + ![Greenhouse](resources/icons/green++blue+black.png) Greenhouse | 9.01 |
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Pizza](resources/icons/pink++green.png) Pizza | 9.22 |
 
+</details>
+
 ### ![Tree Hugger](resources/icons/blue++orange.png) Tree Hugger
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2367,7 +2450,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Lime It or Leave It](resources/icons/light_blue++orange.png) Lime It or Leave It + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 8.55 |
 | ![Ginger Dough](resources/icons/yellow++red+black.png) Ginger Dough + ![Mysterious Blue](resources/icons/light_blue++gray.png) Mysterious Blue | 8.96 |
 
+</details>
+
 ### ![Brown](resources/icons/brown.png) Brown
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2467,7 +2555,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Imperial Purple](resources/icons/blue++red+black.png) Imperial Purple + ![Pizza](resources/icons/pink++green.png) Pizza | 7.68 |
 | ![Plum Highness](resources/icons/red++light_blue.png) Plum Highness + ![Brown](resources/icons/brown.png) Brown | 8.65 |
 
+</details>
+
 ### ![Indian Silk](resources/icons/black++pink.png) Indian Silk
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2562,7 +2655,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Japanese Bonsai](resources/icons/blue++white+yellow.png) Japanese Bonsai + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 9.22 |
 | ![Gray](resources/icons/gray.png) Gray + ![Indian Silk](resources/icons/black++pink.png) Indian Silk | 10.01 |
 
+</details>
+
 ### ![Not yet Caramel](resources/icons/orange++purple.png) Not yet Caramel
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2656,7 +2754,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Ginger Dough](resources/icons/yellow++red+black.png) Ginger Dough + ![Indian Silk](resources/icons/black++pink.png) Indian Silk | 7.91 |
 | ![Purple Protégé](resources/icons/black++purple.png) Purple Protégé + ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk | 8.28 |
 
+</details>
+
 ### ![Garden Weed](resources/icons/gray++orange.png) Garden Weed
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2749,7 +2852,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Brown](resources/icons/brown.png) Brown + ![Honey](resources/icons/orange++yellow+black.png) Honey | 7.96 |
 | ![Lime](resources/icons/lime.png) Lime + ![Potion № 9](resources/icons/red++red+black.png) Potion № 9 | 8.51 |
 
+</details>
+
 ### ![Hinterland](resources/icons/gray++yellow+black.png) Hinterland
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2842,7 +2950,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Not yet Caramel](resources/icons/orange++purple.png) Not yet Caramel | 9.66 |
 | ![Cyan](resources/icons/cyan.png) Cyan + ![Jungle Civilization](resources/icons/orange++blue+black.png) Jungle Civilization | 10.87 |
 
+</details>
+
 ### ![Wild Berry](resources/icons/red++gray.png) Wild Berry
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -2933,7 +3046,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Truffle Trouble](resources/icons/red++yellow+black.png) Truffle Trouble + ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple | 9.45 |
 | ![Siren](resources/icons/red++blue+black.png) Siren + ![Butterum](resources/icons/pink++yellow+black.png) Butterum | 9.74 |
 
+</details>
+
 ### ![Truffle Trouble](resources/icons/red++yellow+black.png) Truffle Trouble
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3023,7 +3141,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Phoenix Red](resources/icons/red++white+yellow.png) Phoenix Red + ![Wild Berry](resources/icons/red++gray.png) Wild Berry | 9.81 |
 | ![Mauve It](resources/icons/pink++red+black.png) Mauve It + ![Lizard](resources/icons/green++purple.png) Lizard | 10.08 |
 
+</details>
+
 ### ![Lime It or Leave It](resources/icons/light_blue++orange.png) Lime It or Leave It
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3112,7 +3235,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Celery](resources/icons/white+yellow++green.png) Celery | 6.61 |
 | ![Lime](resources/icons/lime.png) Lime + ![Bimi Green](resources/icons/gray++green.png) Bimi Green | 6.88 |
 
+</details>
+
 ### ![Gray](resources/icons/gray.png) Gray
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3198,7 +3326,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Galaxea](resources/icons/blue+black.png) Galaxea + ![Ginger Dough](resources/icons/yellow++red+black.png) Ginger Dough | 11.49 |
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Vin Cuit](resources/icons/white+yellow++red+black.png) Vin Cuit | 12.09 |
 
+</details>
+
 ### ![Jungle Civilization](resources/icons/orange++blue+black.png) Jungle Civilization
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3284,7 +3417,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Pesto di Rucola](resources/icons/yellow+black.png) Pesto di Rucola + ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple | 10.05 |
 | ![Muddy Olive](resources/icons/yellow+black++blue+black.png) Muddy Olive + ![Coffee](resources/icons/yellow+black++red+black.png) Coffee | 10.05 |
 
+</details>
+
 ### ![Bavarian Green](resources/icons/yellow++blue+black.png) Bavarian Green
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3369,7 +3507,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue + ![Enchanted Forest](resources/icons/green++yellow+black.png) Enchanted Forest | 8.87 |
 | ![Cyan](resources/icons/cyan.png) Cyan + ![Garden Weed](resources/icons/gray++orange.png) Garden Weed | 9.73 |
 
+</details>
+
 ### ![Never Forget](resources/icons/pink++gray.png) Never Forget
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3452,7 +3595,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew + ![Reading Tea Leaves](resources/icons/yellow+black++purple.png) Reading Tea Leaves | 9.68 |
 | ![Endo](resources/icons/light_blue++yellow+black.png) Endo + ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir | 9.85 |
 
+</details>
+
 ### ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3535,7 +3683,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Dusk](resources/icons/blue++gray.png) Dusk + ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve | 11.82 |
 | ![Japanese Bonsai](resources/icons/blue++white+yellow.png) Japanese Bonsai + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 11.93 |
 
+</details>
+
 ### ![Basswood Green](resources/icons/white+yellow++blue+black.png) Basswood Green
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3617,7 +3770,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Mysterious Blue](resources/icons/light_blue++gray.png) Mysterious Blue + ![Endo](resources/icons/light_blue++yellow+black.png) Endo | 10.27 |
 | ![Fluorescence](resources/icons/yellow++light_blue.png) Fluorescence + ![Ruthless Empress](resources/icons/purple++blue+black.png) Ruthless Empress | 10.62 |
 
+</details>
+
 ### ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3696,7 +3854,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Loch Ness](resources/icons/light_blue++purple.png) Loch Ness + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 8.24 |
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum | 8.44 |
 
+</details>
+
 ### ![Very Coffee](resources/icons/green++red+black.png) Very Coffee
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3775,7 +3938,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Zen Garden Olive](resources/icons/black++yellow+black.png) Zen Garden Olive + ![Wine Tasting](resources/icons/gray++red+black.png) Wine Tasting | 11.71 |
 | ![Black](resources/icons/black.png) Black + ![Brown](resources/icons/brown.png) Brown | 11.81 |
 
+</details>
+
 ### ![Pinky Pickle](resources/icons/white++red+black.png) Pinky Pickle
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3852,7 +4020,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 8.22 |
 | ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream + ![Lusty Lavender](resources/icons/blue++pink.png) Lusty Lavender | 9.51 |
 
+</details>
+
 ### ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -3929,7 +4102,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Dusk](resources/icons/blue++gray.png) Dusk + ![Cream Puff](resources/icons/white+yellow++pink.png) Cream Puff | 10.44 |
 | ![Japanese Bonsai](resources/icons/blue++white+yellow.png) Japanese Bonsai + ![Never Forget](resources/icons/pink++gray.png) Never Forget | 10.78 |
 
+</details>
+
 ### ![Endo](resources/icons/light_blue++yellow+black.png) Endo
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4003,7 +4181,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Cyan](resources/icons/cyan.png) Cyan + ![Tree Hugger](resources/icons/blue++orange.png) Tree Hugger | 9.71 |
 | ![Cyan](resources/icons/cyan.png) Cyan + ![Bimi Green](resources/icons/gray++green.png) Bimi Green | 10.74 |
 
+</details>
+
 ### ![Zoodles](resources/icons/white+yellow++yellow+black.png) Zoodles
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4076,7 +4259,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Yellow](resources/icons/yellow.png) Yellow + ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve | 8.65 |
 | ![Here Comes the Sun](resources/icons/yellow++white+yellow.png) Here Comes the Sun + ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold | 9.01 |
 
+</details>
+
 ### ![Light Gray](resources/icons/light_gray.png) Light Gray
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4148,7 +4336,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Forester](resources/icons/white+yellow++gray.png) Forester + ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam | 12.34 |
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve | 12.51 |
 
+</details>
+
 ### ![Plum Highness](resources/icons/red++light_blue.png) Plum Highness
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4220,7 +4413,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Purple Emperor](resources/icons/blue++purple.png) Purple Emperor + ![Lizard](resources/icons/green++purple.png) Lizard | 7.70 |
 | ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam + ![Reading Tea Leaves](resources/icons/yellow+black++purple.png) Reading Tea Leaves | 8.23 |
 
+</details>
+
 ### ![Dusk](resources/icons/blue++gray.png) Dusk
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4289,7 +4487,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Galaxea](resources/icons/blue+black.png) Galaxea + ![Light Gray](resources/icons/light_gray.png) Light Gray | 11.06 |
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Vulcan](resources/icons/black++gray.png) Vulcan | 12.02 |
 
+</details>
+
 ### ![Muddy Olive](resources/icons/yellow+black++blue+black.png) Muddy Olive
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4355,7 +4558,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Brown](resources/icons/brown.png) Brown | 8.61 |
 | ![Gray](resources/icons/gray.png) Gray + ![Lizard](resources/icons/green++purple.png) Lizard | 9.49 |
 
+</details>
+
 ### ![Zen Garden Olive](resources/icons/black++yellow+black.png) Zen Garden Olive
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4421,7 +4629,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Black](resources/icons/black.png) Black + ![Very Coffee](resources/icons/green++red+black.png) Very Coffee | 12.64 |
 | ![Treetop Cathedral](resources/icons/black++green.png) Treetop Cathedral + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 12.64 |
 
+</details>
+
 ### ![Kiss a Frog](resources/icons/white++yellow+black.png) Kiss a Frog
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4485,7 +4698,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream + ![Lime It or Leave It](resources/icons/light_blue++orange.png) Lime It or Leave It | 9.92 |
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold | 10.07 |
 
+</details>
+
 ### ![Mauve It](resources/icons/pink++red+black.png) Mauve It
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4549,7 +4767,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Red](resources/icons/red.png) Red + ![Basswood Green](resources/icons/white+yellow++blue+black.png) Basswood Green | 9.28 |
 | ![Phoenix Red](resources/icons/red++white+yellow.png) Phoenix Red + ![Siren](resources/icons/red++blue+black.png) Siren | 9.28 |
 
+</details>
+
 ### ![Phoenix Red](resources/icons/red++white+yellow.png) Phoenix Red
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4612,7 +4835,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Pink](resources/icons/pink.png) Pink + ![Vin Cuit](resources/icons/white+yellow++red+black.png) Vin Cuit | 9.37 |
 | ![Cream Puff](resources/icons/white+yellow++pink.png) Cream Puff + ![Mauve It](resources/icons/pink++red+black.png) Mauve It | 9.37 |
 
+</details>
+
 ### ![Bimi Green](resources/icons/gray++green.png) Bimi Green
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4675,7 +4903,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Zen Garden Olive](resources/icons/black++yellow+black.png) Zen Garden Olive + ![Jungle Jewels](resources/icons/light_blue++green.png) Jungle Jewels | 6.37 |
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Enchanted Forest](resources/icons/green++yellow+black.png) Enchanted Forest | 7.01 |
 
+</details>
+
 ### ![Fizzy Peach](resources/icons/white++orange.png) Fizzy Peach
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4737,7 +4970,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Kiss a Frog](resources/icons/white++yellow+black.png) Kiss a Frog + ![Cream Puff](resources/icons/white+yellow++pink.png) Cream Puff | 10.42 |
 | ![White](resources/icons/white.png) White + ![Apricot](resources/icons/yellow++pink.png) Apricot | 11.66 |
 
+</details>
+
 ### ![Lusty Lavender](resources/icons/blue++pink.png) Lusty Lavender
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4799,7 +5037,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple | 10.09 |
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam | 11.01 |
 
+</details>
+
 ### ![Siren](resources/icons/red++blue+black.png) Siren
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4860,7 +5103,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Indian Silk](resources/icons/black++pink.png) Indian Silk + ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple | 7.12 |
 | ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum + ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple | 7.15 |
 
+</details>
+
 ### ![Mysterious Blue](resources/icons/light_blue++gray.png) Mysterious Blue
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4918,7 +5166,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Cactus](resources/icons/blue++yellow+black.png) Cactus + ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew | 11.46 |
 | ![Lusty Lavender](resources/icons/blue++pink.png) Lusty Lavender + ![Endo](resources/icons/light_blue++yellow+black.png) Endo | 11.69 |
 
+</details>
+
 ### ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -4974,7 +5227,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream | 15.50 |
 | ![White](resources/icons/white.png) White + ![Wizard’s Brew](resources/icons/light_blue++pink.png) Wizard’s Brew | 15.90 |
 
+</details>
+
 ### ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5030,7 +5288,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Siren](resources/icons/red++blue+black.png) Siren + ![Berry Jam](resources/icons/light_blue++red+black.png) Berry Jam | 7.87 |
 | ![Black](resources/icons/black.png) Black + ![Muted Purple](resources/icons/pink++blue+black.png) Muted Purple | 8.01 |
 
+</details>
+
 ### ![Wine Tasting](resources/icons/gray++red+black.png) Wine Tasting
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5084,7 +5347,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Dusk](resources/icons/blue++gray.png) Dusk + ![Coffee](resources/icons/yellow+black++red+black.png) Coffee | 11.12 |
 | ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic + ![Brown](resources/icons/brown.png) Brown | 11.15 |
 
+</details>
+
 ### ![Japanese Bonsai](resources/icons/blue++white+yellow.png) Japanese Bonsai
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5134,7 +5402,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer | 11.89 |
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade | 13.96 |
 
+</details>
+
 ### ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5183,7 +5456,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Purple](resources/icons/purple.png) Purple + ![Plastic Lips](resources/icons/red++purple.png) Plastic Lips | 7.19 |
 | ![Imperial Purple](resources/icons/blue++red+black.png) Imperial Purple + ![Indian Silk](resources/icons/black++pink.png) Indian Silk | 7.60 |
 
+</details>
+
 ### ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5229,7 +5507,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Imperial Purple](resources/icons/blue++red+black.png) Imperial Purple + ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade | 12.45 |
 | ![Fading Night](resources/icons/blue++light_blue.png) Fading Night + ![Vin Cuit](resources/icons/white+yellow++red+black.png) Vin Cuit | 12.83 |
 
+</details>
+
 ### ![Loch Ness](resources/icons/light_blue++purple.png) Loch Ness
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5275,7 +5558,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Gray](resources/icons/light_gray.png) Light Gray + ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic | 9.62 |
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone | 10.63 |
 
+</details>
+
 ### ![Fluorescence](resources/icons/yellow++light_blue.png) Fluorescence
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5320,7 +5608,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Spätzle Yellow](resources/icons/white+yellow.png) Spätzle Yellow + ![Fluorescence](resources/icons/yellow++light_blue.png) Fluorescence | 8.39 |
 | ![Here Comes the Sun](resources/icons/yellow++white+yellow.png) Here Comes the Sun + ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade | 8.44 |
 
+</details>
+
 ### ![Jungle Jewels](resources/icons/light_blue++green.png) Jungle Jewels
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5363,7 +5656,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Sinsemilla](resources/icons/yellow++yellow+black.png) Sinsemilla | 7.37 |
 | ![Green](resources/icons/green.png) Green + ![Cyan](resources/icons/cyan.png) Cyan | 7.61 |
 
+</details>
+
 ### ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5404,7 +5702,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Gray](resources/icons/light_gray.png) Light Gray + ![Dusk](resources/icons/blue++gray.png) Dusk | 12.05 |
 | ![Light Gray](resources/icons/light_gray.png) Light Gray + ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone | 12.81 |
 
+</details>
+
 ### ![Plastic Lips](resources/icons/red++purple.png) Plastic Lips
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5445,7 +5748,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Plastic Lips](resources/icons/red++purple.png) Plastic Lips + ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir | 7.93 |
 | ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir + ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum | 8.89 |
 
+</details>
+
 ### ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5484,7 +5792,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade | 10.34 |
 | ![Cyan](resources/icons/cyan.png) Cyan + ![Jovial Jade](resources/icons/white+yellow++light_blue.png) Jovial Jade | 12.25 |
 
+</details>
+
 ### ![Celery](resources/icons/white+yellow++green.png) Celery
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5522,7 +5835,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Lime](resources/icons/lime.png) Lime | 9.18 |
 | ![White](resources/icons/white.png) White + ![Lime](resources/icons/lime.png) Lime | 10.40 |
 
+</details>
+
 ### ![Cream Puff](resources/icons/white+yellow++pink.png) Cream Puff
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5560,7 +5878,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![White](resources/icons/white.png) White + ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold | 12.94 |
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve | 13.62 |
 
+</details>
+
 ### ![Purple Protégé](resources/icons/black++purple.png) Purple Protégé
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5598,7 +5921,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone + ![Ruthless Empress](resources/icons/purple++blue+black.png) Ruthless Empress | 6.36 |
 | ![Galaxea](resources/icons/blue+black.png) Galaxea + ![Grapes of Italy](resources/icons/gray++purple.png) Grapes of Italy | 6.36 |
 
+</details>
+
 ### ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5634,7 +5962,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Magenta](resources/icons/magenta.png) Magenta + ![Plastic Lips](resources/icons/red++purple.png) Plastic Lips | 8.21 |
 | ![Pink](resources/icons/pink.png) Pink + ![Magenta](resources/icons/magenta.png) Magenta | 8.56 |
 
+</details>
+
 ### ![Fading Night](resources/icons/blue++light_blue.png) Fading Night
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5667,7 +6000,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer + ![Mysterious Blue](resources/icons/light_blue++gray.png) Mysterious Blue | 9.27 |
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Fading Night](resources/icons/blue++light_blue.png) Fading Night | 11.17 |
 
+</details>
+
 ### ![Imperial Purple](resources/icons/blue++red+black.png) Imperial Purple
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5700,7 +6038,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Gray](resources/icons/gray.png) Gray + ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum | 7.23 |
 | ![Potion № 9](resources/icons/red++red+black.png) Potion № 9 + ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue | 7.89 |
 
+</details>
+
 ### ![Strawberry Moon](resources/icons/red++pink.png) Strawberry Moon
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5733,7 +6076,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Red](resources/icons/red.png) Red + ![Phoenix Red](resources/icons/red++white+yellow.png) Phoenix Red | 9.19 |
 | ![Red](resources/icons/red.png) Red + ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold | 9.38 |
 
+</details>
+
 ### ![Atlantis](resources/icons/black++light_blue.png) Atlantis
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5766,7 +6114,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Gray](resources/icons/gray.png) Gray + ![Cyan](resources/icons/cyan.png) Cyan | 9.18 |
 | ![Basswood Green](resources/icons/white+yellow++blue+black.png) Basswood Green + ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone | 9.60 |
 
+</details>
+
 ### ![Apricot](resources/icons/yellow++pink.png) Apricot
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5798,7 +6151,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](resources/icons/orange.png) Orange + ![Apricot](resources/icons/yellow++pink.png) Apricot | 7.03 |
 | ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana + ![Not yet Caramel](resources/icons/orange++purple.png) Not yet Caramel | 7.88 |
 
+</details>
+
 ### ![Lime](resources/icons/lime.png) Lime
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5830,7 +6188,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Beer](resources/icons/yellow++orange.png) Beer | 6.50 |
 | ![Green](resources/icons/green.png) Green + ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky | 6.52 |
 
+</details>
+
 ### ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5860,7 +6223,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Pizza](resources/icons/pink++green.png) Pizza + ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk | 7.73 |
 | ![Pink](resources/icons/pink.png) Pink + ![Rich Gold](resources/icons/green++orange.png) Rich Gold | 7.98 |
 
+</details>
+
 ### ![Yellow](resources/icons/yellow.png) Yellow
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5890,7 +6258,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Sinsemilla](resources/icons/yellow++yellow+black.png) Sinsemilla + ![Soft Boiled](resources/icons/white+yellow++orange.png) Soft Boiled | 9.08 |
 | ![Beer](resources/icons/yellow++orange.png) Beer + ![Zoodles](resources/icons/white+yellow++yellow+black.png) Zoodles | 9.29 |
 
+</details>
+
 ### ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5920,7 +6293,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic + ![Coffee](resources/icons/yellow+black++red+black.png) Coffee | 9.48 |
 | ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone + ![Reading Tea Leaves](resources/icons/yellow+black++purple.png) Reading Tea Leaves | 10.14 |
 
+</details>
+
 ### ![Ruthless Empress](resources/icons/purple++blue+black.png) Ruthless Empress
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5949,7 +6327,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Dusk](resources/icons/blue++gray.png) Dusk + ![Purple Emperor](resources/icons/blue++purple.png) Purple Emperor | 5.28 |
 | ![Purple](resources/icons/purple.png) Purple + ![Atlantis](resources/icons/black++light_blue.png) Atlantis | 6.87 |
 
+</details>
+
 ### ![Enchanted Forest](resources/icons/green++yellow+black.png) Enchanted Forest
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -5977,7 +6360,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Jungle Jewels](resources/icons/light_blue++green.png) Jungle Jewels + ![Greenhouse](resources/icons/green++blue+black.png) Greenhouse | 8.26 |
 | ![Green](resources/icons/green.png) Green + ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue | 8.46 |
 
+</details>
+
 ### ![Light Blue](resources/icons/light_blue.png) Light Blue
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6004,7 +6392,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer | 9.82 |
 | ![White](resources/icons/white.png) White + ![Fading Night](resources/icons/blue++light_blue.png) Fading Night | 10.97 |
 
+</details>
+
 ### ![Langoustine](resources/icons/red++orange.png) Langoustine
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6031,7 +6424,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](resources/icons/orange.png) Orange + ![Strawberry Moon](resources/icons/red++pink.png) Strawberry Moon | 8.23 |
 | ![Langoustine](resources/icons/red++orange.png) Langoustine + ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk | 8.23 |
 
+</details>
+
 ### ![Pink](resources/icons/pink.png) Pink
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6057,7 +6455,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream + ![Magenta](resources/icons/magenta.png) Magenta | 10.56 |
 | ![White](resources/icons/white.png) White + ![Magenta](resources/icons/magenta.png) Magenta | 13.26 |
 
+</details>
+
 ### ![Soft Boiled](resources/icons/white+yellow++orange.png) Soft Boiled
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6083,7 +6486,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Fizzy Peach](resources/icons/white++orange.png) Fizzy Peach + ![Rich Gold](resources/icons/green++orange.png) Rich Gold | 7.73 |
 | ![Orange](resources/icons/orange.png) Orange + ![Celery](resources/icons/white+yellow++green.png) Celery | 7.80 |
 
+</details>
+
 ### ![Vulcan](resources/icons/black++gray.png) Vulcan
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6109,7 +6517,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Vulcan](resources/icons/black++gray.png) Vulcan + ![Coffee](resources/icons/yellow+black++red+black.png) Coffee | 11.82 |
 | ![Zen Garden Olive](resources/icons/black++yellow+black.png) Zen Garden Olive + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 12.57 |
 
+</details>
+
 ### ![Greenhouse](resources/icons/green++blue+black.png) Greenhouse
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6134,7 +6547,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Treetop Cathedral](resources/icons/black++green.png) Treetop Cathedral + ![Jungle Civilization](resources/icons/orange++blue+black.png) Jungle Civilization | 5.54 |
 | ![Atlantis](resources/icons/black++light_blue.png) Atlantis + ![Bimi Green](resources/icons/gray++green.png) Bimi Green | 6.25 |
 
+</details>
+
 ### ![Cyan](resources/icons/cyan.png) Cyan
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6158,7 +6576,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Fluorescence](resources/icons/yellow++light_blue.png) Fluorescence + ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic | 10.18 |
 | ![Light Blue](resources/icons/light_blue.png) Light Blue + ![Hinterland](resources/icons/gray++yellow+black.png) Hinterland | 10.21 |
 
+</details>
+
 ### ![Panela](resources/icons/red++green.png) Panela
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6182,7 +6605,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Langoustine](resources/icons/red++orange.png) Langoustine + ![Garden Weed](resources/icons/gray++orange.png) Garden Weed | 5.59 |
 | ![Tree Hugger](resources/icons/blue++orange.png) Tree Hugger + ![Langoustine](resources/icons/red++orange.png) Langoustine | 5.68 |
 
+</details>
+
 ### ![Red](resources/icons/red.png) Red
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6205,7 +6633,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Purple](resources/icons/purple.png) Purple + ![Langoustine](resources/icons/red++orange.png) Langoustine | 9.86 |
 | ![Caramel Gold](resources/icons/yellow++purple.png) Caramel Gold + ![Potion № 9](resources/icons/red++red+black.png) Potion № 9 | 9.92 |
 
+</details>
+
 ### ![Spätzle Yellow](resources/icons/white+yellow.png) Spätzle Yellow
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6227,7 +6660,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Spätzle Yellow](resources/icons/white+yellow.png) Spätzle Yellow + ![Celery](resources/icons/white+yellow++green.png) Celery | 6.45 |
 | ![White](resources/icons/white.png) White + ![Fizzy Peach](resources/icons/white++orange.png) Fizzy Peach | 7.43 |
 
+</details>
+
 ### ![Galaxea](resources/icons/blue+black.png) Galaxea
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6249,7 +6687,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Galaxea](resources/icons/blue+black.png) Galaxea + ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple | 6.60 |
 | ![Vulcan](resources/icons/black++gray.png) Vulcan + ![Ruthless Empress](resources/icons/purple++blue+black.png) Ruthless Empress | 6.70 |
 
+</details>
+
 ### ![Purple](resources/icons/purple.png) Purple
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6271,7 +6714,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Magenta](resources/icons/magenta.png) Magenta + ![Imperial Purple](resources/icons/blue++red+black.png) Imperial Purple | 7.52 |
 | ![Magenta](resources/icons/magenta.png) Magenta + ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum | 9.49 |
 
+</details>
+
 ### ![Rich Gold](resources/icons/green++orange.png) Rich Gold
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6293,7 +6741,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Butterum](resources/icons/pink++yellow+black.png) Butterum + ![Enchanted Forest](resources/icons/green++yellow+black.png) Enchanted Forest | 8.39 |
 | ![Beer](resources/icons/yellow++orange.png) Beer + ![Bimi Green](resources/icons/gray++green.png) Bimi Green | 8.67 |
 
+</details>
+
 ### ![Potion № 9](resources/icons/red++red+black.png) Potion № 9
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6314,7 +6767,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Ancient Chest](resources/icons/orange++red+black.png) Ancient Chest + ![Noble Plum](resources/icons/purple++red+black.png) Noble Plum | 6.42 |
 | ![Arcane Red](resources/icons/red+black.png) Arcane Red + ![Brown](resources/icons/brown.png) Brown | 6.76 |
 
+</details>
+
 ### ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6334,7 +6792,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Dusk](resources/icons/blue++gray.png) Dusk + ![Ruthless Empress](resources/icons/purple++blue+black.png) Ruthless Empress | 5.07 |
 | ![Purple Emperor](resources/icons/blue++purple.png) Purple Emperor + ![Lava Stone](resources/icons/gray++blue+black.png) Lava Stone | 5.07 |
 
+</details>
+
 ### ![Here Comes the Sun](resources/icons/yellow++white+yellow.png) Here Comes the Sun
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6352,7 +6815,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![White](resources/icons/white.png) White + ![Rich Gold](resources/icons/green++orange.png) Rich Gold | 7.54 |
 | ![White](resources/icons/white.png) White + ![Honey](resources/icons/orange++yellow+black.png) Honey | 7.73 |
 
+</details>
+
 ### ![Ancient Chest](resources/icons/orange++red+black.png) Ancient Chest
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6370,7 +6838,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Panela](resources/icons/red++green.png) Panela + ![Langoustine](resources/icons/red++orange.png) Langoustine | 5.55 |
 | ![Langoustine](resources/icons/red++orange.png) Langoustine + ![Ancient Chest](resources/icons/orange++red+black.png) Ancient Chest | 6.08 |
 
+</details>
+
 ### ![Purple Emperor](resources/icons/blue++purple.png) Purple Emperor
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6386,7 +6859,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Purple Emperor](resources/icons/blue++purple.png) Purple Emperor + ![Loch Ness](resources/icons/light_blue++purple.png) Loch Ness | 6.38 |
 | ![Blue](resources/icons/blue.png) Blue + ![Lusty Lavender](resources/icons/blue++pink.png) Lusty Lavender | 6.60 |
 
+</details>
+
 ### ![Green](resources/icons/green.png) Green
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6402,7 +6880,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Lime](resources/icons/lime.png) Lime + ![Treetop Cathedral](resources/icons/black++green.png) Treetop Cathedral | 5.37 |
 | ![Galaxea](resources/icons/blue+black.png) Galaxea + ![Lime](resources/icons/lime.png) Lime | 8.44 |
 
+</details>
+
 ### ![Blue](resources/icons/blue.png) Blue
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6417,7 +6900,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Fading Night](resources/icons/blue++light_blue.png) Fading Night + ![Evening Magic](resources/icons/blue++blue+black.png) Evening Magic | 7.29 |
 | ![Blue](resources/icons/blue.png) Blue + ![Muted Blue](resources/icons/light_blue++blue+black.png) Muted Blue | 7.72 |
 
+</details>
+
 ### ![Arcane Red](resources/icons/red+black.png) Arcane Red
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6432,7 +6920,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum + ![Coffee](resources/icons/yellow+black++red+black.png) Coffee | 7.68 |
 | ![Brown](resources/icons/brown.png) Brown + ![Shadow Purple](resources/icons/blue+black++red+black.png) Shadow Purple | 8.20 |
 
+</details>
+
 ### ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6446,7 +6939,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Black](resources/icons/black.png) Black + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 6.37 |
 | ![Vulcan](resources/icons/black++gray.png) Vulcan + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 7.32 |
 
+</details>
+
 ### ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6459,7 +6957,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Over the Sky](resources/icons/white++light_blue.png) Over the Sky + ![Light Gray](resources/icons/light_gray.png) Light Gray | 10.06 |
 | ![White](resources/icons/white.png) White + ![Galactic Gossamer](resources/icons/white++blue+black.png) Galactic Gossamer | 15.02 |
 
+</details>
+
 ### ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6472,7 +6975,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Vulcan](resources/icons/black++gray.png) Vulcan + ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express | 4.70 |
 | ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express + ![Bruised Plum](resources/icons/black++red+black.png) Bruised Plum | 7.47 |
 
+</details>
+
 ### ![Berries N’ Cream](resources/icons/white++pink.png) Berries N’ Cream
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6484,7 +6992,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![White](resources/icons/white.png) White + ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir | 10.88 |
 | ![White](resources/icons/white.png) White + ![Classy Mauve](resources/icons/white+yellow++purple.png) Classy Mauve | 11.77 |
 
+</details>
+
 ### ![Beer](resources/icons/yellow++orange.png) Beer
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6495,7 +7008,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](resources/icons/orange.png) Orange + ![Soft Boiled](resources/icons/white+yellow++orange.png) Soft Boiled | 5.94 |
 | ![Lush Bamboo](resources/icons/yellow++green.png) Lush Bamboo + ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk | 6.61 |
 
+</details>
+
 ### ![Orange](resources/icons/orange.png) Orange
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6506,7 +7024,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](resources/icons/orange.png) Orange + ![Beer](resources/icons/yellow++orange.png) Beer | 6.76 |
 | ![Beer](resources/icons/yellow++orange.png) Beer + ![Toasted Husk](resources/icons/pink++orange.png) Toasted Husk | 6.81 |
 
+</details>
+
 ### ![Treetop Cathedral](resources/icons/black++green.png) Treetop Cathedral
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6517,7 +7040,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Green](resources/icons/green.png) Green + ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express | 3.06 |
 | ![Black](resources/icons/black.png) Black + ![Rich Gold](resources/icons/green++orange.png) Rich Gold | 5.61 |
 
+</details>
+
 ### ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6527,7 +7055,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![White](resources/icons/white.png) White + ![Yellow Mana](resources/icons/white++white+yellow.png) Yellow Mana | 7.02 |
 | ![White](resources/icons/white.png) White + ![Kiss a Frog](resources/icons/white++yellow+black.png) Kiss a Frog | 7.64 |
 
+</details>
+
 ### ![Lush Bamboo](resources/icons/yellow++green.png) Lush Bamboo
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
@@ -6537,24 +7070,41 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Lime](resources/icons/lime.png) Lime + ![Beer](resources/icons/yellow++orange.png) Beer | 2.81 |
 | ![Lime](resources/icons/lime.png) Lime + ![Rich Gold](resources/icons/green++orange.png) Rich Gold | 6.73 |
 
+</details>
+
 ### ![White](resources/icons/white.png) White
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
 | ![White](resources/icons/white.png) White + ![Light Gray](resources/icons/light_gray.png) Light Gray | 11.62 |
 | ![White](resources/icons/white.png) White + ![Japanese Bonsai](resources/icons/blue++white+yellow.png) Japanese Bonsai | 12.57 |
 
+</details>
+
 ### ![Black](resources/icons/black.png) Black
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
 | ![Black](resources/icons/black.png) Black + ![Midnight Express](resources/icons/black++blue+black.png) Midnight Express | 4.65 |
 
+</details>
+
 ### ![Magenta](resources/icons/magenta.png) Magenta
+
+<details>
+<summary>Click to expand</summary>
 
 | Mix | ΔE |
 |-----|----|
 | ![Magenta](resources/icons/magenta.png) Magenta + ![Magenta Memoir](resources/icons/pink++purple.png) Magenta Memoir | 1.77 |
+
+</details>
 
 ## 🚨 Largest Deviations
 
