@@ -2,6 +2,7 @@ from __future__ import annotations
 
 # later this may be replaced with a proper logging system
 
+
 def report_error(message: str) -> None:
     """
     Report a non-fatal error to the console.

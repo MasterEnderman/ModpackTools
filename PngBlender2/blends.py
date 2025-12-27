@@ -6,6 +6,7 @@ import numpy as np
 
 from errors import report_info
 
+
 class BlendStrategy(ABC):
     """
     Base class for blend strategies.
@@ -38,6 +39,7 @@ class NoOpBlendStrategy(BlendStrategy):
     ) -> Image.Image:
         return base.copy()
 
+
 class MultiplyBlend(BlendStrategy):
     def apply(
         self,
@@ -67,10 +69,7 @@ class MixBlend(BlendStrategy):
         base_arr = np.asarray(base, dtype=np.float32)
         layer_arr = np.asarray(layer, dtype=np.float32)
 
-        result = (
-            base_arr * (1.0 - self._weight)
-            + layer_arr * self._weight
-        )
+        result = base_arr * (1.0 - self._weight) + layer_arr * self._weight
 
         result = np.clip(result, 0, 255).astype(np.uint8)
         return Image.fromarray(result, mode=base.mode)
@@ -121,6 +120,7 @@ class PenteractBlend(BlendStrategy):
     Uses grayscale averaging, value normalization, and dynamic range
     remapping to generate a new color transformation.
     """
+
     def __init__(self, average: Optional[int] = None) -> None:
         if average is not None and not 0 <= average <= 255:
             raise ValueError("Penteract average must be between 0 and 255.")
@@ -162,25 +162,16 @@ class PenteractBlend(BlendStrategy):
         min_val = min(result)
         if min_val < 0:
             report_info(f"    - Penteract minimum: {min_val}")
-            result = [
-                v if v == 255 else v - min_val
-                for v in result
-            ]
+            result = [v if v == 255 else v - min_val for v in result]
 
         # --- Step 5: normalize maximum ---
         max_val = max(result)
         if max_val > 255:
             report_info(f"    - Penteract maximum: {max_val}")
-            result = [
-                v if v == 255 else v + 255 - max_val
-                for v in result
-            ]
+            result = [v if v == 255 else v + 255 - max_val for v in result]
 
         # --- Step 6: clamp ---
-        result = [
-            255 if v > 255 else 0 if v < 0 else v
-            for v in result
-        ]
+        result = [255 if v > 255 else 0 if v < 0 else v for v in result]
 
         # --- Step 7: rebuild image ---
         out_arr = np.array(result, dtype=np.uint8).reshape(base_arr.shape)

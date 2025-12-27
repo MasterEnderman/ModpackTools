@@ -17,13 +17,10 @@ from models import (
 )
 
 
-_HEX_COLOR_PATTERN = re.compile(
-    r"^#([0-9a-fA-F]{6})\(([^)]+)\)$"
-)
+_HEX_COLOR_PATTERN = re.compile(r"^#([0-9a-fA-F]{6})\(([^)]+)\)$")
 
-_MODE_PATTERN = re.compile(
-    r"^(?P<name>[a-zA-Z_]+)(?:\((?P<args>[0-9.,\s]+)\))?$"
-)
+_MODE_PATTERN = re.compile(r"^(?P<name>[a-zA-Z_]+)(?:\((?P<args>[0-9.,\s]+)\))?$")
+
 
 class ConfigLoader:
     """
@@ -89,9 +86,7 @@ class ConfigLoader:
 
         for texture_name, entry in raw.items():
             if not isinstance(entry, dict):
-                report_error(
-                    f"Blend entry for '{texture_name}' must be a mapping."
-                )
+                report_error(f"Blend entry for '{texture_name}' must be a mapping.")
                 continue
 
             chain = bool(entry.get("chain", False))
@@ -135,9 +130,7 @@ class ConfigLoader:
 
         for entry in raw_entries:
             if not isinstance(entry, str):
-                report_error(
-                    f"Invalid color entry for '{texture_name}': {entry!r}"
-                )
+                report_error(f"Invalid color entry for '{texture_name}': {entry!r}")
                 continue
 
             color = self._parse_color_entry(texture_name, entry)
@@ -168,9 +161,7 @@ class ConfigLoader:
         if value.lower().endswith((".png", ".pnm")):
             return ColorSource(file_name=value)
 
-        report_error(
-            f"Malformed color entry for '{texture_name}': '{value}'"
-        )
+        report_error(f"Malformed color entry for '{texture_name}': '{value}'")
         return None
 
     def _parse_modes(
@@ -187,25 +178,19 @@ class ConfigLoader:
             return []
 
         if not isinstance(raw_entries, list):
-            report_error(
-                f"'modes' entry for '{texture_name}' must be a list."
-            )
+            report_error(f"'modes' entry for '{texture_name}' must be a list.")
             return []
 
         modes: list[BlendModeSpec] = []
 
         for entry in raw_entries:
             if not isinstance(entry, str):
-                report_error(
-                    f"Invalid mode entry for '{texture_name}': {entry!r}"
-                )
+                report_error(f"Invalid mode entry for '{texture_name}': {entry!r}")
                 continue
 
             match = _MODE_PATTERN.match(entry.strip())
             if not match:
-                report_error(
-                    f"Malformed mode entry for '{texture_name}': '{entry}'"
-                )
+                report_error(f"Malformed mode entry for '{texture_name}': '{entry}'")
                 continue
 
             name = match.group("name").lower()
@@ -214,19 +199,13 @@ class ConfigLoader:
             args: list[float] = []
             if args_raw:
                 try:
-                    args = [
-                        float(v.strip())
-                        for v in args_raw.split(",")
-                    ]
+                    args = [float(v.strip()) for v in args_raw.split(",")]
                 except ValueError:
                     report_error(
-                        f"Invalid arguments in mode '{entry}' "
-                        f"for '{texture_name}'"
+                        f"Invalid arguments in mode '{entry}' for '{texture_name}'"
                     )
                     continue
 
-            modes.append(
-                BlendModeSpec(name=name, args=args)
-            )
+            modes.append(BlendModeSpec(name=name, args=args))
 
         return modes

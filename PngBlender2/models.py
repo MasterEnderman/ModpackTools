@@ -10,6 +10,7 @@ class AppConfig:
     """
     Fully resolved application configuration.
     """
+
     paths: PathConfig
     blends: BlendConfig
 
@@ -39,6 +40,7 @@ class TexturePipelineConfig:
     """
     Full processing configuration for a single texture.
     """
+
     texture_name: str
     colors: List[ColorSource]
     modes: List[BlendModeSpec]
@@ -53,6 +55,7 @@ class ColorSource:
     """
     Represents a color input, either a file or a hex color.
     """
+
     file_name: Optional[str] = None
     hex_color: Optional[str] = None
     color_name: Optional[str] = None
@@ -64,5 +67,6 @@ class BlendModeSpec:
     Describes a single blend mode invocation.
     Example: mix(0.2), multiply
     """
+
     name: str
     args: List[float]

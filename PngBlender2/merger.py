@@ -51,16 +51,11 @@ class TextureMerger:
 
         base_image = self._loader.load(texture_path)
         if base_image is None:
-            report_error(
-                f"Base texture missing or invalid: {texture_path}"
-            )
+            report_error(f"Base texture missing or invalid: {texture_path}")
             return
 
         # Resolve blend strategies once per texture
-        strategies = [
-            self._registry.resolve(mode)
-            for mode in blend.modes
-        ]
+        strategies = [self._registry.resolve(mode) for mode in blend.modes]
 
         for color in blend.colors:
             self._process_color(
