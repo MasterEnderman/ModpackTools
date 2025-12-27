@@ -23,7 +23,7 @@ class ColorGenerator:
             List of ColorDefinition objects.
         """
         self.generations[0] = [
-            ColorDefinition(c.identifier, c.name, c.hex_value, c.mixed_from, 0)
+            ColorDefinition(c.identifier,c.parsed, c.name, c.hex_value, c.mixed_from, 0)
             for c in self.existing_colors.values()
             if c.mixed_from is None
         ]
@@ -60,6 +60,7 @@ class ColorGenerator:
                     identifier=yml.identifier
                     if yml
                     else f"{combo[0].identifier}{'+' * generation}{combo[1].identifier}",
+                    parsed=yml.parsed if yml else False,
                     name=yml.name if yml else None,
                     hex_value=yml.hex_value if yml else None,
                     mixed_from=tup,

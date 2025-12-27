@@ -235,8 +235,8 @@ class PaletteMixProjectionExporter:
         lines: List[str] = []
         c = {c.identifier: c for c in colors}
         lines.extend(self._render_header(summary))
-        lines.extend(self._render_targets(grouped, c))
         lines.extend(self._render_worst_cases(projections, c))
+        lines.extend(self._render_targets(grouped, c))
 
         self.output_path.parent.mkdir(parents=True, exist_ok=True)
         self.output_path.write_text("\n".join(lines), encoding="utf-8")
@@ -305,9 +305,6 @@ class PaletteMixProjectionExporter:
             icon = self._icon_md(target)
             lines.append(f"### {icon} {target.name}")
             lines.append("")
-            lines.append("<details>")
-            lines.append("<summary>Click to expand</summary>")
-            lines.append("")
             lines.append("| Mix | ΔE |")
             lines.append("|-----|----|")
 
@@ -322,8 +319,6 @@ class PaletteMixProjectionExporter:
 
                 lines.append(f"| {mix} | {p.delta_e:.2f} |")
 
-            lines.append("")
-            lines.append("</details>")
             lines.append("")
 
         return lines

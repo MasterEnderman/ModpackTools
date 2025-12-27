@@ -91,6 +91,7 @@ class PaletteProcessor:
                     rgb=rgb,
                     lab=lab,
                     name=c.name,
+                    parsed=c.parsed,
                     mixed_from=c.mixed_from,
                 )
             )
@@ -159,9 +160,17 @@ class PaletteProcessor:
         if len(palette) < 2:
             return []
 
+        max_generation = max(c.generation for c in palette)
+
         projections: list[MixProjection] = []
 
         for a, b in combinations(palette, 2):
+            # Skip pairs when neither color is from the latest generation
+            if a.generation < max_generation and b.generation < max_generation:
+                continue
+            if not a.parsed or not b.parsed:
+                continue
+
             mixed_rgb = mixbox.lerp(a.rgb, b.rgb, 0.5)
 
             rgb_norm = [v / 255 for v in mixed_rgb]

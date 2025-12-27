@@ -100,6 +100,7 @@ class InputParser:
 
             result[identifier] = ColorDefinition(
                 identifier=identifier,
+                parsed=True,
                 name=name,
                 hex_value=hex_value,
                 mixed_from=mixed_tuple,

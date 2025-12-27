@@ -28,6 +28,7 @@ class ColorDefinition:
     """
 
     identifier: str
+    parsed: bool
     name: Optional[str]
     hex_value: Optional[str]
     mixed_from: Optional[Tuple[str, str]]
@@ -42,6 +43,7 @@ class ProcessedColor:
     rgb: Tuple[int, int, int]
     lab: np.ndarray
     name: str
+    parsed: bool
     mixed_from: Optional[Tuple[str, str]]
 
 
