@@ -165,9 +165,6 @@ class PaletteProcessor:
         projections: list[MixProjection] = []
 
         for a, b in combinations(palette, 2):
-            # Skip pairs when neither color is from the latest generation
-            if a.generation < max_generation and b.generation < max_generation:
-                continue
             if not a.parsed or not b.parsed:
                 continue
 
