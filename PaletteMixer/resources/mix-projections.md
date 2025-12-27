@@ -4,9 +4,9 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 
 ## 📊 Summary
 
-- Palette size: **110 colors**
+- Palette size: **64 colors**
 - Total mix combinations: **136**
-- Average ΔE (CIEDE2000): **3.97**
+- Average ΔE (CIEDE2000): **5.66**
 - Worst-case ΔE: **13.26**
 
 ## 🚨 Largest Deviations
@@ -17,14 +17,46 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Gray](icons/gray.png) Gray + ![Light Gray](icons/light_gray.png) Light Gray | ![Cactus](icons/blue++yellow+black.png) Cactus | 13.12 |
 | ![Black](icons/black.png) Black + ![Brown](icons/brown.png) Brown | ![Very Coffee](icons/green++red+black.png) Very Coffee | 11.81 |
 | ![White](icons/white.png) White + ![Light Gray](icons/light_gray.png) Light Gray | ![White](icons/white.png) White | 11.62 |
+| ![Pink](icons/pink.png) Pink + ![Lime](icons/lime.png) Lime | ![Lush Bamboo](icons/yellow++green.png) Lush Bamboo | 11.49 |
+| ![White](icons/white.png) White + ![Blue](icons/blue.png) Blue | ![Wizard’s Brew](icons/light_blue++pink.png) Wizard’s Brew | 11.45 |
+| ![White](icons/white.png) White + ![Lime](icons/lime.png) Lime | ![Fluorescence](icons/yellow++light_blue.png) Fluorescence | 11.12 |
 | ![Blue](icons/blue.png) Blue + ![Brown](icons/brown.png) Brown | ![Berry Jam](icons/light_blue++red+black.png) Berry Jam | 10.85 |
 | ![White](icons/white.png) White + ![Black](icons/black.png) Black | ![Light Gray](icons/light_gray.png) Light Gray | 10.77 |
-| ![White](icons/white.png) White + ![Lime](icons/lime.png) Lime | ![Celery](icons/white+yellow++green.png) Celery | 10.40 |
-| ![White](icons/white.png) White + ![Purple](icons/purple.png) Purple | ![Wizard’s Brew](icons/light_blue++pink.png) Wizard’s Brew | 9.85 |
-| ![Pink](icons/pink.png) Pink + ![Lime](icons/lime.png) Lime | ![Fizzy Peach](icons/white++orange.png) Fizzy Peach | 9.70 |
-| ![Gray](icons/gray.png) Gray + ![Cyan](icons/cyan.png) Cyan | ![Atlantis](icons/black++light_blue.png) Atlantis | 9.18 |
+| ![Lime](icons/lime.png) Lime + ![Cyan](icons/cyan.png) Cyan | ![Fluorescence](icons/yellow++light_blue.png) Fluorescence | 10.31 |
 
 ## 🎯 Projection Targets
+
+### ![Totally Broccoli](icons/yellow++gray.png) Totally Broccoli
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Gray](icons/gray.png) Gray | 0.00 |
+| ![Green](icons/green.png) Green + ![Light Gray](icons/light_gray.png) Light Gray | 1.98 |
+| ![Light Blue](icons/light_blue.png) Light Blue + ![Orange](icons/orange.png) Orange | 4.00 |
+| ![Yellow](icons/yellow.png) Yellow + ![Blue](icons/blue.png) Blue | 6.63 |
+| ![Lime](icons/lime.png) Lime + ![Brown](icons/brown.png) Brown | 7.86 |
+| ![Green](icons/green.png) Green + ![Lime](icons/lime.png) Lime | 7.96 |
+| ![Orange](icons/orange.png) Orange + ![Cyan](icons/cyan.png) Cyan | 8.02 |
+
+### ![Fluorescence](icons/yellow++light_blue.png) Fluorescence
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
+| ![Yellow](icons/yellow.png) Yellow + ![Cyan](icons/cyan.png) Cyan | 4.36 |
+| ![Light Blue](icons/light_blue.png) Light Blue + ![Lime](icons/lime.png) Lime | 5.27 |
+| ![Lime](icons/lime.png) Lime + ![Cyan](icons/cyan.png) Cyan | 10.31 |
+| ![White](icons/white.png) White + ![Lime](icons/lime.png) Lime | 11.12 |
+
+### ![Honey](icons/orange++yellow+black.png) Honey
+
+| Mix | ΔE |
+|-----|----|
+| ![Green](icons/green.png) Green + ![Orange](icons/orange.png) Orange | 2.12 |
+| ![Yellow](icons/yellow.png) Yellow + ![Brown](icons/brown.png) Brown | 6.30 |
+| ![Pink](icons/pink.png) Pink + ![Green](icons/green.png) Green | 6.47 |
+| ![Orange](icons/orange.png) Orange + ![Light Gray](icons/light_gray.png) Light Gray | 7.24 |
+| ![Lime](icons/lime.png) Lime + ![Magenta](icons/magenta.png) Magenta | 8.37 |
 
 ### ![Loch Ness](icons/light_blue++purple.png) Loch Ness
 
@@ -36,40 +68,68 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Blue](icons/blue.png) Blue + ![Light Gray](icons/light_gray.png) Light Gray | 6.91 |
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Magenta](icons/magenta.png) Magenta | 6.94 |
 
-### ![Pizza](icons/pink++green.png) Pizza
+### ![Indian Silk](icons/black++pink.png) Indian Silk
 
 | Mix | ΔE |
 |-----|----|
-| ![Pink](icons/pink.png) Pink + ![Green](icons/green.png) Green | 0.00 |
-| ![Yellow](icons/yellow.png) Yellow + ![Brown](icons/brown.png) Brown | 3.25 |
-| ![Orange](icons/orange.png) Orange + ![Light Gray](icons/light_gray.png) Light Gray | 4.14 |
-| ![Lime](icons/lime.png) Lime + ![Magenta](icons/magenta.png) Magenta | 6.21 |
-
-### ![Jungle Jewels](icons/light_blue++green.png) Jungle Jewels
-
-| Mix | ΔE |
-|-----|----|
-| ![Light Blue](icons/light_blue.png) Light Blue + ![Green](icons/green.png) Green | 0.00 |
-| ![Lime](icons/lime.png) Lime + ![Cyan](icons/cyan.png) Cyan | 5.35 |
-| ![Blue](icons/blue.png) Blue + ![Lime](icons/lime.png) Lime | 6.43 |
-| ![Green](icons/green.png) Green + ![Cyan](icons/cyan.png) Cyan | 7.61 |
+| ![Black](icons/black.png) Black + ![Pink](icons/pink.png) Pink | 0.00 |
+| ![Purple](icons/purple.png) Purple + ![Brown](icons/brown.png) Brown | 2.90 |
+| ![Red](icons/red.png) Red + ![Light Blue](icons/light_blue.png) Light Blue | 3.26 |
+| ![Red](icons/red.png) Red + ![Cyan](icons/cyan.png) Cyan | 7.08 |
+| ![Magenta](icons/magenta.png) Magenta + ![Brown](icons/brown.png) Brown | 9.23 |
 
 ### ![Ginger Dough](icons/yellow++red+black.png) Ginger Dough
 
 | Mix | ΔE |
 |-----|----|
+| ![Orange](icons/orange.png) Orange + ![Purple](icons/purple.png) Purple | 3.26 |
 | ![Red](icons/red.png) Red + ![Lime](icons/lime.png) Lime | 3.94 |
 | ![Orange](icons/orange.png) Orange + ![Brown](icons/brown.png) Brown | 4.41 |
 | ![Green](icons/green.png) Green + ![Magenta](icons/magenta.png) Magenta | 4.76 |
 | ![Light Gray](icons/light_gray.png) Light Gray + ![Brown](icons/brown.png) Brown | 8.55 |
 
-### ![Fluorescence](icons/yellow++light_blue.png) Fluorescence
+### ![Wizard’s Brew](icons/light_blue++pink.png) Wizard’s Brew
 
 | Mix | ΔE |
 |-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
-| ![Yellow](icons/yellow.png) Yellow + ![Cyan](icons/cyan.png) Cyan | 4.36 |
-| ![Light Blue](icons/light_blue.png) Light Blue + ![Lime](icons/lime.png) Lime | 5.27 |
+| ![Light Blue](icons/light_blue.png) Light Blue + ![Pink](icons/pink.png) Pink | 0.00 |
+| ![Pink](icons/pink.png) Pink + ![Cyan](icons/cyan.png) Cyan | 8.78 |
+| ![White](icons/white.png) White + ![Purple](icons/purple.png) Purple | 9.85 |
+| ![White](icons/white.png) White + ![Blue](icons/blue.png) Blue | 11.45 |
+
+### ![Lush Bamboo](icons/yellow++green.png) Lush Bamboo
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Green](icons/green.png) Green | 0.00 |
+| ![Yellow](icons/yellow.png) Yellow + ![Lime](icons/lime.png) Lime | 8.46 |
+| ![Orange](icons/orange.png) Orange + ![Lime](icons/lime.png) Lime | 9.03 |
+| ![Pink](icons/pink.png) Pink + ![Lime](icons/lime.png) Lime | 11.49 |
+
+### ![Lizard](icons/green++purple.png) Lizard
+
+| Mix | ΔE |
+|-----|----|
+| ![Green](icons/green.png) Green + ![Purple](icons/purple.png) Purple | 0.00 |
+| ![Gray](icons/gray.png) Gray + ![Orange](icons/orange.png) Orange | 6.17 |
+| ![Blue](icons/blue.png) Blue + ![Orange](icons/orange.png) Orange | 7.38 |
+| ![Green](icons/green.png) Green + ![Brown](icons/brown.png) Brown | 7.97 |
+
+### ![Butterum](icons/pink++yellow+black.png) Butterum
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Purple](icons/purple.png) Purple | 5.88 |
+| ![Yellow](icons/yellow.png) Yellow + ![Magenta](icons/magenta.png) Magenta | 7.51 |
+| ![White](icons/white.png) White + ![Brown](icons/brown.png) Brown | 7.81 |
+
+### ![Lusty Lavender](icons/blue++pink.png) Lusty Lavender
+
+| Mix | ΔE |
+|-----|----|
+| ![Blue](icons/blue.png) Blue + ![Pink](icons/pink.png) Pink | 0.00 |
+| ![Purple](icons/purple.png) Purple + ![Light Gray](icons/light_gray.png) Light Gray | 3.05 |
+| ![Gray](icons/gray.png) Gray + ![Magenta](icons/magenta.png) Magenta | 7.66 |
 
 ### ![Bimi Green](icons/gray++green.png) Bimi Green
 
@@ -79,21 +139,13 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Black](icons/black.png) Black + ![Lime](icons/lime.png) Lime | 4.23 |
 | ![Blue](icons/blue.png) Blue + ![Green](icons/green.png) Green | 4.76 |
 
-### ![Mauve It](icons/pink++red+black.png) Mauve It
+### ![Endo](icons/light_blue++yellow+black.png) Endo
 
 | Mix | ΔE |
 |-----|----|
-| ![Magenta](icons/magenta.png) Magenta + ![Brown](icons/brown.png) Brown | 3.50 |
-| ![Red](icons/red.png) Red + ![Magenta](icons/magenta.png) Magenta | 3.98 |
-| ![Red](icons/red.png) Red + ![Light Gray](icons/light_gray.png) Light Gray | 6.10 |
-
-### ![Indian Silk](icons/black++pink.png) Indian Silk
-
-| Mix | ΔE |
-|-----|----|
-| ![Black](icons/black.png) Black + ![Pink](icons/pink.png) Pink | 0.00 |
-| ![Purple](icons/purple.png) Purple + ![Brown](icons/brown.png) Brown | 2.90 |
-| ![Red](icons/red.png) Red + ![Cyan](icons/cyan.png) Cyan | 7.08 |
+| ![Light Blue](icons/light_blue.png) Light Blue + ![Green](icons/green.png) Green | 7.26 |
+| ![Blue](icons/blue.png) Blue + ![Lime](icons/lime.png) Lime | 7.30 |
+| ![Green](icons/green.png) Green + ![Cyan](icons/cyan.png) Cyan | 9.47 |
 
 ### ![Atlantis](icons/black++light_blue.png) Atlantis
 
@@ -103,6 +155,14 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Black](icons/black.png) Black + ![Cyan](icons/cyan.png) Cyan | 8.82 |
 | ![Gray](icons/gray.png) Gray + ![Cyan](icons/cyan.png) Cyan | 9.18 |
 
+### ![Very Coffee](icons/green++red+black.png) Very Coffee
+
+| Mix | ΔE |
+|-----|----|
+| ![Black](icons/black.png) Black + ![Orange](icons/orange.png) Orange | 6.58 |
+| ![Gray](icons/gray.png) Gray + ![Brown](icons/brown.png) Brown | 9.85 |
+| ![Black](icons/black.png) Black + ![Brown](icons/brown.png) Brown | 11.81 |
+
 ### ![Cactus](icons/blue++yellow+black.png) Cactus
 
 | Mix | ΔE |
@@ -111,12 +171,13 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Brown](icons/brown.png) Brown | 6.75 |
 | ![Gray](icons/gray.png) Gray + ![Light Gray](icons/light_gray.png) Light Gray | 13.12 |
 
-### ![Galactic Gossamer](icons/white++blue+black.png) Galactic Gossamer
+### ![Pinky Pickle](icons/white++red+black.png) Pinky Pickle
 
 | Mix | ΔE |
 |-----|----|
-| ![Pink](icons/pink.png) Pink + ![Cyan](icons/cyan.png) Cyan | 5.53 |
-| ![White](icons/white.png) White + ![Blue](icons/blue.png) Blue | 6.14 |
+| ![Light Gray](icons/light_gray.png) Light Gray + ![Magenta](icons/magenta.png) Magenta | 6.06 |
+| ![Pink](icons/pink.png) Pink + ![Gray](icons/gray.png) Gray | 7.43 |
+| ![Pink](icons/pink.png) Pink + ![Magenta](icons/magenta.png) Magenta | 8.94 |
 
 ### ![Pink](icons/pink.png) Pink
 
@@ -139,40 +200,19 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![White](icons/white.png) White + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
 | ![White](icons/white.png) White + ![Cyan](icons/cyan.png) Cyan | 7.45 |
 
-### ![Zoodles](icons/white+yellow++yellow+black.png) Zoodles
+### ![Kiss a Frog](icons/white++yellow+black.png) Kiss a Frog
 
 | Mix | ΔE |
 |-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Light Gray](icons/light_gray.png) Light Gray | 2.45 |
-| ![White](icons/white.png) White + ![Green](icons/green.png) Green | 3.88 |
+| ![Yellow](icons/yellow.png) Yellow + ![Light Gray](icons/light_gray.png) Light Gray | 6.74 |
+| ![White](icons/white.png) White + ![Green](icons/green.png) Green | 6.91 |
 
-### ![Fizzy Peach](icons/white++orange.png) Fizzy Peach
-
-| Mix | ΔE |
-|-----|----|
-| ![White](icons/white.png) White + ![Orange](icons/orange.png) Orange | 0.00 |
-| ![Pink](icons/pink.png) Pink + ![Lime](icons/lime.png) Lime | 9.70 |
-
-### ![Wizard’s Brew](icons/light_blue++pink.png) Wizard’s Brew
+### ![Beer](icons/yellow++orange.png) Beer
 
 | Mix | ΔE |
 |-----|----|
-| ![Light Blue](icons/light_blue.png) Light Blue + ![Pink](icons/pink.png) Pink | 0.00 |
-| ![White](icons/white.png) White + ![Purple](icons/purple.png) Purple | 9.85 |
-
-### ![Celery](icons/white+yellow++green.png) Celery
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Lime](icons/lime.png) Lime | 5.28 |
-| ![White](icons/white.png) White + ![Lime](icons/lime.png) Lime | 10.40 |
-
-### ![Caramel Gold](icons/yellow++purple.png) Caramel Gold
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Purple](icons/purple.png) Purple | 0.00 |
-| ![White](icons/white.png) White + ![Brown](icons/brown.png) Brown | 6.40 |
+| ![Yellow](icons/yellow.png) Yellow + ![Orange](icons/orange.png) Orange | 0.00 |
+| ![White](icons/white.png) White + ![Orange](icons/orange.png) Orange | 6.70 |
 
 ### ![Phoenix Red](icons/red++white+yellow.png) Phoenix Red
 
@@ -181,19 +221,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](icons/orange.png) Orange + ![Magenta](icons/magenta.png) Magenta | 7.31 |
 | ![Yellow](icons/yellow.png) Yellow + ![Red](icons/red.png) Red | 7.86 |
 
-### ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola
+### ![Green](icons/green.png) Green
 
 | Mix | ΔE |
 |-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Black](icons/black.png) Black | 0.00 |
-| ![Lime](icons/lime.png) Lime + ![Brown](icons/brown.png) Brown | 6.15 |
-
-### ![Totally Broccoli](icons/yellow++gray.png) Totally Broccoli
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Gray](icons/gray.png) Gray | 0.00 |
-| ![Green](icons/green.png) Green + ![Light Gray](icons/light_gray.png) Light Gray | 1.98 |
+| ![Yellow](icons/yellow.png) Yellow + ![Black](icons/black.png) Black | 5.80 |
+| ![Gray](icons/gray.png) Gray + ![Lime](icons/lime.png) Lime | 7.38 |
 
 ### ![Noble Plum](icons/purple++red+black.png) Noble Plum
 
@@ -202,12 +235,19 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Blue](icons/blue.png) Blue + ![Red](icons/red.png) Red | 4.80 |
 | ![Black](icons/black.png) Black + ![Magenta](icons/magenta.png) Magenta | 5.15 |
 
-### ![Lusty Lavender](icons/blue++pink.png) Lusty Lavender
+### ![Lava Stone](icons/gray++blue+black.png) Lava Stone
 
 | Mix | ΔE |
 |-----|----|
-| ![Blue](icons/blue.png) Blue + ![Pink](icons/pink.png) Pink | 0.00 |
-| ![Purple](icons/purple.png) Purple + ![Light Gray](icons/light_gray.png) Light Gray | 3.05 |
+| ![Blue](icons/blue.png) Blue + ![Gray](icons/gray.png) Gray | 7.51 |
+| ![Blue](icons/blue.png) Blue + ![Black](icons/black.png) Black | 7.70 |
+
+### ![Fading Night](icons/blue++light_blue.png) Fading Night
+
+| Mix | ΔE |
+|-----|----|
+| ![Blue](icons/blue.png) Blue + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
+| ![Blue](icons/blue.png) Blue + ![Cyan](icons/cyan.png) Cyan | 6.12 |
 
 ### ![Purple](icons/purple.png) Purple
 
@@ -216,12 +256,33 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Blue](icons/blue.png) Blue + ![Magenta](icons/magenta.png) Magenta | 4.20 |
 | ![Purple](icons/purple.png) Purple + ![Magenta](icons/magenta.png) Magenta | 7.07 |
 
-### ![Lime It or Leave It](icons/light_blue++orange.png) Lime It or Leave It
+### ![Berry Jam](icons/light_blue++red+black.png) Berry Jam
 
 | Mix | ΔE |
 |-----|----|
-| ![Light Blue](icons/light_blue.png) Light Blue + ![Orange](icons/orange.png) Orange | 0.00 |
-| ![Green](icons/green.png) Green + ![Lime](icons/lime.png) Lime | 5.35 |
+| ![Gray](icons/gray.png) Gray + ![Purple](icons/purple.png) Purple | 6.24 |
+| ![Blue](icons/blue.png) Blue + ![Brown](icons/brown.png) Brown | 10.85 |
+
+### ![Arcane Red](icons/red+black.png) Arcane Red
+
+| Mix | ΔE |
+|-----|----|
+| ![Red](icons/red.png) Red + ![Black](icons/black.png) Black | 0.00 |
+| ![Red](icons/red.png) Red + ![Gray](icons/gray.png) Gray | 7.19 |
+
+### ![Strawberry Moon](icons/red++pink.png) Strawberry Moon
+
+| Mix | ΔE |
+|-----|----|
+| ![Red](icons/red.png) Red + ![Pink](icons/pink.png) Pink | 0.00 |
+| ![Red](icons/red.png) Red + ![Light Gray](icons/light_gray.png) Light Gray | 7.97 |
+
+### ![Plastic Lips](icons/red++purple.png) Plastic Lips
+
+| Mix | ΔE |
+|-----|----|
+| ![Red](icons/red.png) Red + ![Purple](icons/purple.png) Purple | 0.00 |
+| ![Red](icons/red.png) Red + ![Magenta](icons/magenta.png) Magenta | 7.88 |
 
 ### ![Light Blue](icons/light_blue.png) Light Blue
 
@@ -229,20 +290,6 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Cyan](icons/cyan.png) Cyan | 7.50 |
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Light Gray](icons/light_gray.png) Light Gray | 8.16 |
-
-### ![Magenta Memoir](icons/pink++purple.png) Magenta Memoir
-
-| Mix | ΔE |
-|-----|----|
-| ![Pink](icons/pink.png) Pink + ![Purple](icons/purple.png) Purple | 0.00 |
-| ![Pink](icons/pink.png) Pink + ![Magenta](icons/magenta.png) Magenta | 8.56 |
-
-### ![Garden Weed](icons/gray++orange.png) Garden Weed
-
-| Mix | ΔE |
-|-----|----|
-| ![Gray](icons/gray.png) Gray + ![Orange](icons/orange.png) Orange | 0.00 |
-| ![Green](icons/green.png) Green + ![Brown](icons/brown.png) Brown | 3.17 |
 
 ### ![Spätzle Yellow](icons/white+yellow.png) Spätzle Yellow
 
@@ -262,107 +309,23 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![White](icons/white.png) White + ![Light Gray](icons/light_gray.png) Light Gray | 11.62 |
 
-### ![Forester](icons/white+yellow++gray.png) Forester
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Blue](icons/blue.png) Blue | 5.29 |
-
 ### ![Apricot](icons/yellow++pink.png) Apricot
 
 | Mix | ΔE |
 |-----|----|
 | ![Yellow](icons/yellow.png) Yellow + ![Pink](icons/pink.png) Pink | 0.00 |
 
-### ![Lush Bamboo](icons/yellow++green.png) Lush Bamboo
+### ![Ruthless Empress](icons/purple++blue+black.png) Ruthless Empress
 
 | Mix | ΔE |
 |-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Green](icons/green.png) Green | 0.00 |
+| ![Blue](icons/blue.png) Blue + ![Purple](icons/purple.png) Purple | 5.90 |
 
-### ![Beer](icons/yellow++orange.png) Beer
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Orange](icons/orange.png) Orange | 0.00 |
-
-### ![Butterum](icons/pink++yellow+black.png) Butterum
+### ![Brown](icons/brown.png) Brown
 
 | Mix | ΔE |
 |-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Magenta](icons/magenta.png) Magenta | 7.51 |
-
-### ![Galaxea](icons/blue+black.png) Galaxea
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Black](icons/black.png) Black | 0.00 |
-
-### ![Fading Night](icons/blue++light_blue.png) Fading Night
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
-
-### ![Dusk](icons/blue++gray.png) Dusk
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Gray](icons/gray.png) Gray | 0.00 |
-
-### ![Tree Hugger](icons/blue++orange.png) Tree Hugger
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Orange](icons/orange.png) Orange | 0.00 |
-
-### ![Purple Emperor](icons/blue++purple.png) Purple Emperor
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Purple](icons/purple.png) Purple | 0.00 |
-
-### ![Muted Blue](icons/light_blue++blue+black.png) Muted Blue
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Cyan](icons/cyan.png) Cyan | 1.73 |
-
-### ![Berry Jam](icons/light_blue++red+black.png) Berry Jam
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Brown](icons/brown.png) Brown | 10.85 |
-
-### ![Arcane Red](icons/red+black.png) Arcane Red
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Black](icons/black.png) Black | 0.00 |
-
-### ![Plum Highness](icons/red++light_blue.png) Plum Highness
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Light Blue](icons/light_blue.png) Light Blue | 0.00 |
-
-### ![Strawberry Moon](icons/red++pink.png) Strawberry Moon
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Pink](icons/pink.png) Pink | 0.00 |
-
-### ![Wild Berry](icons/red++gray.png) Wild Berry
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Gray](icons/gray.png) Gray | 0.00 |
-
-### ![Panela](icons/red++green.png) Panela
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Green](icons/green.png) Green | 0.00 |
+| ![Red](icons/red.png) Red + ![Green](icons/green.png) Green | 6.49 |
 
 ### ![Langoustine](icons/red++orange.png) Langoustine
 
@@ -370,23 +333,17 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![Red](icons/red.png) Red + ![Orange](icons/orange.png) Orange | 0.00 |
 
-### ![Plastic Lips](icons/red++purple.png) Plastic Lips
-
-| Mix | ΔE |
-|-----|----|
-| ![Red](icons/red.png) Red + ![Purple](icons/purple.png) Purple | 0.00 |
-
 ### ![Red](icons/red.png) Red
 
 | Mix | ΔE |
 |-----|----|
 | ![Red](icons/red.png) Red + ![Brown](icons/brown.png) Brown | 4.87 |
 
-### ![Vulcan](icons/black++gray.png) Vulcan
+### ![Black](icons/black.png) Black
 
 | Mix | ΔE |
 |-----|----|
-| ![Black](icons/black.png) Black + ![Gray](icons/gray.png) Gray | 0.00 |
+| ![Black](icons/black.png) Black + ![Gray](icons/gray.png) Gray | 8.09 |
 
 ### ![Treetop Cathedral](icons/black++green.png) Treetop Cathedral
 
@@ -394,17 +351,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![Black](icons/black.png) Black + ![Green](icons/green.png) Green | 0.00 |
 
-### ![Jungle Civilization](icons/orange++blue+black.png) Jungle Civilization
+### ![Imperial Purple](icons/blue++red+black.png) Imperial Purple
 
 | Mix | ΔE |
 |-----|----|
-| ![Black](icons/black.png) Black + ![Orange](icons/orange.png) Orange | 6.14 |
-
-### ![Purple Protégé](icons/black++purple.png) Purple Protégé
-
-| Mix | ΔE |
-|-----|----|
-| ![Black](icons/black.png) Black + ![Purple](icons/purple.png) Purple | 0.00 |
+| ![Black](icons/black.png) Black + ![Purple](icons/purple.png) Purple | 2.50 |
 
 ### ![Gray](icons/gray.png) Gray
 
@@ -412,29 +363,23 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![Black](icons/black.png) Black + ![Light Gray](icons/light_gray.png) Light Gray | 6.39 |
 
-### ![Very Coffee](icons/green++red+black.png) Very Coffee
-
-| Mix | ΔE |
-|-----|----|
-| ![Black](icons/black.png) Black + ![Brown](icons/brown.png) Brown | 11.81 |
-
 ### ![Mysterious Blue](icons/light_blue++gray.png) Mysterious Blue
 
 | Mix | ΔE |
 |-----|----|
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Gray](icons/gray.png) Gray | 0.00 |
 
-### ![Never Forget](icons/pink++gray.png) Never Forget
+### ![Orange](icons/orange.png) Orange
 
 | Mix | ΔE |
 |-----|----|
-| ![Pink](icons/pink.png) Pink + ![Gray](icons/gray.png) Gray | 0.00 |
+| ![Pink](icons/pink.png) Pink + ![Orange](icons/orange.png) Orange | 5.22 |
 
-### ![Toasted Husk](icons/pink++orange.png) Toasted Husk
+### ![Magenta](icons/magenta.png) Magenta
 
 | Mix | ΔE |
 |-----|----|
-| ![Pink](icons/pink.png) Pink + ![Orange](icons/orange.png) Orange | 0.00 |
+| ![Pink](icons/pink.png) Pink + ![Purple](icons/purple.png) Purple | 3.92 |
 
 ### ![Classy Mauve](icons/white+yellow++purple.png) Classy Mauve
 
@@ -448,60 +393,6 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 |-----|----|
 | ![Pink](icons/pink.png) Pink + ![Brown](icons/brown.png) Brown | 5.75 |
 
-### ![Grapes of Italy](icons/gray++purple.png) Grapes of Italy
-
-| Mix | ΔE |
-|-----|----|
-| ![Gray](icons/gray.png) Gray + ![Purple](icons/purple.png) Purple | 0.00 |
-
-### ![Enchanted Forest](icons/green++yellow+black.png) Enchanted Forest
-
-| Mix | ΔE |
-|-----|----|
-| ![Gray](icons/gray.png) Gray + ![Lime](icons/lime.png) Lime | 6.24 |
-
-### ![Muted Purple](icons/pink++blue+black.png) Muted Purple
-
-| Mix | ΔE |
-|-----|----|
-| ![Gray](icons/gray.png) Gray + ![Magenta](icons/magenta.png) Magenta | 3.25 |
-
-### ![Coffee](icons/yellow+black++red+black.png) Coffee
-
-| Mix | ΔE |
-|-----|----|
-| ![Gray](icons/gray.png) Gray + ![Brown](icons/brown.png) Brown | 9.01 |
-
-### ![Rich Gold](icons/green++orange.png) Rich Gold
-
-| Mix | ΔE |
-|-----|----|
-| ![Green](icons/green.png) Green + ![Orange](icons/orange.png) Orange | 0.00 |
-
-### ![Lizard](icons/green++purple.png) Lizard
-
-| Mix | ΔE |
-|-----|----|
-| ![Green](icons/green.png) Green + ![Purple](icons/purple.png) Purple | 0.00 |
-
-### ![Not yet Caramel](icons/orange++purple.png) Not yet Caramel
-
-| Mix | ΔE |
-|-----|----|
-| ![Orange](icons/orange.png) Orange + ![Purple](icons/purple.png) Purple | 0.00 |
-
-### ![Sinsemilla](icons/yellow++yellow+black.png) Sinsemilla
-
-| Mix | ΔE |
-|-----|----|
-| ![Orange](icons/orange.png) Orange + ![Lime](icons/lime.png) Lime | 8.51 |
-
-### ![Bavarian Green](icons/yellow++blue+black.png) Bavarian Green
-
-| Mix | ΔE |
-|-----|----|
-| ![Orange](icons/orange.png) Orange + ![Cyan](icons/cyan.png) Cyan | 5.05 |
-
 ### ![Moss Gardens](icons/black++white+yellow.png) Moss Gardens
 
 | Mix | ΔE |
@@ -513,12 +404,6 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | Mix | ΔE |
 |-----|----|
 | ![Light Gray](icons/light_gray.png) Light Gray + ![Lime](icons/lime.png) Lime | 5.21 |
-
-### ![Pinky Pickle](icons/white++red+black.png) Pinky Pickle
-
-| Mix | ΔE |
-|-----|----|
-| ![Light Gray](icons/light_gray.png) Light Gray + ![Magenta](icons/magenta.png) Magenta | 6.06 |
 
 ### ![Cyan](icons/cyan.png) Cyan
 
