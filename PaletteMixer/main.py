@@ -60,7 +60,6 @@ def main() -> None:
     processed_palette = processor.reduce_palette(
         processed_palette,
         max_colors=final_size,
-        user_defined_ids=set(colors.keys()),
     )
 
     # 8. Export palette

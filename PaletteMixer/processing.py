@@ -102,34 +102,30 @@ class PaletteProcessor:
         self,
         processed: list[ProcessedColor],
         max_colors: int,
-        user_defined_ids: set[str],
     ) -> list[ProcessedColor]:
         """
         Reduce palette size using farthest-point sampling (CIEDE2000),
-        while keeping all user-defined colors.
+        while keeping all user-defined colors AND ensuring mix-closure.
         """
         if len(processed) <= max_colors:
             return processed
 
-        # 1. Split palette
-        fixed = [c for c in processed if c.identifier in user_defined_ids]
-        candidates = [c for c in processed if c.identifier not in user_defined_ids]
+        fixed = [c for c in processed if c.parsed]
+        candidates = [c for c in processed if not c.parsed]
 
         if len(fixed) > max_colors:
             raise ValueError("Number of user-defined colors exceeds max palette size")
 
         selected = fixed.copy()
 
-        # Pre-cache Lab arrays for speed
         lab_map = {c.identifier: c.lab for c in processed}
 
-        # 2. Iteratively add farthest colors
+        # ---- Phase 1: geometric reduction ----
         while len(selected) < max_colors and candidates:
             best_candidate = None
             best_distance = -1.0
 
             for candidate in candidates:
-                # Compute distance to closest selected color
                 min_dist = min(
                     delta_E_CIE2000(
                         lab_map[candidate.identifier],
@@ -146,6 +142,40 @@ class PaletteProcessor:
                 selected.append(best_candidate)
                 candidates.remove(best_candidate)
 
+        # ---- Phase 2: dependency closure ----
+        selected_map = {c.identifier: c for c in selected}
+        full_map = {c.identifier: c for c in processed}
+
+        changed = True
+        while changed:
+            changed = False
+
+            required_ids: set[str] = set()
+            for c in selected:
+                self._collect_dependencies(c, full_map, required_ids)
+
+            missing = required_ids - selected_map.keys()
+            if not missing:
+                break
+
+            # Remove least important generated colors (last added, highest generation)
+            removable = sorted(
+                (c for c in selected if not c.parsed),
+                key=lambda c: (c.generation, selected.index(c)),
+                reverse=True,
+            )
+
+            for missing_id in missing:
+                if len(selected) >= max_colors and removable:
+                    victim = removable.pop(0)
+                    selected.remove(victim)
+                    selected_map.pop(victim.identifier)
+
+                dep = full_map[missing_id]
+                selected.append(dep)
+                selected_map[dep.identifier] = dep
+                changed = True
+
         return selected
 
     def project_all_mixes(
@@ -159,8 +189,6 @@ class PaletteProcessor:
 
         if len(palette) < 2:
             return []
-
-        max_generation = max(c.generation for c in palette)
 
         projections: list[MixProjection] = []
 
@@ -194,3 +222,20 @@ class PaletteProcessor:
             )
 
         return projections
+
+    def _collect_dependencies(
+        self,
+        color: ProcessedColor,
+        color_map: dict[str, ProcessedColor],
+        acc: set[str],
+    ) -> None:
+        if not color.mixed_from:
+            return
+
+        for parent_id in color.mixed_from:
+            if parent_id in acc:
+                continue
+
+            acc.add(parent_id)
+            parent = color_map[parent_id]
+            self._collect_dependencies(parent, color_map, acc)

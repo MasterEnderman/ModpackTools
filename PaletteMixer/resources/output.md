@@ -30,7 +30,7 @@
 - **Lab:** `(87.25, -1.68, 75.81)`
 - **Mixed from:** _Base color_
 
-# Generation 1 (8 colors)
+# Generation 1 (10 colors)
 
 ## ![Arcane Red](icons/red+black.png) Arcane Red
 - **Hex:** `#612925`
@@ -38,6 +38,14 @@
 - **Lab:** `(24.52, 25.08, 14.95)`
 - **Mixed from:**
   - ![Red](icons/red.png) Red (`#B02E26`)
+  - ![Black](icons/black.png) Black (`#1D1D21`)
+
+## ![Galaxea](icons/blue+black.png) Galaxea
+- **Hex:** `#32355E`
+- **RGB:** `(50, 53, 94)`
+- **Lab:** `(23.78, 10.87, -24.91)`
+- **Mixed from:**
+  - ![Blue](icons/blue.png) Blue (`#3C44AA`)
   - ![Black](icons/black.png) Black (`#1D1D21`)
 
 ## ![Gray](icons/gray.png) Gray
@@ -72,6 +80,14 @@
   - ![Yellow](icons/yellow.png) Yellow (`#FED83D`)
   - ![Red](icons/red.png) Red (`#B02E26`)
 
+## ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola
+- **Hex:** `#71833B`
+- **RGB:** `(113, 131, 59)`
+- **Lab:** `(51.90, -18.26, 36.28)`
+- **Mixed from:**
+  - ![Yellow](icons/yellow.png) Yellow (`#FED83D`)
+  - ![Black](icons/black.png) Black (`#1D1D21`)
+
 ## ![Pink](icons/pink.png) Pink
 - **Hex:** `#F38BAA`
 - **RGB:** `(243, 139, 170)`
@@ -96,7 +112,7 @@
   - ![White](icons/white.png) White (`#F9FFFE`)
   - ![Yellow](icons/yellow.png) Yellow (`#FED83D`)
 
-# Generation 2 (51 colors)
+# Generation 2 (49 colors)
 
 ## ![Apricot](icons/yellow++pink.png) Apricot
 - **Hex:** `#FAB06F`
@@ -168,7 +184,7 @@
 - **Lab:** `(61.60, 14.89, 27.43)`
 - **Mixed from:**
   - ![Pink](icons/pink.png) Pink (`#F38BAA`)
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Cactus](icons/blue++yellow+black.png) Cactus
 - **Hex:** `#546F5E`
@@ -176,7 +192,7 @@
 - **Lab:** `(44.32, -13.71, 6.28)`
 - **Mixed from:**
   - ![Blue](icons/blue.png) Blue (`#3C44AA`)
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Classy Mauve](icons/white+yellow++purple.png) Classy Mauve
 - **Hex:** `#BA969E`
@@ -208,7 +224,7 @@
 - **Lab:** `(61.63, -34.48, 20.66)`
 - **Mixed from:**
   - ![Light Blue](icons/light_blue.png) Light Blue (`#3AB3DA`)
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Fading Night](icons/blue++light_blue.png) Fading Night
 - **Hex:** `#3B78C3`
@@ -240,7 +256,7 @@
 - **Lab:** `(56.43, 5.29, 50.48)`
 - **Mixed from:**
   - ![Orange](icons/orange.png) Orange (`#F9801D`)
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Imperial Purple](icons/blue++red+black.png) Imperial Purple
 - **Hex:** `#552E62`
@@ -280,7 +296,7 @@
 - **Lab:** `(77.82, -13.49, 31.61)`
 - **Mixed from:**
   - ![White](icons/white.png) White (`#F9FFFE`)
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
 
 ## ![Langoustine](icons/red++orange.png) Langoustine
 - **Hex:** `#D44E22`
@@ -296,7 +312,7 @@
 - **Lab:** `(28.28, 3.39, -13.92)`
 - **Mixed from:**
   - ![Gray](icons/gray.png) Gray (`#474F52`)
-  - ⚠ Unknown color `blue+black`
+  - ![Galaxea](icons/blue+black.png) Galaxea (`#32355E`)
 
 ## ![Light Gray](icons/light_gray.png) Light Gray
 - **Hex:** `#9D9D97`
@@ -410,20 +426,12 @@
   - ![Red](icons/red.png) Red (`#B02E26`)
   - ![Purple](icons/purple.png) Purple (`#8932B8`)
 
-## ![Potion № 9](icons/red++red+black.png) Potion № 9
-- **Hex:** `#872C24`
-- **RGB:** `(135, 44, 36)`
-- **Lab:** `(31.99, 38.37, 26.32)`
-- **Mixed from:**
-  - ![Red](icons/red.png) Red (`#B02E26`)
-  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
-
 ## ![Reading Tea Leaves](icons/yellow+black++purple.png) Reading Tea Leaves
 - **Hex:** `#826968`
 - **RGB:** `(130, 105, 104)`
 - **Lab:** `(46.78, 9.78, 4.32)`
 - **Mixed from:**
-  - ⚠ Unknown color `yellow+black`
+  - ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola (`#71833B`)
   - ![Purple](icons/purple.png) Purple (`#8932B8`)
 
 ## ![Ruthless Empress](icons/purple++blue+black.png) Ruthless Empress
@@ -432,15 +440,7 @@
 - **Lab:** `(31.67, 35.49, -43.09)`
 - **Mixed from:**
   - ![Purple](icons/purple.png) Purple (`#8932B8`)
-  - ⚠ Unknown color `blue+black`
-
-## ![Shadow Purple](icons/blue+black++red+black.png) Shadow Purple
-- **Hex:** `#492B44`
-- **RGB:** `(73, 43, 68)`
-- **Lab:** `(22.17, 18.43, -9.92)`
-- **Mixed from:**
-  - ⚠ Unknown color `blue+black`
-  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
+  - ![Galaxea](icons/blue+black.png) Galaxea (`#32355E`)
 
 ## ![Siren](icons/red++blue+black.png) Siren
 - **Hex:** `#693242`
@@ -448,7 +448,7 @@
 - **Lab:** `(28.58, 26.49, 1.49)`
 - **Mixed from:**
   - ![Red](icons/red.png) Red (`#B02E26`)
-  - ⚠ Unknown color `blue+black`
+  - ![Galaxea](icons/blue+black.png) Galaxea (`#32355E`)
 
 ## ![Strawberry Moon](icons/red++pink.png) Strawberry Moon
 - **Hex:** `#D7536D`

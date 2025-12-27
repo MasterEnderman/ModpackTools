@@ -6,7 +6,7 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 
 - Palette size: **64 colors**
 - Total mix combinations: **136**
-- Average ΔE (CIEDE2000): **5.66**
+- Average ΔE (CIEDE2000): **5.52**
 - Worst-case ΔE: **13.26**
 
 ## 🚨 Largest Deviations
@@ -26,18 +26,6 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 
 ## 🎯 Projection Targets
 
-### ![Totally Broccoli](icons/yellow++gray.png) Totally Broccoli
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Gray](icons/gray.png) Gray | 0.00 |
-| ![Green](icons/green.png) Green + ![Light Gray](icons/light_gray.png) Light Gray | 1.98 |
-| ![Light Blue](icons/light_blue.png) Light Blue + ![Orange](icons/orange.png) Orange | 4.00 |
-| ![Yellow](icons/yellow.png) Yellow + ![Blue](icons/blue.png) Blue | 6.63 |
-| ![Lime](icons/lime.png) Lime + ![Brown](icons/brown.png) Brown | 7.86 |
-| ![Green](icons/green.png) Green + ![Lime](icons/lime.png) Lime | 7.96 |
-| ![Orange](icons/orange.png) Orange + ![Cyan](icons/cyan.png) Cyan | 8.02 |
-
 ### ![Fluorescence](icons/yellow++light_blue.png) Fluorescence
 
 | Mix | ΔE |
@@ -47,6 +35,16 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Light Blue](icons/light_blue.png) Light Blue + ![Lime](icons/lime.png) Lime | 5.27 |
 | ![Lime](icons/lime.png) Lime + ![Cyan](icons/cyan.png) Cyan | 10.31 |
 | ![White](icons/white.png) White + ![Lime](icons/lime.png) Lime | 11.12 |
+
+### ![Totally Broccoli](icons/yellow++gray.png) Totally Broccoli
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Gray](icons/gray.png) Gray | 0.00 |
+| ![Green](icons/green.png) Green + ![Light Gray](icons/light_gray.png) Light Gray | 1.98 |
+| ![Light Blue](icons/light_blue.png) Light Blue + ![Orange](icons/orange.png) Orange | 4.00 |
+| ![Yellow](icons/yellow.png) Yellow + ![Blue](icons/blue.png) Blue | 6.63 |
+| ![Green](icons/green.png) Green + ![Lime](icons/lime.png) Lime | 7.96 |
 
 ### ![Honey](icons/orange++yellow+black.png) Honey
 
@@ -96,6 +94,15 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Pink](icons/pink.png) Pink + ![Cyan](icons/cyan.png) Cyan | 8.78 |
 | ![White](icons/white.png) White + ![Purple](icons/purple.png) Purple | 9.85 |
 | ![White](icons/white.png) White + ![Blue](icons/blue.png) Blue | 11.45 |
+
+### ![Pesto di Rucola](icons/yellow+black.png) Pesto di Rucola
+
+| Mix | ΔE |
+|-----|----|
+| ![Yellow](icons/yellow.png) Yellow + ![Black](icons/black.png) Black | 0.00 |
+| ![Lime](icons/lime.png) Lime + ![Brown](icons/brown.png) Brown | 6.15 |
+| ![Gray](icons/gray.png) Gray + ![Lime](icons/lime.png) Lime | 6.66 |
+| ![Orange](icons/orange.png) Orange + ![Cyan](icons/cyan.png) Cyan | 7.10 |
 
 ### ![Lush Bamboo](icons/yellow++green.png) Lush Bamboo
 
@@ -221,26 +228,12 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | ![Orange](icons/orange.png) Orange + ![Magenta](icons/magenta.png) Magenta | 7.31 |
 | ![Yellow](icons/yellow.png) Yellow + ![Red](icons/red.png) Red | 7.86 |
 
-### ![Green](icons/green.png) Green
-
-| Mix | ΔE |
-|-----|----|
-| ![Yellow](icons/yellow.png) Yellow + ![Black](icons/black.png) Black | 5.80 |
-| ![Gray](icons/gray.png) Gray + ![Lime](icons/lime.png) Lime | 7.38 |
-
 ### ![Noble Plum](icons/purple++red+black.png) Noble Plum
 
 | Mix | ΔE |
 |-----|----|
 | ![Blue](icons/blue.png) Blue + ![Red](icons/red.png) Red | 4.80 |
 | ![Black](icons/black.png) Black + ![Magenta](icons/magenta.png) Magenta | 5.15 |
-
-### ![Lava Stone](icons/gray++blue+black.png) Lava Stone
-
-| Mix | ΔE |
-|-----|----|
-| ![Blue](icons/blue.png) Blue + ![Gray](icons/gray.png) Gray | 7.51 |
-| ![Blue](icons/blue.png) Blue + ![Black](icons/black.png) Black | 7.70 |
 
 ### ![Fading Night](icons/blue++light_blue.png) Fading Night
 
@@ -314,6 +307,18 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 | Mix | ΔE |
 |-----|----|
 | ![Yellow](icons/yellow.png) Yellow + ![Pink](icons/pink.png) Pink | 0.00 |
+
+### ![Galaxea](icons/blue+black.png) Galaxea
+
+| Mix | ΔE |
+|-----|----|
+| ![Blue](icons/blue.png) Blue + ![Black](icons/black.png) Black | 0.00 |
+
+### ![Lava Stone](icons/gray++blue+black.png) Lava Stone
+
+| Mix | ΔE |
+|-----|----|
+| ![Blue](icons/blue.png) Blue + ![Gray](icons/gray.png) Gray | 7.51 |
 
 ### ![Ruthless Empress](icons/purple++blue+black.png) Ruthless Empress
 
