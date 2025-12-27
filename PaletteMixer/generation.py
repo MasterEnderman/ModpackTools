@@ -24,7 +24,8 @@ class ColorGenerator:
         """
         self.generations[0] = [
             ColorDefinition(c.identifier, c.name, c.hex_value, c.mixed_from, 0)
-            for c in self.existing_colors.values() if c.mixed_from is None
+            for c in self.existing_colors.values()
+            if c.mixed_from is None
         ]
 
         for generation in range(1, self.max_depth + 1):
@@ -48,12 +49,17 @@ class ColorGenerator:
             tup = (combo[0].identifier, combo[1].identifier)
             yml = self._get_from_yaml(tup)
 
-            if any(c.mixed_from and sorted(c.mixed_from) == sorted(tup) for c in self.generations[generation - 1]):
+            if any(
+                c.mixed_from and sorted(c.mixed_from) == sorted(tup)
+                for c in self.generations[generation - 1]
+            ):
                 continue
 
             self.generations[generation].append(
                 ColorDefinition(
-                    identifier=yml.identifier if yml else f"{combo[0].identifier}{'+' * generation}{combo[1].identifier}",
+                    identifier=yml.identifier
+                    if yml
+                    else f"{combo[0].identifier}{'+' * generation}{combo[1].identifier}",
                     name=yml.name if yml else None,
                     hex_value=yml.hex_value if yml else None,
                     mixed_from=tup,

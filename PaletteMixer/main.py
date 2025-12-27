@@ -7,7 +7,7 @@ from generation import ColorGenerator
 from input import InputLoader, InputParser, DependencyValidator
 from util import calculate_max_color_count, resolve_output_size
 from processing import PaletteProcessor
-from output import PaletteImageExporter, PaletteMarkdownExporter
+from output import PaletteImageExporter, PaletteMarkdownExporter, PaletteMixProjectionExporter
 
 # =========================
 # Main wiring
@@ -33,9 +33,7 @@ def main() -> None:
     validator.validate(colors, max_depth=GRAPH_MAX_DEPTH)
 
     # 4. Calculate max size
-    base_color_count = sum(
-        1 for c in colors.values() if c.mixed_from is None
-    )
+    base_color_count = sum(1 for c in colors.values() if c.mixed_from is None)
 
     max_size = calculate_max_color_count(
         base_color_count=base_color_count,
@@ -78,12 +76,19 @@ def main() -> None:
         output_path=Path("resources/output.md"),
     )
 
-    # 9. Print stats
+    # 9. Project mixes
+    if cli_args.projections:
+        projections = processor.project_all_mixes(processed_palette)
+        exporter = PaletteMixProjectionExporter(output_path=Path("resources/mix-projections.md"))
+        exporter.export(colors=processed_palette, projections=projections)
+
+    # 10. Print stats
     print(f"🎨 Final palette ({final_size} mixed and {base_color_count} base colors):")
     print(f"  - {base_color_count} defined base colors")
     print(f"  - {len(colors) - base_color_count} defined mixed colors")
     print(f"  - {len(generated_colors) - len(colors)} generated colors")
     print(f"  - {len(processed_palette)} total colors")
+
 
 if __name__ == "__main__":
     main()

@@ -6,27 +6,28 @@ from pathlib import Path
 
 from classes import CliArguments
 
+
 class CliParser:
     """
     Parses command-line arguments only.
     """
 
     def parse(self) -> CliArguments:
-        parser = argparse.ArgumentParser(
-            description="Advanced color processing tool"
+        parser = argparse.ArgumentParser(description="Advanced color processing tool")
+
+        parser.add_argument("input_file", type=Path, help="Path to the input YAML file")
+
+        parser.add_argument(
+            "--size", type=int, required=False, help="Optional maximum output size"
         )
 
         parser.add_argument(
-            "input_file",
-            type=Path,
-            help="Path to the input YAML file"
-        )
-
-        parser.add_argument(
-            "--size",
-            type=int,
-            required=False,
-            help="Optional maximum output size"
+            "--project-mixes",
+            action="store_true",
+            help=(
+                "Generate a virtual additional generation by projecting all possible "
+                "mixes onto the closest existing palette color (ΔE)"
+            ),
         )
 
         args = parser.parse_args()
@@ -40,5 +41,6 @@ class CliParser:
 
         return CliArguments(
             input_path=args.input_file,
+            projections=args.project_mixes,
             size=args.size,
         )

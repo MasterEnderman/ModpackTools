@@ -6,12 +6,13 @@ from collections import defaultdict
 from math import atan2, ceil, sqrt
 from pathlib import Path
 from PIL import Image, ImageDraw
-from typing import List, Dict
+from typing import List, Dict, Iterable
 
-from classes import ProcessedColor
+from classes import ProcessedColor, MixProjection
 
 ICON_SIZE = 16
 ICON_PATH = Path("resources/icons")
+
 
 class PaletteImageExporter:
     """
@@ -92,6 +93,7 @@ class PaletteMarkdownExporter:
     """
     Exports a palette of ProcessedColor objects into a Markdown document.
     """
+
     def export(
         self,
         colors: List[ProcessedColor],
@@ -106,7 +108,6 @@ class PaletteMarkdownExporter:
 
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(markdown, encoding="utf-8")
-
 
     @staticmethod
     def _group_by_generation(
@@ -140,7 +141,6 @@ class PaletteMarkdownExporter:
             for color in colors:
                 lines.extend(self._render_color(color, lookup))
                 lines.append("")
-
 
         return "\n".join(lines).rstrip() + "\n"
 
@@ -202,3 +202,155 @@ class PaletteMarkdownExporter:
 
         return icon_file.as_posix().removeprefix("resources/")
 
+class PaletteMixProjectionExporter:
+    """
+    Exports virtual color-mix projections into a readable Markdown document.
+    """
+
+    def __init__(
+        self,
+        output_path: Path,
+    ) -> None:
+        self.output_path = output_path
+        self.icon_dir = ICON_PATH
+
+    def export(
+        self,
+        colors: Iterable[ProcessedColor],
+        projections: Iterable[MixProjection],
+    ) -> None:
+        """
+        Export mix projection data to Markdown.
+
+        Parameters
+        ----------
+        colors:
+            Mapping from color_id -> ProcessedColor
+        projections:
+            Iterable of MixProjection results
+        """
+        grouped = self._group_by_target(projections)
+        summary = self._compute_summary(projections)
+
+        lines: List[str] = []
+        c = {c.identifier: c for c in colors}
+        lines.extend(self._render_header(summary))
+        lines.extend(self._render_targets(grouped, c))
+        lines.extend(self._render_worst_cases(projections, c))
+
+        self.output_path.parent.mkdir(parents=True, exist_ok=True)
+        self.output_path.write_text("\n".join(lines), encoding="utf-8")
+
+    def _group_by_target(
+        self,
+        projections: Iterable[MixProjection],
+    ) -> Dict[str, List[MixProjection]]:
+        grouped: Dict[str, List[MixProjection]] = defaultdict(list)
+
+        for p in projections:
+            grouped[p.projected].append(p)
+
+        # sort each group by increasing ΔE
+        for lst in grouped.values():
+            lst.sort(key=lambda p: p.delta_e)
+
+        return dict(grouped)
+
+    def _compute_summary(
+        self,
+        projections: Iterable[MixProjection],
+    ) -> dict:
+        projections = list(projections)
+
+        delta_es = [p.delta_e for p in projections]
+
+        return {
+            "palette_size": len(set(p.projected for p in projections)),
+            "total_combinations": len(projections),
+            "avg_delta_e": sum(delta_es) / len(delta_es) if delta_es else 0.0,
+            "max_delta_e": max(delta_es) if delta_es else 0.0,
+        }
+
+    def _render_header(self, summary: dict) -> List[str]:
+        return [
+            "# 🔀 Color Mix Projections",
+            "",
+            "This document shows *virtual* 50/50 mix results projected onto the closest existing palette color.",
+            "",
+            "## 📊 Summary",
+            "",
+            f"- Palette size: **{summary['palette_size']} colors**",
+            f"- Total mix combinations: **{summary['total_combinations']}**",
+            f"- Average ΔE (CIEDE2000): **{summary['avg_delta_e']:.2f}**",
+            f"- Worst-case ΔE: **{summary['max_delta_e']:.2f}**",
+            "",
+        ]
+
+    def _render_targets(
+        self,
+        grouped: Dict[str, List[MixProjection]],
+        colors: Dict[str, ProcessedColor],
+    ) -> List[str]:
+        lines: List[str] = []
+        lines.append("## 🎯 Projection Targets")
+        lines.append("")
+
+        for target_id, projections in sorted(
+            grouped.items(),
+            key=lambda item: len(item[1]),
+            reverse=True,
+        ):
+            target = colors[target_id]
+
+            icon = self._icon_md(target)
+            lines.append(f"### {icon} {target.name}")
+            lines.append("")
+            lines.append("| Mix | ΔE |")
+            lines.append("|-----|----|")
+
+            for p in projections:
+                a = colors[p.source_a]
+                b = colors[p.source_b]
+
+                mix = (
+                    f"{self._icon_md(a)} {a.name} + "
+                    f"{self._icon_md(b)} {b.name}"
+                )
+
+                lines.append(f"| {mix} | {p.delta_e:.2f} |")
+
+            lines.append("")
+
+        return lines
+
+    def _render_worst_cases(
+        self,
+        projections: Iterable[MixProjection],
+        colors: Dict[str, ProcessedColor],
+        limit: int = 10,
+    ) -> List[str]:
+        worst = sorted(projections, key=lambda p: p.delta_e, reverse=True)[:limit]
+
+        lines = [
+            "## 🚨 Largest Deviations",
+            "",
+            "| Mix | Projected To | ΔE |",
+            "|----|-------------|----|",
+        ]
+
+        for p in worst:
+            a = colors[p.source_a]
+            b = colors[p.source_b]
+            target = colors[p.projected]
+
+            mix = f"{self._icon_md(a)} {a.name} + {self._icon_md(b)} {b.name}"
+            proj = f"{self._icon_md(target)} {target.name}"
+
+            lines.append(f"| {mix} | {proj} | {p.delta_e:.2f} |")
+
+        lines.append("")
+        return lines
+
+    def _icon_md(self, color: ProcessedColor) -> str:
+        icon_path = self.icon_dir / f"{color.identifier}.png"
+        return f"![{color.name}]({icon_path.as_posix()})"

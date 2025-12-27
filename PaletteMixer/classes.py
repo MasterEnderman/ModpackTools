@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, Tuple
 
+
 @dataclass(frozen=True)
 class CliArguments:
     """
@@ -16,6 +17,7 @@ class CliArguments:
     """
 
     input_path: Path
+    projections: bool
     size: Optional[int]
 
 
@@ -41,3 +43,16 @@ class ProcessedColor:
     lab: np.ndarray
     name: str
     mixed_from: Optional[Tuple[str, str]]
+
+
+@dataclass(frozen=True)
+class MixProjection:
+    """
+    Represents the result of virtually mixing two palette colors and
+    projecting the result onto the closest existing palette color.
+    """
+
+    source_a: str
+    source_b: str
+    projected: str
+    delta_e: float

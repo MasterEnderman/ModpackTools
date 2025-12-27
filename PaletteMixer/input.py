@@ -77,18 +77,14 @@ class InputParser:
 
         for identifier, entry in colors.items():
             if not isinstance(entry, dict):
-                self._error(
-                    f"Color '{identifier}' must be a mapping."
-                )
+                self._error(f"Color '{identifier}' must be a mapping.")
 
             name = entry.get("name")
             hex_value = entry.get("hex")
             mixed_from = entry.get("mixed_from")
 
             if hex_value is None and mixed_from is None:
-                self._error(
-                    f"Color '{identifier}' must define 'hex' or 'mixed_from'."
-                )
+                self._error(f"Color '{identifier}' must define 'hex' or 'mixed_from'.")
 
             mixed_tuple: Optional[Tuple[str, str]] = None
             if mixed_from is not None:

@@ -1,6 +1,12 @@
 from __future__ import annotations
 
-from classes import ColorDefinition, ProcessedColor
+import mixbox
+from itertools import combinations
+from classes import ColorDefinition, ProcessedColor, MixProjection
+from util import hex_to_rgb, rgb_to_hex
+from colour import sRGB_to_XYZ, XYZ_to_Lab
+from colour.difference import delta_E_CIE2000
+import numpy as np
 
 
 class PaletteProcessor:
@@ -11,10 +17,9 @@ class PaletteProcessor:
         """
         Iterates by generation and assigns hex values using pymixbox.
         """
-        import mixbox
-        from util import hex_to_rgb, rgb_to_hex
-
-        for generation in sorted({c.generation for c in self.colors.values() if c.generation}):
+        for generation in sorted(
+            {c.generation for c in self.colors.values() if c.generation}
+        ):
             for color in self.colors.values():
                 if color.generation != generation or color.generation == 0:
                     continue
@@ -26,9 +31,7 @@ class PaletteProcessor:
                 parent_b = self.colors[parent_b_id]
 
                 if parent_a.hex_value is None or parent_b.hex_value is None:
-                    raise RuntimeError(
-                        f"Parent hex missing for {color.identifier}"
-                    )
+                    raise RuntimeError(f"Parent hex missing for {color.identifier}")
 
                 rgb_a = hex_to_rgb(parent_a.hex_value)
                 rgb_b = hex_to_rgb(parent_b.hex_value)
@@ -47,13 +50,15 @@ class PaletteProcessor:
         if not unresolved:
             return
 
-        hexes = ",".join(c.hex_value.lstrip("#") for c in unresolved if c.hex_value is not None)
+        hexes = ",".join(
+            c.hex_value.lstrip("#") for c in unresolved if c.hex_value is not None
+        )
         url = "https://api.color.pizza/v1/"
 
         response = requests.get(
             url,
             params={"values": hexes, "list": "bestOf", "noduplicates": "true"},
-            timeout=10
+            timeout=10,
         )
         response.raise_for_status()
 
@@ -66,17 +71,11 @@ class PaletteProcessor:
         """
         Converts fully-resolved ColorDefinitions into ProcessedColor objects.
         """
-        from util import hex_to_rgb
-        from colour import sRGB_to_XYZ, XYZ_to_Lab
-        import numpy as np
-
         processed: list[ProcessedColor] = []
 
         for c in self.colors.values():
             if c.hex_value is None or c.name is None:
-                raise RuntimeError(
-                    f"Color {c.identifier} is not fully resolved"
-                )
+                raise RuntimeError(f"Color {c.identifier} is not fully resolved")
 
             rgb = hex_to_rgb(c.hex_value)
             rgb_norm = [v / 255 for v in rgb]
@@ -108,8 +107,6 @@ class PaletteProcessor:
         Reduce palette size using farthest-point sampling (CIEDE2000),
         while keeping all user-defined colors.
         """
-        from colour.difference import delta_E_CIE2000
-
         if len(processed) <= max_colors:
             return processed
 
@@ -118,9 +115,7 @@ class PaletteProcessor:
         candidates = [c for c in processed if c.identifier not in user_defined_ids]
 
         if len(fixed) > max_colors:
-            raise ValueError(
-                "Number of user-defined colors exceeds max palette size"
-            )
+            raise ValueError("Number of user-defined colors exceeds max palette size")
 
         selected = fixed.copy()
 
@@ -151,3 +146,45 @@ class PaletteProcessor:
                 candidates.remove(best_candidate)
 
         return selected
+
+    def project_all_mixes(
+        self,
+        palette: list[ProcessedColor],
+    ) -> list[MixProjection]:
+        """
+        Virtually mix all unordered pairs of palette colors and project each
+        mix onto the closest existing palette color using ΔE (CIEDE2000).
+        """
+
+        if len(palette) < 2:
+            return []
+
+        projections: list[MixProjection] = []
+
+        for a, b in combinations(palette, 2):
+            mixed_rgb = mixbox.lerp(a.rgb, b.rgb, 0.5)
+
+            rgb_norm = [v / 255 for v in mixed_rgb]
+
+            xyz = sRGB_to_XYZ(rgb_norm)
+            mixed_lab = np.array(XYZ_to_Lab(xyz))
+
+            best_id: str | None = None
+            best_delta: float = float("inf")
+
+            for candidate in palette:
+                d = float(delta_E_CIE2000(mixed_lab, candidate.lab))
+                if d < best_delta:
+                    best_delta = d
+                    best_id = candidate.identifier
+
+            projections.append(
+                MixProjection(
+                    source_a=a.identifier,
+                    source_b=b.identifier,
+                    projected=best_id or "UNDEFINED",
+                    delta_e=best_delta,
+                )
+            )
+
+        return projections

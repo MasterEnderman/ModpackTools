@@ -114,6 +114,14 @@
 
 # Generation 2 (95 colors)
 
+## ![Ancient Chest](icons/orange++red+black.png) Ancient Chest
+- **Hex:** `#9B4D1E`
+- **RGB:** `(155, 77, 30)`
+- **Lab:** `(41.80, 29.26, 40.97)`
+- **Mixed from:**
+  - ![Orange](icons/orange.png) Orange (`#F9801D`)
+  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
+
 ## ![Apricot](icons/yellow++pink.png) Apricot
 - **Hex:** `#FAB06F`
 - **RGB:** `(250, 176, 111)`
@@ -233,14 +241,6 @@
 - **Mixed from:**
   - ![Spätzle Yellow](icons/white+yellow.png) Spätzle Yellow (`#FBEC89`)
   - ![Purple](icons/purple.png) Purple (`#8932B8`)
-
-## ![Coco Muck](icons/orange++red+black.png) Coco Muck
-- **Hex:** `#9B4D1E`
-- **RGB:** `(155, 77, 30)`
-- **Lab:** `(41.80, 29.26, 40.97)`
-- **Mixed from:**
-  - ![Orange](icons/orange.png) Orange (`#F9801D`)
-  - ![Arcane Red](icons/red+black.png) Arcane Red (`#612925`)
 
 ## ![Coffee](icons/yellow+black++red+black.png) Coffee
 - **Hex:** `#704B32`
