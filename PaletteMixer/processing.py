@@ -207,6 +207,10 @@ class PaletteProcessor:
             best_delta: float = float("inf")
 
             for candidate in palette:
+                if candidate.mixed_from and a.identifier in candidate.mixed_from and b.identifier in candidate.mixed_from:
+                    best_delta = 0.0
+                    best_id = candidate.identifier
+                    break
                 d = float(delta_E_CIE2000(mixed_lab, candidate.lab))
                 if d < best_delta:
                     best_delta = d
