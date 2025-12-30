@@ -304,6 +304,10 @@ class PaletteMixProjectionExporter:
         ):
             target = colors[target_id]
 
+            script: List[str] = []
+            script.append("```js")
+            script.append(f"// {target.name}")
+
             icon = self._icon_md(target)
             lines.append(f"### {icon} {target.name}")
             lines.append("")
@@ -319,8 +323,15 @@ class PaletteMixProjectionExporter:
                     f"{self._icon_md(b)} {b.name}"
                 )
 
-                lines.append(f"| {mix} | {p.delta_e:.2f} |")
+                d_E = f"{p.delta_e:.2f}"
 
+                lines.append(f"| {mix} | {d_E} |")
+
+                script.append(f"/* {d_E.rjust(5)} */ {self._camel_case(target.name)}.addMix([{self._camel_case(a.name)}, {self._camel_case(b.name)}]);")
+
+            lines.append("")
+            script.append("```")
+            lines.append("\n".join(script))
             lines.append("")
 
         return lines
@@ -356,3 +367,6 @@ class PaletteMixProjectionExporter:
     def _icon_md(self, color: ProcessedColor) -> str:
         icon_path = self.icon_dir / f"{color.identifier}.png"
         return f"![{color.name}]({icon_path.as_posix().removeprefix("resources/")})"
+
+    def _camel_case(self, s: str) -> str:
+        return "".join(word.capitalize() for word in s.strip().replace("’","").replace("ä","ae").replace("ö","oe").replace("ü","ue").split(" "))

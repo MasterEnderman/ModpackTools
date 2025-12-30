@@ -193,7 +193,7 @@ class PaletteProcessor:
         projections: list[MixProjection] = []
 
         for a, b in combinations(palette, 2):
-            if not a.parsed or not b.parsed:
+            if not a.parsed and not b.parsed:
                 continue
 
             mixed_rgb = mixbox.lerp(a.rgb, b.rgb, 0.5)
