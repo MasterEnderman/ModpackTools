@@ -25,6 +25,7 @@ from typing import Dict, List, Optional, Tuple
 import math
 import mixbox
 import numpy as np
+import re
 import requests
 import shutil
 import yaml
@@ -307,8 +308,21 @@ def export_markdown(
             .replace("ä", "ae")
             .replace("ö", "oe")
             .replace("ü", "ue")
+            .replace("ß", "ss")
+            .replace("Ä", "Ae")
+            .replace("Ö", "Oe")
+            .replace("Ü", "Ue")
+            .replace("é", "e")
+            .replace("è", "e")
+            .replace("ê", "e")
+            .replace("ë", "e")
             .split(" ")
         )
+
+    def snake_case(s: str) -> str:
+        # Use regex to find uppercase letters and replace them
+        result = re.sub(r'(?<!^)(?=[A-Z])', '_', camel_case(s)).lower()
+        return result
 
     temp_gen: int = -1
 
@@ -373,6 +387,10 @@ def export_markdown(
                     lines.append(
                         f"  - ![{parent_name}]({parent_path}) {parent_name} (` {parent.hex} `)"
                     )
+
+        lines.append("\n**Definition:**\n```js")
+        lines.append(f"global {camel_case(name)} as Color = Color('{snake_case(name)}', '{c.hex}');")
+        lines.append("```")
 
         if c.key in projections:
             lines.append("\n**Projections:**\n```js")

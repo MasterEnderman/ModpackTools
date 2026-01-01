@@ -17,17 +17,32 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Lab:** ` (99.54, -2.14, -0.21) `
 - **Mixed from:** _Base color_
 
+**Definition:**
+```js
+global White as Color = Color('white', '#F9FFFE');
+```
+
 ### ![Yellow](icons/yellow.png) Yellow
 - **Hex:** ` #FED83D `
 - **RGB:** ` (254, 216, 61) `
 - **Lab:** ` (87.25, -1.68, 75.81) `
 - **Mixed from:** _Base color_
 
+**Definition:**
+```js
+global Yellow as Color = Color('yellow', '#FED83D');
+```
+
 ### ![Blue](icons/blue.png) Blue
 - **Hex:** ` #3C44AA `
 - **RGB:** ` (60, 68, 170) `
 - **Lab:** ` (33.98, 29.61, -55.84) `
 - **Mixed from:** _Base color_
+
+**Definition:**
+```js
+global Blue as Color = Color('blue', '#3C44AA');
+```
 
 **Projections:**
 ```js
@@ -41,6 +56,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Lab:** ` (40.12, 51.64, 36.32) `
 - **Mixed from:** _Base color_
 
+**Definition:**
+```js
+global Red as Color = Color('red', '#B02E26');
+```
+
 **Projections:**
 ```js
 // Red
@@ -52,6 +72,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **RGB:** ` (29, 29, 33) `
 - **Lab:** ` (10.92, 1.06, -2.73) `
 - **Mixed from:** _Base color_
+
+**Definition:**
+```js
+global Black as Color = Color('black', '#1D1D21');
+```
 
 **Projections:**
 ```js
@@ -69,6 +94,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
   - ![Red](icons/red.png) Red (` #B02E26 `)
 
+**Definition:**
+```js
+global Orange as Color = Color('orange', '#F9801D');
+```
+
 **Projections:**
 ```js
 // Orange
@@ -84,6 +114,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
   - ![White](icons/white.png) White (` #F9FFFE `)
 
+**Definition:**
+```js
+global LightBlue as Color = Color('light_blue', '#3AB3DA');
+```
+
 **Projections:**
 ```js
 // LightBlue
@@ -97,6 +132,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Red](icons/red.png) Red (` #B02E26 `)
   - ![White](icons/white.png) White (` #F9FFFE `)
+
+**Definition:**
+```js
+global Pink as Color = Color('pink', '#F38BAA');
+```
 
 **Projections:**
 ```js
@@ -113,6 +153,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Black](icons/black.png) Black (` #1D1D21 `)
   - ![White](icons/white.png) White (` #F9FFFE `)
 
+**Definition:**
+```js
+global Gray as Color = Color('gray', '#474F52');
+```
+
 **Projections:**
 ```js
 // Gray
@@ -127,6 +172,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Red](icons/red.png) Red (` #B02E26 `)
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
+
+**Definition:**
+```js
+global Purple as Color = Color('purple', '#8932B8');
+```
 
 **Projections:**
 ```js
@@ -144,6 +194,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
 
+**Definition:**
+```js
+global Green as Color = Color('green', '#5E7C16');
+```
+
 **Projections:**
 ```js
 // Green
@@ -158,6 +213,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Red](icons/red.png) Red (` #B02E26 `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
+
+**Definition:**
+```js
+global ArcaneRed as Color = Color('arcane_red', '#612925');
+```
 
 **Projections:**
 ```js
@@ -174,6 +234,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
 
+**Definition:**
+```js
+global Galaxea as Color = Color('galaxea', '#32355E');
+```
+
 **Projections:**
 ```js
 // Galaxea
@@ -188,6 +253,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
+
+**Definition:**
+```js
+global SpaetzleYellow as Color = Color('spaetzle_yellow', '#FBEC89');
+```
 
 **Projections:**
 ```js
@@ -205,6 +275,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Purple](icons/purple.png) Purple (` #8932B8 `)
   - ![White](icons/white.png) White (` #F9FFFE `)
 
+**Definition:**
+```js
+global Magenta as Color = Color('magenta', '#C74EBD');
+```
+
 **Projections:**
 ```js
 // Magenta
@@ -219,6 +294,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Green](icons/green.png) Green (` #5E7C16 `)
   - ![White](icons/white.png) White (` #F9FFFE `)
+
+**Definition:**
+```js
+global Lime as Color = Color('lime', '#80C71F');
+```
 
 **Projections:**
 ```js
@@ -235,6 +315,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
   - ![White](icons/white.png) White (` #F9FFFE `)
 
+**Definition:**
+```js
+global LightGray as Color = Color('light_gray', '#9D9D97');
+```
+
 **Projections:**
 ```js
 // LightGray
@@ -248,6 +333,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
   - ![Green](icons/green.png) Green (` #5E7C16 `)
+
+**Definition:**
+```js
+global Cyan as Color = Color('cyan', '#169C9C');
+```
 
 **Projections:**
 ```js
@@ -264,6 +354,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Black](icons/black.png) Black (` #1D1D21 `)
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
 
+**Definition:**
+```js
+global Brown as Color = Color('brown', '#835432');
+```
+
 **Projections:**
 ```js
 // Brown
@@ -279,6 +374,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
 
+**Definition:**
+```js
+global WizardsBrew as Color = Color('wizards_brew', '#9890B9');
+```
+
 **Projections:**
 ```js
 // WizardsBrew
@@ -292,6 +392,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
+
+**Definition:**
+```js
+global IndianSilk as Color = Color('indian_silk', '#845468');
+```
 
 **Projections:**
 ```js
@@ -309,6 +414,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Green](icons/green.png) Green (` #5E7C16 `)
 
+**Definition:**
+```js
+global RichGold as Color = Color('rich_gold', '#A38019');
+```
+
 **Projections:**
 ```js
 // RichGold
@@ -322,6 +432,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
+
+**Definition:**
+```js
+global FadingNight as Color = Color('fading_night', '#3B78C3');
+```
 
 **Projections:**
 ```js
@@ -338,13 +453,18 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Green](icons/green.png) Green (` #5E7C16 `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
 
+**Definition:**
+```js
+global TreetopCathedral as Color = Color('treetop_cathedral', '#334B18');
+```
+
 **Projections:**
 ```js
 // TreetopCathedral
 /*  0.00 */ TreetopCathedral.addMix([Green, Black]);
 ```
 
-### ![PurpleProtégé](icons/purple+black.png) Purple Protégé
+### ![PurpleProtege](icons/purple+black.png) Purple Protégé
 - **Hex:** ` #55316C `
 - **RGB:** ` (85, 49, 108) `
 - **Lab:** ` (27.33, 28.20, -28.11) `
@@ -352,12 +472,17 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Purple](icons/purple.png) Purple (` #8932B8 `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
 
+**Definition:**
+```js
+global PurpleProtege as Color = Color('purple_protege', '#55316C');
+```
+
 **Projections:**
 ```js
-// PurpleProtégé
-/*  0.00 */ PurpleProtégé.addMix([Purple, Black]);
-/*  7.02 */ PurpleProtégé.addMix([Magenta, Black]);
-/*  7.15 */ PurpleProtégé.addMix([Gray, Purple]);
+// PurpleProtege
+/*  0.00 */ PurpleProtege.addMix([Purple, Black]);
+/*  7.02 */ PurpleProtege.addMix([Magenta, Black]);
+/*  7.15 */ PurpleProtege.addMix([Gray, Purple]);
 ```
 
 ### ![Beer](icons/orange+yellow.png) Beer
@@ -367,6 +492,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
+
+**Definition:**
+```js
+global Beer as Color = Color('beer', '#FCAB29');
+```
 
 **Projections:**
 ```js
@@ -382,6 +512,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Purple](icons/purple.png) Purple (` #8932B8 `)
   - ![Green](icons/green.png) Green (` #5E7C16 `)
+
+**Definition:**
+```js
+global Lizard as Color = Color('lizard', '#7D6E49');
+```
 
 **Projections:**
 ```js
@@ -399,6 +534,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
+
+**Definition:**
+```js
+global TotallyBroccoli as Color = Color('totally_broccoli', '#8C9C4D');
+```
 
 **Projections:**
 ```js
@@ -419,6 +559,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
 
+**Definition:**
+```js
+global MysteriousBlue as Color = Color('mysterious_blue', '#487E8E');
+```
+
 **Projections:**
 ```js
 // MysteriousBlue
@@ -432,6 +577,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Red](icons/red.png) Red (` #B02E26 `)
+
+**Definition:**
+```js
+global Langoustine as Color = Color('langoustine', '#D44E22');
+```
 
 **Projections:**
 ```js
@@ -447,6 +597,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
 
+**Definition:**
+```js
+global BerriesNCream as Color = Color('berries_n_cream', '#F7BECF');
+```
+
 **Projections:**
 ```js
 // BerriesNCream
@@ -460,6 +615,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
   - ![Red](icons/red.png) Red (` #B02E26 `)
+
+**Definition:**
+```js
+global StrawberryMoon as Color = Color('strawberry_moon', '#D7536D');
+```
 
 **Projections:**
 ```js
@@ -476,6 +636,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
 
+**Definition:**
+```js
+global Apricot as Color = Color('apricot', '#FAB06F');
+```
+
 **Projections:**
 ```js
 // Apricot
@@ -489,6 +654,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
+
+**Definition:**
+```js
+global Fluorescence as Color = Color('fluorescence', '#8CD873');
+```
 
 **Projections:**
 ```js
@@ -506,6 +676,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
   - ![Green](icons/green.png) Green (` #5E7C16 `)
 
+**Definition:**
+```js
+global BimiGreen as Color = Color('bimi_green', '#4E692C');
+```
+
 **Projections:**
 ```js
 // BimiGreen
@@ -521,6 +696,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
 
+**Definition:**
+```js
+global Atlantis as Color = Color('atlantis', '#346576');
+```
+
 **Projections:**
 ```js
 // Atlantis
@@ -534,6 +714,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
+
+**Definition:**
+```js
+global NeverForget as Color = Color('never_forget', '#9B6A7D');
+```
 
 **Projections:**
 ```js
@@ -551,6 +736,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
 
+**Definition:**
+```js
+global Morocco as Color = Color('morocco', '#C26E65');
+```
+
 **Projections:**
 ```js
 // Morocco
@@ -565,6 +755,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
 
+**Definition:**
+```js
+global ToadKing as Color = Color('toad_king', '#4D715B');
+```
+
 **Projections:**
 ```js
 // ToadKing
@@ -572,7 +767,7 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 /*  7.86 */ ToadKing.addMix([LightBlue, Brown]);
 ```
 
-### ![Frappé](icons/white+brown.png) Frappé
+### ![Frappe](icons/white+brown.png) Frappé
 - **Hex:** ` #C5A188 `
 - **RGB:** ` (197, 161, 136) `
 - **Lab:** ` (68.85, 9.63, 18.03) `
@@ -580,12 +775,17 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
 
+**Definition:**
+```js
+global Frappe as Color = Color('frappe', '#C5A188');
+```
+
 **Projections:**
 ```js
-// Frappé
-/*  0.00 */ Frappé.addMix([White, Brown]);
-/*  6.40 */ Frappé.addMix([Yellow, Purple]);
-/*  7.45 */ Frappé.addMix([Magenta, Yellow]);
+// Frappe
+/*  0.00 */ Frappe.addMix([White, Brown]);
+/*  6.40 */ Frappe.addMix([Yellow, Purple]);
+/*  7.45 */ Frappe.addMix([Magenta, Yellow]);
 ```
 
 ### ![DarkRum](icons/brown+black.png) Dark Rum
@@ -595,6 +795,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Brown](icons/brown.png) Brown (` #835432 `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
+
+**Definition:**
+```js
+global DarkRum as Color = Color('dark_rum', '#483B2A');
+```
 
 **Projections:**
 ```js
@@ -611,6 +816,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
 
+**Definition:**
+```js
+global VolcanicAsh as Color = Color('volcanic_ash', '#717777');
+```
+
 **Projections:**
 ```js
 // VolcanicAsh
@@ -625,6 +835,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
 
+**Definition:**
+```js
+global CandyFloss as Color = Color('candy_floss', '#DE9FDC');
+```
+
 **Projections:**
 ```js
 // CandyFloss
@@ -638,6 +853,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
   - ![Red](icons/red.png) Red (` #B02E26 `)
+
+**Definition:**
+```js
+global SpicyPurple as Color = Color('spicy_purple', '#C03B71');
+```
 
 **Projections:**
 ```js
@@ -655,6 +875,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
 
+**Definition:**
+```js
+global LightBrown as Color = Color('light_brown', '#B16927');
+```
+
 **Projections:**
 ```js
 // LightBrown
@@ -671,6 +896,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Yellow](icons/yellow.png) Yellow (` #FED83D `)
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
 
+**Definition:**
+```js
+global SalsaVerde as Color = Color('salsa_verde', '#C5C462');
+```
+
 **Projections:**
 ```js
 // SalsaVerde
@@ -685,6 +915,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
+
+**Definition:**
+```js
+global TwinkleNight as Color = Color('twinkle_night', '#6D6DB0');
+```
 
 **Projections:**
 ```js
@@ -704,6 +939,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
   - ![Black](icons/black.png) Black (` #1D1D21 `)
 
+**Definition:**
+```js
+global DeepSeaDiver as Color = Color('deep_sea_diver', '#20565A');
+```
+
 **Projections:**
 ```js
 // DeepSeaDiver
@@ -717,6 +957,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Blue](icons/blue.png) Blue (` #3C44AA `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
+
+**Definition:**
+```js
+global PinotNoir as Color = Color('pinot_noir', '#5E525C');
+```
 
 **Projections:**
 ```js
@@ -732,6 +977,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
   - ![Green](icons/green.png) Green (` #5E7C16 `)
+
+**Definition:**
+```js
+global KryptoniteGreen as Color = Color('kryptonite_green', '#37933E');
+```
 
 **Projections:**
 ```js
@@ -750,6 +1000,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
 
+**Definition:**
+```js
+global SummerOf82 as Color = Color('summer_of82', '#76CED7');
+```
+
 **Projections:**
 ```js
 // SummerOf82
@@ -765,6 +1020,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
 
+**Definition:**
+```js
+global IronFist as Color = Color('iron_fist', '#C8CAC9');
+```
+
 **Projections:**
 ```js
 // IronFist
@@ -778,6 +1038,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Lime](icons/lime.png) Lime (` #80C71F `)
+
+**Definition:**
+```js
+global Greenfinch as Color = Color('greenfinch', '#B9A11D');
+```
 
 **Projections:**
 ```js
@@ -794,6 +1059,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![White](icons/white.png) White (` #F9FFFE `)
   - ![Lime](icons/lime.png) Lime (` #80C71F `)
 
+**Definition:**
+```js
+global VenomousSting as Color = Color('venomous_sting', '#CBED6B');
+```
+
 **Projections:**
 ```js
 // VenomousSting
@@ -808,6 +1078,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
   - ![Purple](icons/purple.png) Purple (` #8932B8 `)
+
+**Definition:**
+```js
+global CrownJewels as Color = Color('crown_jewels', '#9367A7');
+```
 
 **Projections:**
 ```js
@@ -824,6 +1099,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Lime](icons/lime.png) Lime (` #80C71F `)
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
 
+**Definition:**
+```js
+global GreenWithEnvy as Color = Color('green_with_envy', '#3FBA4A');
+```
+
 **Projections:**
 ```js
 // GreenWithEnvy
@@ -838,6 +1118,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
   - ![Brown](icons/brown.png) Brown (` #835432 `)
+
+**Definition:**
+```js
+global WhiskyBarrel as Color = Color('whisky_barrel', '#95775D');
+```
 
 **Projections:**
 ```js
@@ -854,6 +1139,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
 
+**Definition:**
+```js
+global SuperPink as Color = Color('super_pink', '#DD6CB2');
+```
+
 **Projections:**
 ```js
 // SuperPink
@@ -869,6 +1159,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Orange](icons/orange.png) Orange (` #F9801D `)
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
 
+**Definition:**
+```js
+global Jaffa as Color = Color('jaffa', '#D9764E');
+```
+
 **Projections:**
 ```js
 // Jaffa
@@ -882,6 +1177,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
   - ![Lime](icons/lime.png) Lime (` #80C71F `)
+
+**Definition:**
+```js
+global Kathmandu as Color = Color('kathmandu', '#B0975A');
+```
 
 **Projections:**
 ```js
@@ -900,6 +1200,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
 
+**Definition:**
+```js
+global Ming as Color = Color('ming', '#327173');
+```
+
 **Projections:**
 ```js
 // Ming
@@ -913,6 +1218,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![Pink](icons/pink.png) Pink (` #F38BAA `)
   - ![Cyan](icons/cyan.png) Cyan (` #169C9C `)
+
+**Definition:**
+```js
+global Tempest as Color = Color('tempest', '#8088A2');
+```
 
 **Projections:**
 ```js
@@ -928,6 +1238,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
   - ![Magenta](icons/magenta.png) Magenta (` #C74EBD `)
   - ![Gray](icons/gray.png) Gray (` #474F52 `)
 
+**Definition:**
+```js
+global GrapeCandy as Color = Color('grape_candy', '#885187');
+```
+
 **Projections:**
 ```js
 // GrapeCandy
@@ -941,6 +1256,11 @@ This document shows *virtual* 50/50 mix results projected onto the closest exist
 - **Mixed from:**
   - ![LightBlue](icons/light_blue.png) LightBlue (` #3AB3DA `)
   - ![LightGray](icons/light_gray.png) LightGray (` #9D9D97 `)
+
+**Definition:**
+```js
+global Seaside as Color = Color('seaside', '#6BA7B5');
+```
 
 **Projections:**
 ```js
