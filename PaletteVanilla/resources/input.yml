@@ -1,0 +1,76 @@
+colors:
+  white:
+    name: "White"
+    hex: "#F9FFFE"
+    gen: 0
+  orange:
+    name: "Orange"
+    hex: "#F9801D"
+    mixed_from: ["yellow", "red"]
+    gen: 1
+  magenta:
+    name: "Magenta"
+    hex: "#C74EBD"
+    mixed_from: ["purple", "white"]
+    gen: 2
+  light_blue:
+    name: "Light Blue"
+    hex: "#3AB3DA"
+    mixed_from: ["blue", "white"]
+    gen: 1
+  yellow:
+    name: "Yellow"
+    hex: "#FED83D"
+    gen: 0
+  lime:
+    name: "Lime"
+    hex: "#80C71F"
+    mixed_from: ["green", "white"]
+    gen: 2
+  pink:
+    name: "Pink"
+    hex: "#F38BAA"
+    mixed_from: ["red", "white"]
+    gen: 1
+  gray:
+    name: "Gray"
+    hex: "#474F52"
+    mixed_from: ["black", "white"]
+    gen: 1
+  light_gray:
+    name: "Light Gray"
+    hex: "#9D9D97"
+    mixed_from: ["gray", "white"]
+    gen: 2
+  cyan:
+    name: "Cyan"
+    hex: "#169C9C"
+    mixed_from: ["blue", "green"]
+    gen: 2
+  purple:
+    name: "Purple"
+    hex: "#8932B8"
+    mixed_from: ["red", "blue"]
+    gen: 1
+  blue:
+    name: "Blue"
+    hex: "#3C44AA"
+    gen: 0
+  brown:
+    name: "Brown"
+    hex: "#835432"
+    mixed_from: ["black", "orange"]
+    gen: 2
+  green:
+    name: "Green"
+    hex: "#5E7C16"
+    mixed_from: ["blue", "yellow"]
+    gen: 1
+  red:
+    name: "Red"
+    hex: "#B02E26"
+    gen: 0
+  black:
+    name: "Black"
+    hex: "#1D1D21"
+    gen: 0
