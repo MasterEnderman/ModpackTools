@@ -22,11 +22,12 @@ from colour import sRGB_to_XYZ, XYZ_to_Lab
 from colour.difference import delta_E_CIE2000
 from typing import Dict, List, Optional, Tuple
 
+import math
 import mixbox
 import numpy as np
 import requests
 import yaml
-from PIL import Image
+from PIL import Image, ImageDraw
 
 
 # ---------------------------------------------------------------------------
@@ -38,6 +39,7 @@ RESOURCES = ROOT / "resources"
 ICON_DIR = RESOURCES / "icons"
 INPUT_YAML = RESOURCES / "input.yml"
 OUTPUT_MD = RESOURCES / "output.md"
+OUTPUT_PNG = RESOURCES / "palette.png"
 
 COLOR_PIZZA_API = "https://api.color.pizza/v1/"
 
@@ -425,6 +427,74 @@ def resolve_color_names(colors: List[Color]) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Image export
+# ---------------------------------------------------------------------------
+
+
+def export_png(
+    colors: List[Color],
+    swatch_size: int = 64,
+) -> None:
+    """
+    Export the given colors as a PNG palette image.
+    """
+
+    def hue_angle(lab: np.ndarray) -> float:
+        # lab = [L*, a*, b*]
+        a = lab[1]
+        b = lab[2]
+        return math.atan2(b, a)
+
+    def sort_colors(colors: List[Color]) -> List[Color]:
+        """
+        Sort colors by perceptual lightness and hue (Lab space).
+        """
+
+        if len(colors) <= 1:
+            return colors
+
+        return sorted(
+            colors,
+            key=lambda c: (
+                hue_angle(c.lab()),
+                c.lab()[0],
+            ),
+        )
+
+    if not colors:
+        raise ValueError("Cannot export an empty color palette")
+
+    sorted_colors = sort_colors(colors)
+
+    n = len(sorted_colors)
+    cols = math.ceil(math.sqrt(n))
+    rows = math.ceil(n / cols)
+
+    width = cols * swatch_size
+    height = rows * swatch_size
+
+    image = Image.new("RGB", (width, height))
+    draw = ImageDraw.Draw(image)
+
+    for index, color in enumerate(sorted_colors):
+        row = index // cols
+        col = index % cols
+
+        x0 = col * swatch_size
+        y0 = row * swatch_size
+        x1 = x0 + swatch_size
+        y1 = y0 + swatch_size
+
+        draw.rectangle(
+            [x0, y0, x1, y1],
+            fill=color.rgb255(),
+        )
+
+    OUTPUT_PNG.parent.mkdir(parents=True, exist_ok=True)
+    image.save(OUTPUT_PNG, format="PNG")
+
+
+# ---------------------------------------------------------------------------
 # Main entry point
 # ---------------------------------------------------------------------------
 
@@ -453,6 +523,7 @@ def main() -> None:
     projections = project_all_mixes(list(reduced))
 
     export_markdown(reduced, projections)
+    export_png(reduced)
 
 
 if __name__ == "__main__":
