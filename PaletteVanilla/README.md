@@ -30,6 +30,7 @@ The output is designed to be both human-readable and machine-friendly.
 └── resources
     ├── input.yml
     ├── output.md
+    ├── palette.png
     └── icons
         ├── red.png
         ├── blue.png
