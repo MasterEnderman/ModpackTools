@@ -26,6 +26,7 @@ import math
 import mixbox
 import numpy as np
 import requests
+import shutil
 import yaml
 from PIL import Image, ImageDraw
 
@@ -119,10 +120,10 @@ class Color:
 
     # ------------------------------------------------------------------
 
-    def write_icon(self, path: pathlib.Path) -> None:
-        """Write a 64x64 PNG icon for the color."""
+    def write_icon(self, path: pathlib.Path, size: int = 16) -> None:
+        """Write a n x n PNG icon for the color."""
         path.parent.mkdir(parents=True, exist_ok=True)
-        img = Image.new("RGB", (64, 64), self.rgb255())
+        img = Image.new("RGB", (size, size), self.rgb255())
         img.save(path, "PNG")
 
     # ------------------------------------------------------------------
@@ -335,6 +336,7 @@ def export_markdown(
         "",
     ]
 
+    shutil.rmtree(ICON_DIR, ignore_errors=True)
     for c in sorted(colors, key=lambda x: x.gen):
         icon_path = ICON_DIR / f"{c.key}.png"
         c.write_icon(icon_path)
