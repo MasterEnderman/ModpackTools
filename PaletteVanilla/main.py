@@ -46,6 +46,7 @@ COLOR_PIZZA_API = "https://api.color.pizza/v1/"
 # Utility functions
 # ---------------------------------------------------------------------------
 
+
 def clamp(v: float, lo: float = 0.0, hi: float = 1.0) -> float:
     """Clamp a float into a given range."""
     return max(lo, min(hi, v))
@@ -54,6 +55,7 @@ def clamp(v: float, lo: float = 0.0, hi: float = 1.0) -> float:
 # ---------------------------------------------------------------------------
 # Color class
 # ---------------------------------------------------------------------------
+
 
 @dataclass(slots=True)
 class Color:
@@ -151,6 +153,7 @@ class MixProjection:
 # Parsing & palette creation
 # ---------------------------------------------------------------------------
 
+
 def load_colors(path: pathlib.Path) -> Dict[str, Color]:
     """Load base colors from YAML."""
     with path.open("r", encoding="utf-8") as f:
@@ -187,6 +190,7 @@ def build_full_palette(base: Dict[str, Color]) -> List[Color]:
 # ---------------------------------------------------------------------------
 # Palette reduction
 # ---------------------------------------------------------------------------
+
 
 def reduce_palette(
     palette: List[Color],
@@ -256,7 +260,11 @@ def project_all_mixes(
         best_delta: float = float("inf")
 
         for candidate in palette:
-            if candidate.mixed_from and a.key in candidate.mixed_from and b.key in candidate.mixed_from:
+            if (
+                candidate.mixed_from
+                and a.key in candidate.mixed_from
+                and b.key in candidate.mixed_from
+            ):
                 best_delta = 0.0
                 best_id = candidate.key
                 break
@@ -267,23 +275,37 @@ def project_all_mixes(
 
         id = best_id or "UNDEFINED"
         projections[id] = projections.get(id, [])
-        projections[id].append(MixProjection(
-            source_a=a.key,
-            source_b=b.key,
-            delta_e=best_delta,
-        ))
+        projections[id].append(
+            MixProjection(
+                source_a=a.key,
+                source_b=b.key,
+                delta_e=best_delta,
+            )
+        )
 
     return projections
+
 
 # ---------------------------------------------------------------------------
 # Markdown export
 # ---------------------------------------------------------------------------
 
-def export_markdown(colors: List[Color], projections: Dict[str, List[MixProjection]]) -> None:
+
+def export_markdown(
+    colors: List[Color], projections: Dict[str, List[MixProjection]]
+) -> None:
     """Export final palette to markdown."""
 
     def camel_case(s: str) -> str:
-        return "".join(word.capitalize() for word in s.strip().replace("’","").replace("ä","ae").replace("ö","oe").replace("ü","ue").split(" "))
+        return "".join(
+            word.capitalize()
+            for word in s.strip()
+            .replace("’", "")
+            .replace("ä", "ae")
+            .replace("ö", "oe")
+            .replace("ü", "ue")
+            .split(" ")
+        )
 
     temp_gen: int = -1
 
@@ -318,13 +340,19 @@ def export_markdown(colors: List[Color], projections: Dict[str, List[MixProjecti
         if c.gen != temp_gen:
             temp_gen = c.gen
             gen_count = len([c for c in colors if c.gen == temp_gen])
-            lines.append(f"## Generation {c.gen} ({gen_count} color{'s' if gen_count != 1 else ''})\n")
+            lines.append(
+                f"## Generation {c.gen} ({gen_count} color{'s' if gen_count != 1 else ''})\n"
+            )
 
         name = c.resolved_name or c.key
-        lines.append(f"### ![{camel_case(name)}]({icon_path.as_posix().split("resources/")[-1]}) {name}")
+        lines.append(
+            f"### ![{camel_case(name)}]({icon_path.as_posix().split('resources/')[-1]}) {name}"
+        )
         lines.append(f"- **Hex:** ` {c.hex} `")
         lines.append(f"- **RGB:** ` {c.rgb255()} `")
-        lines.append(f"- **Lab:** ` ({c.lab()[0]:.2f}, {c.lab()[1]:.2f}, {c.lab()[2]:.2f}) `")
+        lines.append(
+            f"- **Lab:** ` ({c.lab()[0]:.2f}, {c.lab()[1]:.2f}, {c.lab()[2]:.2f}) `"
+        )
 
         if c.gen == 0:
             lines.append("- **Mixed from:** _Base color_")
@@ -347,9 +375,15 @@ def export_markdown(colors: List[Color], projections: Dict[str, List[MixProjecti
             lines.append(f"// {camel_case(name)}")
             for combination in sorted(projections[c.key], key=lambda x: x.delta_e):
                 delta = f"{combination.delta_e:.2f}"
-                c_a = camel_case(lookup[combination.source_a].resolved_name or combination.source_a)
-                c_b = camel_case(lookup[combination.source_b].resolved_name or combination.source_b)
-                lines.append(f"/* {delta.rjust(5)} */ {camel_case(name)}.addMix([{c_a}, {c_b}]);")
+                c_a = camel_case(
+                    lookup[combination.source_a].resolved_name or combination.source_a
+                )
+                c_b = camel_case(
+                    lookup[combination.source_b].resolved_name or combination.source_b
+                )
+                lines.append(
+                    f"/* {delta.rjust(5)} */ {camel_case(name)}.addMix([{c_a}, {c_b}]);"
+                )
             lines.append("```")
 
         lines.append("")
@@ -360,6 +394,7 @@ def export_markdown(colors: List[Color], projections: Dict[str, List[MixProjecti
 # ---------------------------------------------------------------------------
 # Color name resolution
 # ---------------------------------------------------------------------------
+
 
 def resolve_color_names(colors: List[Color]) -> None:
     """
@@ -392,6 +427,7 @@ def resolve_color_names(colors: List[Color]) -> None:
 # ---------------------------------------------------------------------------
 # Main entry point
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     """CLI entry point."""
