@@ -1,6 +1,8 @@
 # Vanilla Palette Color Mix Projections
 
-<img src="resources/palette.png" width="256" height="256" align="center">
+<div align="center">
+  <img src="resources/palette.png" width="256" height="256" align="center">
+</div>
 
 This project generates, reduces, and analyzes a color palette derived from a small set of user-defined base colors.
 It simulates 50/50 color mixing, trims the palette to a fixed size using perceptual distance, and projects all possible mixes onto the closest remaining palette colors.
