@@ -6,6 +6,7 @@ A collection of python projects I wrote while working on various Minecraft modpa
 
 - [PaletteCreator](https://github.com/MasterEnderman/ModpackTools/blob/master/PaletteCreator/)
 - [PaletteMixer](https://github.com/MasterEnderman/ModpackTools/blob/master/PaletteMixer/)
+- [PaletteVanilla](https://github.com/MasterEnderman/ModpackTools/blob/master/PaletteVanilla/)
 - [PngBlender](https://github.com/MasterEnderman/ModpackTools/blob/master/PngBlender/)
 - [PngBlender2](https://github.com/MasterEnderman/ModpackTools/blob/master/PngBlender2/)
 
