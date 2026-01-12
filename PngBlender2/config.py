@@ -37,9 +37,9 @@ class ConfigLoader:
         Returns:
             Parsed application configuration.
         """
-        data = self._load_yaml()
-        paths = self._parse_paths(data.get("paths", {}))
-        blends = self._parse_blends(data.get("blend", {}))
+        self.data = self._load_yaml()
+        paths = self._parse_paths(self.data.get("paths", {}))
+        blends = self._parse_blends(self.data.get("blend", {}))
 
         return AppConfig(paths=paths, blends=blends)
 
@@ -90,7 +90,7 @@ class ConfigLoader:
                 continue
 
             chain = bool(entry.get("chain", False))
-            colors_raw = entry.get("colors")
+            colors_raw = entry.get("colors", self.data.get("colors", None))
             modes_raw = entry.get("modes", [])
 
             if not isinstance(colors_raw, list) or not colors_raw:

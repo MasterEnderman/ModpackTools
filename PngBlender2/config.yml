@@ -16,7 +16,10 @@ paths:
   # Paths are resolved relative to main.py
   input: input
   output: output
-
+colors:
+  # These colors are used, when a blend doesn't specify any colors
+  - "#FFFFFF(white)"
+  - blue.pnm
 blend:
   obsidian.pnm:
     modes:
@@ -27,5 +30,3 @@ blend:
   bedrock.pnm:
     modes:
       - penteract(107)
-    colors:
-      - blue.pnm
